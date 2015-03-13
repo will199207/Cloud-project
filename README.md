@@ -1,2 +1,2 @@
-# Cloud-project
-COSC 480 Major Project
+# GroupBuy
+COSC 480 Project
