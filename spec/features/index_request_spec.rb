@@ -15,7 +15,7 @@ RSpec.describe "index page", type: :feature do
             :pledges => 50,
             :start => "2015-01-22 12:00:00",
             :end => "2015-04-02 12:00:00",
-            :userid => 1)
+            :user_id => 1)
 
         Product.create!(
             :name => "Laptop",
@@ -25,7 +25,7 @@ RSpec.describe "index page", type: :feature do
             :pledges => 6,
             :start => "2014-01-01 12:00:00",
             :end => "2015-04-03 12:00:00",
-            :userid => 2)
+            :user_id => 2)
         
         Product.create!(
             :name => "Children's Toy",
@@ -35,7 +35,7 @@ RSpec.describe "index page", type: :feature do
             :pledges => 150,
             :start => "2015-02-20 12:00:00",
             :end => "2015-04-30 12:00:00",
-            :userid => 3)
+            :user_id => 3)
 
         Product.create!(
             :name => "NEW CAR!",
@@ -45,7 +45,7 @@ RSpec.describe "index page", type: :feature do
             :pledges => 2,
             :start => "2015-04-01 12:00:00",
             :end => "2015-05-1 12:00:00",
-            :userid => 4)
+            :user_id => 4)
 
         Product.create!(
             :name => "Noise Canceling Head Phones",
@@ -55,7 +55,7 @@ RSpec.describe "index page", type: :feature do
             :pledges => 30,
             :start => "2014-12-25 12:00:00",
             :end => "2015-04-04 12:00:00",
-            :userid => 5)
+            :user_id => 5)
 
         Product.create!(
             :name => "Tires",
@@ -65,7 +65,7 @@ RSpec.describe "index page", type: :feature do
             :pledges => 30,
             :start => "2015-01-01 12:00:00",
             :end => "2015-04-29 12:00:00",
-            :userid => 6)
+            :user_id => 6)
 
         visit "/products"
     end 
