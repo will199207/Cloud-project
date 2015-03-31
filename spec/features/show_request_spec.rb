@@ -2,8 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "index page", type: :feature do
   before :each do
-    Product.create!(:name => "apple corer", :description => "apple description", :price => 1.99, :minimum_age_appropriate => 3)
-    Product.create!(:name => "banana peeler", :description => "banana description", :price => 2.99, :minimum_age_appropriate => 2, :maximum_age_appropriate => 2)
+    Product.create!(
 
     visit "/products"
   end
