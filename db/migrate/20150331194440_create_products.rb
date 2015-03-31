@@ -8,7 +8,7 @@ class CreateProducts < ActiveRecord::Migration
       t.integer :pledges
       t.datetime :start
       t.datetime :end
-      t.reference :user
+      t.integer :user_id
       t.timestamps null: false
     end
   end
