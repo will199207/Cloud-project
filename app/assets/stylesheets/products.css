@@ -33,6 +33,14 @@ body h2 {
   text-align: center;
   background-color: #CC6600;
 }
+body h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
+  font-weight: 200;
+  font-style: normal;
+  text-align: left;
+  background-color: #CC6600;
+}
 body .newly_listed {
   position: relative;
   top: -5px;
