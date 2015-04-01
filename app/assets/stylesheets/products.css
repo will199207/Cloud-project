@@ -91,4 +91,6 @@ body a:link, body a:visited, body .products_table th {
   color: #A9511D;
   background-color: #6D8DB7; 
 }
-
+body .price {
+    text-align: right; 
+}
