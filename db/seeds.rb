@@ -8,11 +8,63 @@
 
 Product.delete_all
 
-Product.create!(name: "Plush toy", description: "It's cuddly and soft.  What more could you ask?", price: 4.99)
-Product.create!(name: "Buzz Lightyear Action Figure", description: "Buzz Lightyear: for your inner space cadet.", price: 17.99, minimum_age_appropriate: 3)
-Product.create!(name: "Lost puppies board game", description: "Cooperative game in which you collaborate to get lost puppies home before dark.", price: 19.99, minimum_age_appropriate: 4, maximum_age_appropriate: 12)
-Product.create!(name: "Stick", description: "Yes, it's a real stick.  Wooden.  A stick.", price: 0.50, minimum_age_appropriate: 5)
-Product.create!(name: "Koosh ball", description: "Far too much fun to throw these at an unsuspecting friend.  Makes a bad pillow.", price: 5.99, minimum_age_appropriate: 5)
-Product.create!(name: "Stacking blocks", description: "Build them up, knock them down.  Endless entertainment.", price: 11.99, minimum_age_appropriate: 1, maximum_age_appropriate: 5)
-Product.create!(name: "Crinkly bunny", description: "This fine bunny makes crinkly plastic noise when you touch it.  Will blow your baby's mind.", price: 2.99, minimum_age_appropriate: 0, maximum_age_appropriate: 0)
+Product.create!(
+            :name => "20 oz Bottles of Coke Cola", 
+            :description => "Cheap Caffinee",
+            :price => 1.50,
+            :target => 100,
+            :pledges => 50,
+            :start => "2015-01-22 12:00:00",
+            :end => "2015-04-02 12:00:00",
+            :user_id => 1)
+
+        Product.create!(
+            :name => "Laptop",
+            :description => "Probably need one",
+            :price => 550.00,
+            :target => 20,
+            :pledges => 6,
+            :start => "2014-01-01 12:00:00",
+            :end => "2015-04-03 12:00:00",
+            :user_id => 2)
+        
+        Product.create!(
+            :name => "Children's Toy",
+            :description => "Keep the kids quiet",
+            :price => 15.99,
+            :target => 200,
+            :pledges => 150,
+            :start => "2015-02-20 12:00:00",
+            :end => "2015-04-30 12:00:00",
+            :user_id => 3)
+
+        Product.create!(
+            :name => "NEW CAR!",
+            :description => "Four wheels and a engine",
+            :price => 35000.00,
+            :target => 10,
+            :pledges => 2,
+            :start => "2015-04-01 12:00:00",
+            :end => "2015-05-1 12:00:00",
+            :user_id => 4)
+
+        Product.create!(
+            :name => "Noise Canceling Head Phones",
+            :description => "Good for planes",
+            :price => 120.00,
+            :target => 35,
+            :pledges => 30,
+            :start => "2014-12-25 12:00:00",
+            :end => "2015-04-04 12:00:00",
+            :user_id => 5)
+
+        Product.create!(
+            :name => "Tires",
+            :description => "Round and made of ruber",
+            :price => 220.00,
+            :target => 300,
+            :pledges => 30,
+            :start => "2015-01-01 12:00:00",
+            :end => "2015-04-29 12:00:00",
+            :user_id => 6)
 
