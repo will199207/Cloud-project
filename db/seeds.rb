@@ -14,19 +14,19 @@ Product.create!(
             :price => 1.50,
             :target => 100,
             :pledges => 50,
-            :start => 2015-01-22 12:00:00,
-            :end => 2015-04-02 12:00:00,
-            :userid => 1)
+            :start => "2015-01-22 12:00:00",
+            :end => "2015-04-02 12:00:00",
+            :user_id => 1)
 
-Product.create!(
+        Product.create!(
             :name => "Laptop",
             :description => "Probably need one",
             :price => 550.00,
             :target => 20,
             :pledges => 6,
-            :start => 2014-01-01 12:00:00,
-            :end => 2015-04-03 12:00:00,
-            :userid => 1)
+            :start => "2014-01-01 12:00:00",
+            :end => "2015-04-03 12:00:00",
+            :user_id => 2)
         
         Product.create!(
             :name => "Children's Toy",
@@ -34,9 +34,9 @@ Product.create!(
             :price => 15.99,
             :target => 200,
             :pledges => 150,
-            :start => 2015-02-20 12:00:00,
-            :end => 2015-04-30 12:00:00,
-            :userid => 2)
+            :start => "2015-02-20 12:00:00",
+            :end => "2015-04-30 12:00:00",
+            :user_id => 3)
 
         Product.create!(
             :name => "NEW CAR!",
@@ -44,9 +44,9 @@ Product.create!(
             :price => 35000.00,
             :target => 10,
             :pledges => 2,
-            :start => 2015-04-01 12:00:00,
-            :end => 2015-05-1 12:00:00,
-            :userid => 3)
+            :start => "2015-04-01 12:00:00",
+            :end => "2015-05-1 12:00:00",
+            :user_id => 4)
 
         Product.create!(
             :name => "Noise Canceling Head Phones",
@@ -54,9 +54,9 @@ Product.create!(
             :price => 120.00,
             :target => 35,
             :pledges => 30,
-            :start => 2014-12-25 12:00:00,
-            :end => 2015-04-04 12:00:00,
-            :userid => 4)
+            :start => "2014-12-25 12:00:00",
+            :end => "2015-04-04 12:00:00",
+            :user_id => 5)
 
         Product.create!(
             :name => "Tires",
@@ -64,6 +64,7 @@ Product.create!(
             :price => 220.00,
             :target => 300,
             :pledges => 30,
-            :start => 2015-01-01 12:00:00,
-            :end => 2015-04-29 12:00:00,
-            :userid => 5)
+            :start => "2015-01-01 12:00:00",
+            :end => "2015-04-29 12:00:00",
+            :user_id => 6)
+
