@@ -2,12 +2,12 @@ class Product < ActiveRecord::Base
     belongs_to :user
 
     def self.are_active
-        #self.where("end > #{DateTime.now.to_formatted_s(:db)}")
-        self
+        self.where("end > '#{DateTime.now.to_formatted_s(:db)}'")
+        
     end
 
     def self.not_active
-        self
+        self.where("end <= '#{DateTime.now.to_formatted_s(:db)}'")
     end
 
     def self.target_not_hit
@@ -31,6 +31,6 @@ class Product < ActiveRecord::Base
     end
 
     def self.almost_targeted
-        self.order("target - pledges ASC")
+        self.order("((target * 1.0)/pledges) ASC")
     end
 end

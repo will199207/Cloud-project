@@ -2974,3 +2974,19 @@ Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for
 
 
 Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 22:25:46 -0400
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE (start > 2015-03-31 22:10:02)[0m
+SQLite3::SQLException: near "22": syntax error: SELECT "products".* FROM "products" WHERE (start > 2015-03-31 22:10:02)
+  [1m[35mProduct Load (27.9ms)[0m  SELECT "products".* FROM "products" WHERE (start > 2015-03-31)
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE (start > 2015-03-3122:10:02)[0m
+SQLite3::SQLException: near ":10": syntax error: SELECT "products".* FROM "products" WHERE (start > 2015-03-3122:10:02)
+  [1m[35mProduct Load (27.1ms)[0m  SELECT "products".* FROM "products" WHERE (start > 2015-03-31T22:10:02)
+SQLite3::SQLException: unrecognized token: "31T22": SELECT "products".* FROM "products" WHERE (start > 2015-03-31T22:10:02)
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" WHERE (start > 2015-03-31 22-10-02)[0m
+SQLite3::SQLException: near "22": syntax error: SELECT "products".* FROM "products" WHERE (start > 2015-03-31 22-10-02)
+  [1m[35mProduct Load (3.1ms)[0m  SELECT "products".* FROM "products" WHERE (end > 2015-03-31)
+  [1m[36mProduct Load (33.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > 2015-03-31 0)[0m
+SQLite3::SQLException: near "0": syntax error: SELECT "products".* FROM "products" WHERE (end > 2015-03-31 0)
+  [1m[35mProduct Load (2.0ms)[0m  SELECT "products".* FROM "products" WHERE (end > 2001-W05-6T04:05:06+07:00)
+SQLite3::SQLException: unrecognized token: "6T04": SELECT "products".* FROM "products" WHERE (end > 2001-W05-6T04:05:06+07:00)
+  [1m[36mProduct Load (2.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2001-W05-6T04:05:06+07:00')[0m
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2001-W05-6T04:05:06+07:00')
