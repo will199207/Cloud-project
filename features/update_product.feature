@@ -1,7 +1,7 @@
-Feature: Search GroupBuy for a product
-  As a user
-  So that I can see a narrower view of the products available for bidding in GroupBuy
-  I want to be able to search the GroupBuy product listings
+Feature: Pledge to buy a Product
+  As a user,
+  So that I can take advantage of the great deals that GroupBuy offers,
+  I want to pledge to buy a product.
 
   Background: GroupBuy has several products and users
     Given these Products:
@@ -13,8 +13,8 @@ Feature: Search GroupBuy for a product
       | Chubbies    | The most radical shorts   |  42.50 |   25   |   20    | 2015-03-25 09:26:31 | 2015-06-21 23:59:59 |     7     |
 
     Given these Users:
-      | id | username   | email                     | first_name | last_name |    password       |  
-      |  1 | Markos     | mgeorges@colgate.edu      | Markos     | Georges   | greekfreak        | 
+      | id | username   | email                     | first_name | last_name |    password       |
+      |  1 | Markos     | mgeorges@colgate.edu      | Markos     | Georges   | greekfreak        |
       |  2 | Garcia     | wgarcia@colgate.edu       | William    | Garcia    | chiefcia          |
       |  3 | Will       | rely@colgate.edu          | Willets    | Ely       | presidentwill     |
       |  4 | DAN        | ddrucker@colgate.edu      | Daniel     | Drucker   | GOHAWKS           |
@@ -22,19 +22,23 @@ Feature: Search GroupBuy for a product
       |  6 | John       | john.smith@gmail.com      | John       | Smith     | bigdaddyjohn      |
       |  7 | Chubsters  | chubsternation@gmail.com  | Tom        | Selleck   | shortsRevolution  |
 
-  Scenario: Search products for wolf
-    Given I am on the index page
-    When I fill in "search" with "wolf"
-    And I press "search"
-    Then I should be on the product search page
-    And I should see "Wolf Cola"
-    And I should see "Wolf Pelts"
-    But I should not see "Xbox One"
-
-  Scenario: Search Products for shorts
-    Given I am on the index page
-    When I fill in "search" with "shorts"
-    And I press "search"
-    Then I should be on the product search page
+  Scenario: Pledge to buy a Product
+    Given I am on the login page
+    When I fill in the following:
+      | Username | Markos     |
+      | Password | greekfreak |
+    And I press "Sign Up"
+    Then I should be on the index page
+    And I should see "Welcome, Markos"
     And I should see "Chubbies"
-    But I should not see "Water Bed"
+    When I press "Chubbies"
+    Then I should see "The most radical shorts"
+    And I should see "$42.50"
+    And I should see "25"
+    And I should see "Chubsters"
+    When I fill in "Pledge to buy" with "1"
+    And I press "Pledge!"
+    Then I should be on the pledge confirmation page
+    And I should see "Pledges until Bid: 4"
+    And I should see "Pledge Confirmation"
+
