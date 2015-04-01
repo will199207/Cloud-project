@@ -17,6 +17,15 @@ body #main {
   border: 5px solid #CC3300;
   border-radius: 10px; 
 }
+body h4{
+  font-family: Helvetica, sans-serif;
+  text-align: center; 
+  font-size: 28pt;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #006633;
+  color: white; 
+}
 body h3 {
   font-family: Helvetica, sans-serif;
   font-size: 20pt;
@@ -31,6 +40,14 @@ body h2 {
   font-weight: 200;
   font-style: normal;
   text-align: center;
+  background-color: #CC6600;
+}
+body h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
+  font-weight: 200;
+  font-style: normal;
+  text-align: left;
   background-color: #CC6600;
 }
 body .newly_listed {

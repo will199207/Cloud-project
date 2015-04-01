@@ -2786,3 +2786,60 @@ SQLite3::SQLException: near "21": syntax error: SELECT "products".* FROM "produc
 >>>>>>> 38989691c1d1828ed2bff8cb40fc3192666ffdb1
 >>>>>>> 588ca4215bd28dfde4798504436837b4fec1839e
 >>>>>>> f99f8f42ed338f89c8114d05713728f4980cfcb8
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 22:11:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/products" for 127.0.0.1 at 2015-03-31 22:11:55 -0400
+Processing by ProductsController#index as HTML
+Completed 500 Internal Server Error in 9ms
+
+SyntaxError (/home/csvm/GroupBuy/app/models/product.rb:10: syntax error, unexpected <<
+<<<<<<< HEAD
+  ^
+/home/csvm/GroupBuy/app/models/product.rb:12: syntax error, unexpected ===, expecting keyword_end
+=======
+   ^
+/home/csvm/GroupBuy/app/models/product.rb:14: syntax error, unexpected >>, expecting keyword_end
+>>>>>>> f99f8f42ed338f89c8114d05713728f4980cfcb8
+  ^):
+  app/models/product.rb:10: syntax error, unexpected <<
+  app/models/product.rb:12: syntax error, unexpected ===, expecting keyword_end
+  app/models/product.rb:14: syntax error, unexpected >>, expecting keyword_end
+  app/controllers/products_controller.rb:3:in `index'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (36.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (40.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (354.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (67.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (969.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-03-31 22:16:12 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (12.5ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (15.6ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (907.4ms)
+Completed 200 OK in 2396ms (Views: 2177.1ms | ActiveRecord: 37.5ms)
+
+
+Started GET "/assets/products-d4a7fd4dc49dc823196ee0a6fd7d1a40.css?body=1" for 127.0.0.1 at 2015-03-31 22:16:17 -0400
+
+
+Started GET "/assets/application-10b1a3dfedb48658df7ddbedd11dec3f.css?body=1" for 127.0.0.1 at 2015-03-31 22:16:17 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 22:16:17 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 22:16:18 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 22:16:18 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 22:16:19 -0400
