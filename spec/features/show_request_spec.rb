@@ -1,34 +1,46 @@
 require 'rails_helper'
 
-RSpec.describe "index page", type: :feature do
+RSpec.describe "show page", type: :feature do
   before :each do
-    Product.create!(:name => "apple corer", :description => "apple description", :price => 1.99, :minimum_age_appropriate => 3)
-    Product.create!(:name => "banana peeler", :description => "banana description", :price => 2.99, :minimum_age_appropriate => 2, :maximum_age_appropriate => 2)
+       Product.create!(
+            :name => "20 oz Bottles of Coke Cola", 
+            :description => "Cheap Caffinee",
+            :price => 1.50,
+            :target => 100,
+            :pledges => 50,
+            :start => "2015-01-22 12:00:00",
+            :end => "2015-04-02 12:00:00",
+            :user_id => 1)
 
-    visit "/products"
-  end
+        Product.create!(
+            :name => "Laptop",
+            :description => "Probably need one",
+            :price => 550.00,
+            :target => 20,
+            :pledges => 6,
+            :start => "2014-01-01 12:00:00",
+            :end => "2015-04-03 12:00:00",
+            :user_id => 2)
 
-  it "should have links from each product name to 'show' pages" do
-    expect(page).to have_link("apple corer")
-    expect(page).to have_link("banana peeler")
-  end
+        visit "/products"
+    end
+    
+    it "should should have a link to product 'Laptop'" do 
+        expect(page).to have_link("Laptop")
+    end 
 
-  it "show link for product should show details for the product" do
-    click_link("apple corer")
-    expect(page).to have_link("Back to product list")
-    expect(page).to have_content("apple corer")
-    expect(page).to have_content("apple description")
-    expect(page).to have_content("1.99")
-    expect(page).to have_content("3 and above")
-  end
+    it "should have a link to product '20 oz Bottles of Coke Cola'" do 
+        expect(page).to have_link("20 oz Bottles of Coke Cola")
+    end 
 
-  it "show link for product should show details for the product" do
-    click_link("banana peeler")
-    expect(page).to have_link("Back to product list")
-    expect(page).to have_content("banana peeler")
-    expect(page).to have_content("banana description")
-    expect(page).to have_content("2.99")
-    expect(page).to have_content("Age 2")
-  end
+    it "should show the page for each product when it's link is clicked" do 
+        click_link("Laptop")
+        expect(page).to have_link("Back to Home")
+        expect(page).to have_content("Laptop")
+        expect(page).to have_content("Probably need one")
+        expect(page).to have_content("2")
+        expect(page).to have_content("Pictures")
+        expect(page).to have_content("550.00"
+    end
 
-end
+
