@@ -73,13 +73,13 @@ RSpec.describe "index page", type: :feature do
 
     it "should show products in order by date added under Newly Added" do 
         product_date_added = []
-        page.all(".productsbynew").each { |x| product_date_added << x.text }
+        page.find(".productsbynew").all("name").each { |x| product_date_added << x.text }
         expect(product_date_added).to match_array(newly_added)
     end 
 
     it "should show products close to their target" do 
         products_close_to_target = []
-        page.all(".productsbytarget").each { |x| products_close_to_target << x.text }
+        page.find(".productsbytarget").all("name").each { |x| products_close_to_target << x.text }
         expect(products_close_to_target).to match_array(close_to_target)
     end 
 
