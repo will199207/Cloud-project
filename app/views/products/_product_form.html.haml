@@ -1,0 +1,14 @@
+= label :product, :name, 'Product Name'
+= text_field :product, 'name'
+
+= label :product, :description, 'Product Description'
+= text_field :product, 'description'
+
+= label :product, :target, 'Target'
+= number_field :product, 'target'
+
+= label :product, :price, 'Price'
+= number_field(:product, :price, step: 0.01)
+
+= label :product, :end, 'Expiration Date'
+= date_select :product, :end
