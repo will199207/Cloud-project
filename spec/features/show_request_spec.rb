@@ -40,7 +40,6 @@ RSpec.describe "show page", type: :feature do
         expect(page).to have_content("Probably need one")
         expect(page).to have_content("2")
         expect(page).to have_content("Pictures")
-        expect(page).to have_content("550.00"
+        expect(page).to have_content("550.00")
     end
-
-
+end
