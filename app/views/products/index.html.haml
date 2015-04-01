@@ -10,7 +10,7 @@
             %tr.productrow
                 %td.name= link_to "#{product.name}", product 
                 %td.description= product.description
-                %td.timecreated= product.start.strftime("%H:%M:%S")
+                %td.timecreated= product.start
                 %td.price= number_to_currency(product.price)
         
     %table.close_to_target
@@ -23,7 +23,7 @@
             %tr.productrow
                 %td.name= link_to "#{product.name}", product
                 %td.description= product.description
-                %td.percent= (product.pledges/product.target.to_f).round(2)
+                %td.percent= (product.pledges/product.target.to_f).round(3)*100
                 %td.price= number_to_currency(product.price)
 
     %table.ending_soon
@@ -34,10 +34,11 @@
         %th Price
         -@expiring.each do |product|
             %tr.productrow
-                %tr.product= link_to "#{product.name}", product
-                %tr.description= product.description 
-                %tr.timeleft= product.end.strftime("%H:%M:%S")
-                %tr.price= number_to_currency(product.price)
+                %td.product= link_to "#{product.name}", product
+                %td.description= product.description 
+                %td.timeleft= product.end
+                %td.price= number_to_currency(product.price)
+                
 
 
 
