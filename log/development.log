@@ -1370,3 +1370,31 @@ Migrating to CreateUsers (20150331195812)
   [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products"  ORDER BY target - pledges ASC
   [1m[36mProduct Load (9.4ms)[0m  [1mSELECT "products".* FROM "products"  ORDER BY end ASC[0m
 >>>>>>> a5ba63ab35158460e8e34b1e0ba38182c750cee8
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 20:41:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/products" for 127.0.0.1 at 2015-03-31 20:41:28 -0400
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (93.1ms)
+Completed 200 OK in 10908ms (Views: 10389.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-424fb1cd931d805416431d1a1edf8b94.css?body=1" for 127.0.0.1 at 2015-03-31 20:41:41 -0400
+
+
+Started GET "/assets/application-4201c363ea61bd9c6ea729b9ee8f7239.css?body=1" for 127.0.0.1 at 2015-03-31 20:41:41 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 20:41:42 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 20:41:43 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 20:41:43 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 20:41:44 -0400
