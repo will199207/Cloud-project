@@ -1370,3 +1370,1224 @@ Migrating to CreateUsers (20150331195812)
   [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products"  ORDER BY target - pledges ASC
   [1m[36mProduct Load (9.4ms)[0m  [1mSELECT "products".* FROM "products"  ORDER BY end ASC[0m
 >>>>>>> a5ba63ab35158460e8e34b1e0ba38182c750cee8
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 20:40:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/products" for 127.0.0.1 at 2015-03-31 20:40:30 -0400
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 305ms (Views: 292.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-424fb1cd931d805416431d1a1edf8b94.css?body=1" for 127.0.0.1 at 2015-03-31 20:40:30 -0400
+
+
+Started GET "/assets/application-4201c363ea61bd9c6ea729b9ee8f7239.css?body=1" for 127.0.0.1 at 2015-03-31 20:40:30 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 20:40:31 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 20:40:31 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 20:40:31 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 20:40:31 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 20:53:24 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (70.0ms)
+  Rendered products/new.html.haml within layouts/application (86.8ms)
+Completed 200 OK in 149ms (Views: 149.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 20:53:25 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 20:53:25 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 20:53:25 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 20:53:25 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 20:54:24 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (7.3ms)
+  Rendered products/new.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 74ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-424fb1cd931d805416431d1a1edf8b94.css?body=1" for 127.0.0.1 at 2015-03-31 20:54:24 -0400
+
+
+Started GET "/assets/application-4201c363ea61bd9c6ea729b9ee8f7239.css?body=1" for 127.0.0.1 at 2015-03-31 20:54:24 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 20:54:24 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 20:54:24 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 20:54:24 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 20:54:24 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 20:54:46 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (5.1ms)
+  Rendered products/new.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-424fb1cd931d805416431d1a1edf8b94.css?body=1" for 127.0.0.1 at 2015-03-31 20:54:46 -0400
+
+
+Started GET "/assets/application-4201c363ea61bd9c6ea729b9ee8f7239.css?body=1" for 127.0.0.1 at 2015-03-31 20:54:46 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 20:54:46 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 20:54:46 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 20:54:46 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 20:54:46 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 20:56:38 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (6.9ms)
+  Rendered products/new.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 77ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-424fb1cd931d805416431d1a1edf8b94.css?body=1" for 127.0.0.1 at 2015-03-31 20:56:38 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 20:56:38 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 20:56:38 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 20:56:38 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 20:56:38 -0400
+
+
+Started GET "/assets/application-4201c363ea61bd9c6ea729b9ee8f7239.css?body=1" for 127.0.0.1 at 2015-03-31 20:56:38 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:01:17 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (2.8ms)
+  Rendered products/new.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 88ms (Views: 87.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-864d5b02bc05e9be308ae5e0bfda1b59.css?body=1" for 127.0.0.1 at 2015-03-31 21:01:18 -0400
+
+
+Started GET "/assets/application-2ddc7e1244c8b6fff258fa15779f244b.css?body=1" for 127.0.0.1 at 2015-03-31 21:01:18 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:01:18 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:01:18 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:01:18 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:01:18 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:07:15 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.haml within layouts/application (22.6ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    3:     %h3 Create a New Product Listing
+    4: 
+    5:     .create_product_form= form_tag '/products', :method => :post do
+    6:         = render :partial => 'product_form'
+    7:         = submit_tag 'Post'
+  app/views/products/new.html.haml:6
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (12.7ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (60.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:07:53 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    3:     %h3 Create a New Product Listing
+    4: 
+    5:     .create_product_form= form_tag '/products', :method => :post do
+    6:                             = render :partial => 'product_form'
+    7:                             = submit_tag 'Post'
+  app/views/products/new.html.haml:6
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (52.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:08:33 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (3.0ms)
+  Rendered products/new.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 90ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-16636255a29eb7892aeb7bc1a89b1bd3.css?body=1" for 127.0.0.1 at 2015-03-31 21:08:33 -0400
+
+
+Started GET "/assets/application-dc2de54a553bf30dd8d8355db57cc96b.css?body=1" for 127.0.0.1 at 2015-03-31 21:08:33 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:08:33 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:08:33 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:08:33 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:08:33 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:11:42 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (2.5ms)
+  Rendered products/new.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 81ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-0cf87768ee5c4b3e119296a170074de8.css?body=1" for 127.0.0.1 at 2015-03-31 21:11:42 -0400
+
+
+Started GET "/assets/application-587621f92c483cbec67bef53082f1bd3.css?body=1" for 127.0.0.1 at 2015-03-31 21:11:42 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:11:42 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:11:42 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:11:42 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:11:42 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:12:15 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (10.3ms)
+  Rendered products/new.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 133ms (Views: 132.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-997aa3fa0f8d8afb1503bb1e10e23529.css?body=1" for 127.0.0.1 at 2015-03-31 21:12:15 -0400
+
+
+Started GET "/assets/application-eb09f91b49faf7f95346726cbf20de11.css?body=1" for 127.0.0.1 at 2015-03-31 21:12:15 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:12:15 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:12:15 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:12:15 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:12:15 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:13:29 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (4.2ms)
+  Rendered products/new.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 96ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-ba322c47432ca2173d1774cb0d2fa350.css?body=1" for 127.0.0.1 at 2015-03-31 21:13:29 -0400
+
+
+Started GET "/assets/application-6936c708a1cc3375ce1804cd856abd10.css?body=1" for 127.0.0.1 at 2015-03-31 21:13:29 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:13:29 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:13:29 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:13:29 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:13:29 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:14:08 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (6.2ms)
+  Rendered products/new.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 106ms (Views: 105.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-735a0a4bc81668f80279ea22dbfc8e49.css?body=1" for 127.0.0.1 at 2015-03-31 21:14:08 -0400
+
+
+Started GET "/assets/application-78226c5cfdd83f5c3466ca0737c2fee0.css?body=1" for 127.0.0.1 at 2015-03-31 21:14:08 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:14:08 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:14:08 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:14:08 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:14:08 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:14:56 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (3.9ms)
+  Rendered products/new.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 95ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-bf6889b6b12b8116f2623d39738a028b.css?body=1" for 127.0.0.1 at 2015-03-31 21:14:57 -0400
+
+
+Started GET "/assets/application-a2d3429ec3b32a3e4d7a9fbeac6194fe.css?body=1" for 127.0.0.1 at 2015-03-31 21:14:57 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:14:57 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:14:57 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:14:57 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:14:57 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:21:50 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (9.5ms)
+  Rendered products/new.html.haml within layouts/application (18.0ms)
+Completed 200 OK in 109ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-d735155d9c882272250c403e6a64d23e.css?body=1" for 127.0.0.1 at 2015-03-31 21:21:50 -0400
+
+
+Started GET "/assets/application-4249204df72a52e742c3fc980fc77c63.css?body=1" for 127.0.0.1 at 2015-03-31 21:21:50 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:21:50 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:21:50 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:21:50 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:21:50 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:22:45 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (6.4ms)
+  Rendered products/new.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 73ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-d735155d9c882272250c403e6a64d23e.css?body=1" for 127.0.0.1 at 2015-03-31 21:22:46 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:22:46 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:22:46 -0400
+
+
+Started GET "/assets/application-4249204df72a52e742c3fc980fc77c63.css?body=1" for 127.0.0.1 at 2015-03-31 21:22:46 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:22:46 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:22:46 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:23:30 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (3.3ms)
+  Rendered products/new.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 95ms (Views: 94.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-73075b537c69195280ac411eb07e6665.css?body=1" for 127.0.0.1 at 2015-03-31 21:23:30 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:23:30 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:23:30 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:23:30 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:23:30 -0400
+
+
+Started GET "/assets/application-d56c09fa50f5cb965ca5e872d3e0021a.css?body=1" for 127.0.0.1 at 2015-03-31 21:23:30 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:25:00 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (3.3ms)
+  Rendered products/new.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 101ms (Views: 100.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-f4f5b80f194290e5e532c9f0be26b81c.css?body=1" for 127.0.0.1 at 2015-03-31 21:25:00 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:25:00 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:25:00 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:25:00 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:25:00 -0400
+
+
+Started GET "/assets/application-1a84217da7a5fd47e6ff37539075999f.css?body=1" for 127.0.0.1 at 2015-03-31 21:25:00 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:26:45 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (2.4ms)
+  Rendered products/new.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 93ms (Views: 93.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-c9d45a4ae4579885a0247476cd78f758.css?body=1" for 127.0.0.1 at 2015-03-31 21:26:45 -0400
+
+
+Started GET "/assets/application-9dbec8337de9f7ee2c4132c15e1ab65a.css?body=1" for 127.0.0.1 at 2015-03-31 21:26:45 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:26:45 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:26:45 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:26:45 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:26:45 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:27:42 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (8.9ms)
+  Rendered products/new.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 73ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-c9d45a4ae4579885a0247476cd78f758.css?body=1" for 127.0.0.1 at 2015-03-31 21:27:42 -0400
+
+
+Started GET "/assets/application-9dbec8337de9f7ee2c4132c15e1ab65a.css?body=1" for 127.0.0.1 at 2015-03-31 21:27:42 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:27:42 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:27:42 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:27:42 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:27:42 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:31:12 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (7.4ms)
+  Rendered products/new.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 89ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-1d73f5c3a97a62c298a12d9cb7fed5b7.css?body=1" for 127.0.0.1 at 2015-03-31 21:31:12 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:31:12 -0400
+
+
+Started GET "/assets/application-710290fb449bd7ec7aeda55076ad04eb.css?body=1" for 127.0.0.1 at 2015-03-31 21:31:12 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:31:12 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:31:12 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:31:12 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:32:57 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (5.1ms)
+  Rendered products/new.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 92ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-96c85eff30d344b797df2b892ae79ede.css?body=1" for 127.0.0.1 at 2015-03-31 21:32:57 -0400
+
+
+Started GET "/assets/application-cb03b7603513f89e1a140aa0c00b8f70.css?body=1" for 127.0.0.1 at 2015-03-31 21:32:57 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:32:57 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:32:57 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:32:57 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:32:57 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:35:12 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (5.0ms)
+  Rendered products/new.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 81ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-96c85eff30d344b797df2b892ae79ede.css?body=1" for 127.0.0.1 at 2015-03-31 21:35:12 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:35:12 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:35:12 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:35:12 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:35:12 -0400
+
+
+Started GET "/assets/application-cb03b7603513f89e1a140aa0c00b8f70.css?body=1" for 127.0.0.1 at 2015-03-31 21:35:12 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:35:56 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (2.8ms)
+  Rendered products/new.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 100ms (Views: 99.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-1d73f5c3a97a62c298a12d9cb7fed5b7.css?body=1" for 127.0.0.1 at 2015-03-31 21:35:56 -0400
+
+
+Started GET "/assets/application-710290fb449bd7ec7aeda55076ad04eb.css?body=1" for 127.0.0.1 at 2015-03-31 21:35:56 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:35:56 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:35:56 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:35:56 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:35:56 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:38:42 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (4.5ms)
+  Rendered products/new.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 100ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-05a00fe5ee235715b5e7dd35214b6714.css?body=1" for 127.0.0.1 at 2015-03-31 21:38:42 -0400
+
+
+Started GET "/assets/application-0954765eef7eade8799aefadb5f7f529.css?body=1" for 127.0.0.1 at 2015-03-31 21:38:42 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:38:42 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:38:42 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:38:42 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:38:42 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:38:44 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (6.3ms)
+  Rendered products/new.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 70ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-05a00fe5ee235715b5e7dd35214b6714.css?body=1" for 127.0.0.1 at 2015-03-31 21:38:44 -0400
+
+
+Started GET "/assets/application-0954765eef7eade8799aefadb5f7f529.css?body=1" for 127.0.0.1 at 2015-03-31 21:38:44 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:38:44 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:38:44 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:38:44 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:38:44 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:39:03 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (4.5ms)
+  Rendered products/new.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 96ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-b2bc1ef1576a7c849af254d65c55f476.css?body=1" for 127.0.0.1 at 2015-03-31 21:39:03 -0400
+
+
+Started GET "/assets/application-f3ffb8ffee941c3a74deb7c961649ab0.css?body=1" for 127.0.0.1 at 2015-03-31 21:39:03 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:39:03 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:39:03 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:39:03 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:39:03 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:39:25 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (2.4ms)
+  Rendered products/new.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-b2bc1ef1576a7c849af254d65c55f476.css?body=1" for 127.0.0.1 at 2015-03-31 21:39:25 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:39:25 -0400
+
+
+Started GET "/assets/application-f3ffb8ffee941c3a74deb7c961649ab0.css?body=1" for 127.0.0.1 at 2015-03-31 21:39:25 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:39:25 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:39:25 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:39:25 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:41:11 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (2.8ms)
+  Rendered products/new.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 108ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-c9d45a4ae4579885a0247476cd78f758.css?body=1" for 127.0.0.1 at 2015-03-31 21:41:11 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:41:11 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:41:11 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:41:11 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:41:11 -0400
+
+
+Started GET "/assets/application-9dbec8337de9f7ee2c4132c15e1ab65a.css?body=1" for 127.0.0.1 at 2015-03-31 21:41:11 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:46:29 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (2.6ms)
+  Rendered products/new.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 108ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2e8a81ddf38c7e6433e3b166e72a014b.css?body=1" for 127.0.0.1 at 2015-03-31 21:46:30 -0400
+
+
+Started GET "/assets/application-dd08a1a625ae70ff085bb5c85b16ef6f.css?body=1" for 127.0.0.1 at 2015-03-31 21:46:30 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:46:30 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:46:30 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:46:30 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:46:30 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:46:53 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (11.8ms)
+  Rendered products/new.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 79ms (Views: 78.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2e8a81ddf38c7e6433e3b166e72a014b.css?body=1" for 127.0.0.1 at 2015-03-31 21:46:53 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:46:53 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:46:53 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:46:53 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:46:53 -0400
+
+
+Started GET "/assets/application-dd08a1a625ae70ff085bb5c85b16ef6f.css?body=1" for 127.0.0.1 at 2015-03-31 21:46:54 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:48:23 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (2.6ms)
+  Rendered products/new.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 106ms (Views: 105.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-cbc5a2a439f5275cd8a5cc950a76fff2.css?body=1" for 127.0.0.1 at 2015-03-31 21:48:24 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:48:24 -0400
+
+
+Started GET "/assets/products-b8b26ca2d12d7f8f87f637d41bbf82be.css?body=1" for 127.0.0.1 at 2015-03-31 21:48:24 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:48:24 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:48:24 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:48:24 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:48:28 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (5.9ms)
+  Rendered products/new.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-b8b26ca2d12d7f8f87f637d41bbf82be.css?body=1" for 127.0.0.1 at 2015-03-31 21:48:28 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:48:28 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:48:28 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:48:28 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:48:28 -0400
+
+
+Started GET "/assets/application-cbc5a2a439f5275cd8a5cc950a76fff2.css?body=1" for 127.0.0.1 at 2015-03-31 21:48:28 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-03-31 21:48:30 -0400
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-b8b26ca2d12d7f8f87f637d41bbf82be.css?body=1" for 127.0.0.1 at 2015-03-31 21:48:30 -0400
+
+
+Started GET "/assets/application-cbc5a2a439f5275cd8a5cc950a76fff2.css?body=1" for 127.0.0.1 at 2015-03-31 21:48:30 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:48:30 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:48:30 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:48:30 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:48:30 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-03-31 21:49:11 -0400
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-b8b26ca2d12d7f8f87f637d41bbf82be.css?body=1" for 127.0.0.1 at 2015-03-31 21:49:11 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:11 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:11 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:11 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:11 -0400
+
+
+Started GET "/assets/application-cbc5a2a439f5275cd8a5cc950a76fff2.css?body=1" for 127.0.0.1 at 2015-03-31 21:49:11 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:49:16 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (4.3ms)
+  Rendered products/new.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 84ms (Views: 83.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-b8b26ca2d12d7f8f87f637d41bbf82be.css?body=1" for 127.0.0.1 at 2015-03-31 21:49:16 -0400
+
+
+Started GET "/assets/application-cbc5a2a439f5275cd8a5cc950a76fff2.css?body=1" for 127.0.0.1 at 2015-03-31 21:49:16 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:16 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:16 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:16 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:16 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-03-31 21:49:18 -0400
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-b8b26ca2d12d7f8f87f637d41bbf82be.css?body=1" for 127.0.0.1 at 2015-03-31 21:49:19 -0400
+
+
+Started GET "/assets/application-cbc5a2a439f5275cd8a5cc950a76fff2.css?body=1" for 127.0.0.1 at 2015-03-31 21:49:19 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:19 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:19 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:19 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:19 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-03-31 21:49:31 -0400
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-b8b26ca2d12d7f8f87f637d41bbf82be.css?body=1" for 127.0.0.1 at 2015-03-31 21:49:31 -0400
+
+
+Started GET "/assets/application-cbc5a2a439f5275cd8a5cc950a76fff2.css?body=1" for 127.0.0.1 at 2015-03-31 21:49:31 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:31 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:31 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:31 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:49:31 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-03-31 21:50:01 -0400
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 87ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-b8b26ca2d12d7f8f87f637d41bbf82be.css?body=1" for 127.0.0.1 at 2015-03-31 21:50:01 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:50:01 -0400
+
+
+Started GET "/assets/application-cbc5a2a439f5275cd8a5cc950a76fff2.css?body=1" for 127.0.0.1 at 2015-03-31 21:50:01 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:50:01 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:50:01 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:50:01 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:50:04 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (3.0ms)
+  Rendered products/new.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 89ms (Views: 88.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-b8b26ca2d12d7f8f87f637d41bbf82be.css?body=1" for 127.0.0.1 at 2015-03-31 21:50:04 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:50:04 -0400
+
+
+Started GET "/assets/application-cbc5a2a439f5275cd8a5cc950a76fff2.css?body=1" for 127.0.0.1 at 2015-03-31 21:50:04 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:50:04 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:50:04 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:50:04 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:50:49 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (4.1ms)
+  Rendered products/new.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 85ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-b8b26ca2d12d7f8f87f637d41bbf82be.css?body=1" for 127.0.0.1 at 2015-03-31 21:50:49 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:50:49 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:50:49 -0400
+
+
+Started GET "/assets/application-cbc5a2a439f5275cd8a5cc950a76fff2.css?body=1" for 127.0.0.1 at 2015-03-31 21:50:49 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:50:49 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:50:49 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:51:59 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (2.8ms)
+  Rendered products/new.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 103ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-c2f464b345ca5120ce3fcee23c4ea8b1.css?body=1" for 127.0.0.1 at 2015-03-31 21:51:59 -0400
+
+
+Started GET "/assets/application-45a5a4ee406480d017b0432b90ed2fd9.css?body=1" for 127.0.0.1 at 2015-03-31 21:51:59 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:51:59 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:51:59 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:51:59 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:51:59 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:53:58 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (6.6ms)
+  Rendered products/new.html.haml within layouts/application (16.2ms)
+Completed 200 OK in 82ms (Views: 80.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-c2f464b345ca5120ce3fcee23c4ea8b1.css?body=1" for 127.0.0.1 at 2015-03-31 21:53:58 -0400
+
+
+Started GET "/assets/application-45a5a4ee406480d017b0432b90ed2fd9.css?body=1" for 127.0.0.1 at 2015-03-31 21:53:58 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:53:58 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:53:58 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:53:58 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:53:58 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-03-31 21:54:35 -0400
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 69ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-c2f464b345ca5120ce3fcee23c4ea8b1.css?body=1" for 127.0.0.1 at 2015-03-31 21:54:36 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:54:36 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:54:36 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:54:36 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:54:36 -0400
+
+
+Started GET "/assets/application-45a5a4ee406480d017b0432b90ed2fd9.css?body=1" for 127.0.0.1 at 2015-03-31 21:54:36 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:54:40 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (2.8ms)
+  Rendered products/new.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 82ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-c2f464b345ca5120ce3fcee23c4ea8b1.css?body=1" for 127.0.0.1 at 2015-03-31 21:54:40 -0400
+
+
+Started GET "/assets/application-45a5a4ee406480d017b0432b90ed2fd9.css?body=1" for 127.0.0.1 at 2015-03-31 21:54:40 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:54:40 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:54:40 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:54:40 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:54:40 -0400
+
+
+Started POST "/products" for 127.0.0.1 at 2015-03-31 21:55:52 -0400
+
+AbstractController::ActionNotFound (The action 'create' could not be found for ProductsController):
+  actionpack (4.2.0) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:56:18 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (5.0ms)
+  Rendered products/new.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 111ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-3f4d403f94b2144cfefd38c9e53fcc2e.css?body=1" for 127.0.0.1 at 2015-03-31 21:56:18 -0400
+
+
+Started GET "/assets/application-cf7218df54def2437bf8195130a602dd.css?body=1" for 127.0.0.1 at 2015-03-31 21:56:18 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:56:18 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:56:18 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:56:18 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:56:18 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-03-31 21:56:19 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (4.8ms)
+  Rendered products/new.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-3f4d403f94b2144cfefd38c9e53fcc2e.css?body=1" for 127.0.0.1 at 2015-03-31 21:56:20 -0400
+
+
+Started GET "/assets/application-cf7218df54def2437bf8195130a602dd.css?body=1" for 127.0.0.1 at 2015-03-31 21:56:20 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-03-31 21:56:20 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-03-31 21:56:20 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-03-31 21:56:20 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 21:56:20 -0400
