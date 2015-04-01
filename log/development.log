@@ -4052,3 +4052,1099 @@ Migrating to CreateUsers (20150331195812)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-01 19:22:27.169315"], ["updated_at", "2015-04-01 19:22:27.169315"]]
   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/products" for ::1 at 2015-04-01 15:42:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 15:42:13')  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 15:42:13')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 15:42:13')  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (39.2ms)
+Completed 200 OK in 147ms (Views: 138.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 15:42:14 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 15:42:14 -0400
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 15:42:23 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (10.5ms)
+  Rendered products/new.html.haml within layouts/application (19.4ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2015-04-01 15:42:28 -0400
+
+AbstractController::ActionNotFound (The action 'create' could not be found for ProductsController):
+  actionpack (4.2.0) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ddrucker/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ddrucker/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ddrucker/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 15:54:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (14.2ms)
+  Rendered products/new.html.haml within layouts/application (32.7ms)
+Completed 200 OK in 112ms (Views: 111.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 16:04:03 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (4.9ms)
+  Rendered products/new.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 79ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 16:07:45 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (61.8ms)
+  Rendered products/new.html.haml within layouts/application (68.6ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (can't dup Symbol):
+    11: = number_field(:product, :price, step: 0.01, :placeholder => 'Price')
+    12: %br
+    13: = label :product, :end, 'Expiration Date'
+    14: = select_datetime :product, :end
+    15: %br
+  app/views/products/_product_form.html.haml:14:in `_app_views_products__product_form_html_haml__946351066284736580_70320961697420'
+  app/views/products/new.html.haml:6:in `block in _app_views_products_new_html_haml__4179054229227454473_70320960781660'
+  app/views/products/new.html.haml:5:in `_app_views_products_new_html_haml__4179054229227454473_70320960781660'
+
+
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (14.4ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (100.4ms)
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 16:09:04 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (7.8ms)
+  Rendered products/new.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 16:20:50 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (9.7ms)
+  Rendered products/new.html.haml within layouts/application (17.9ms)
+Completed 200 OK in 81ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 16:38:05 -0400
+
+SyntaxError (/Users/ddrucker/Desktop/GroupBuy/app/controllers/products_controller.rb:32: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+		p[:end] = p[:end]to_formatted_s(:db)
+		                               ^):
+  app/controllers/products_controller.rb:32: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+
+
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (3.6ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (96.2ms)
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 16:38:21 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (7.8ms)
+  Rendered products/new.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 86ms (Views: 85.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 16:38:21 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 16:38:21 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 16:38:21 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 16:38:21 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 16:38:21 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 16:38:21 -0400
+
+
+Started POST "/products" for ::1 at 2015-04-01 16:40:04 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nTzAH/JjS8v0/CuMMCWazPLlt9Zwf+uwIUMGK9i201xQbI3BcbaRQZAIstZFsumsDdMkMolEOOegVveWoeAJFQ==", "product"=>{"name"=>"Walkie Talkies", "description"=>"Good for talking without cell phones", "target"=>"25", "price"=>"39.99", "end(1i)"=>"2015", "end(2i)"=>"6", "end(3i)"=>"8", "end(4i)"=>"14", "end(5i)"=>"30"}, "commit"=>"Post"}
+Completed 500 Internal Server Error in 14ms
+
+NoMethodError (undefined method `to_formatted_s' for nil:NilClass):
+  app/controllers/products_controller.rb:32:in `create_update_params'
+  app/controllers/products_controller.rb:17:in `create'
+
+
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (87.4ms)
+
+
+Started PUT "/console/repl_sessions/6606ae7537a1c0139a022e2f46b310c6" for ::1 at 2015-04-01 16:45:08 -0400
+
+
+Started POST "/products" for ::1 at 2015-04-01 16:56:02 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nTzAH/JjS8v0/CuMMCWazPLlt9Zwf+uwIUMGK9i201xQbI3BcbaRQZAIstZFsumsDdMkMolEOOegVveWoeAJFQ==", "product"=>{"name"=>"Walkie Talkies", "description"=>"Good for talking without cell phones", "target"=>"25", "price"=>"39.99", "end(1i)"=>"2015", "end(2i)"=>"6", "end(3i)"=>"8", "end(4i)"=>"09", "end(5i)"=>"08"}, "commit"=>"Post"}
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `to_formatted_s' for nil:NilClass):
+  app/controllers/products_controller.rb:32:in `create_update_params'
+  app/controllers/products_controller.rb:17:in `create'
+
+
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (88.7ms)
+
+
+Started POST "/products" for ::1 at 2015-04-01 17:00:48 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nTzAH/JjS8v0/CuMMCWazPLlt9Zwf+uwIUMGK9i201xQbI3BcbaRQZAIstZFsumsDdMkMolEOOegVveWoeAJFQ==", "product"=>{"name"=>"Walkie Talkies", "description"=>"Good for talking without cell phones", "target"=>"25", "price"=>"39.99", "end(1i)"=>"2015", "end(2i)"=>"6", "end(3i)"=>"8", "end(4i)"=>"14", "end(5i)"=>"30"}, "commit"=>"Post"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `<' for true:TrueClass):
+  app/controllers/products_controller.rb:45:in `fix_date'
+  app/controllers/products_controller.rb:32:in `create_update_params'
+  app/controllers/products_controller.rb:17:in `create'
+
+
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (82.8ms)
+
+
+Started POST "/products" for ::1 at 2015-04-01 17:01:39 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nTzAH/JjS8v0/CuMMCWazPLlt9Zwf+uwIUMGK9i201xQbI3BcbaRQZAIstZFsumsDdMkMolEOOegVveWoeAJFQ==", "product"=>{"name"=>"Walkie Talkies", "description"=>"Good for talking without cell phones", "target"=>"25", "price"=>"39.99", "end(1i)"=>"2015", "end(2i)"=>"6", "end(3i)"=>"8", "end(4i)"=>"14", "end(5i)"=>"30"}, "commit"=>"Post"}
+  [1m[35m (0.6ms)[0m  SELECT "users"."id" FROM "users"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "end", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Walkie Talkies"], ["description", "Good for talking without cell phones"], ["price", 39.99], ["target", 25], ["end", "{1=>2015, 2=>6, 3=>8, 4=>14, 5=>30}"], ["created_at", "2015-04-01 21:01:39.895538"], ["updated_at", "2015-04-01 21:01:39.895538"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 91ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/products" for ::1 at 2015-04-01 17:01:39 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:01:39')  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:01:39')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (23.4ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (undefined method `/' for nil:NilClass):
+    25:             %tr.productsbytarget
+    26:                 %td.name= link_to "#{product.name}", product
+    27:                 %td.description= product.description
+    28:                 %td.percent= (product.pledges/product.target.to_f).round(3)*100
+    29:                 %td.price= number_to_currency(product.price)
+    30: 
+    31:     %table.ending_soon
+  app/views/products/index.html.haml:28:in `block in _app_views_products_index_html_haml___3000598482536080268_70320961858000'
+  app/views/products/index.html.haml:24:in `_app_views_products_index_html_haml___3000598482536080268_70320961858000'
+
+
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (87.1ms)
+  [1m[36mProduct Load (1.9ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price = 39.99)[0m
+
+
+Started GET "/products" for ::1 at 2015-04-01 17:03:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:03:40')  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:03:40')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `/' for nil:NilClass):
+    25:             %tr.productsbytarget
+    26:                 %td.name= link_to "#{product.name}", product
+    27:                 %td.description= product.description
+    28:                 %td.percent= (product.pledges/product.target.to_f).round(3)*100
+    29:                 %td.price= number_to_currency(product.price)
+    30: 
+    31:     %table.ending_soon
+  app/views/products/index.html.haml:28:in `block in _app_views_products_index_html_haml___3000598482536080268_70320961858000'
+  app/views/products/index.html.haml:24:in `_app_views_products_index_html_haml___3000598482536080268_70320961858000'
+
+
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (91.4ms)
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (price = 39.99)
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateProducts (20150331194440)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal(10,2), "target" integer, "pledges" integer, "start" varchar, "end" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331194440"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateUsers (20150331195812)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "first_name" varchar, "last_name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331195812"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.1ms)[0m  DELETE FROM "products"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-01 21:05:13.290900"], ["updated_at", "2015-04-01 21:05:13.290900"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-01 21:05:13.313421"], ["updated_at", "2015-04-01 21:05:13.313421"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-01 21:05:13.316400"], ["updated_at", "2015-04-01 21:05:13.316400"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-01 21:05:13.319098"], ["updated_at", "2015-04-01 21:05:13.319098"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-01 21:05:13.322075"], ["updated_at", "2015-04-01 21:05:13.322075"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-01 21:05:13.324952"], ["updated_at", "2015-04-01 21:05:13.324952"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal(10,2), "target" integer, "pledges" integer, "start" varchar, "end" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "first_name" varchar, "last_name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150331195812')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150331194440')
+
+
+Started GET "/products" for ::1 at 2015-04-01 17:05:25 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:05:25')  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:05:25')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:05:25')  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 72ms (Views: 67.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:05:25 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:05:25 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:05:25 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:05:25 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:05:25 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:05:25 -0400
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 17:05:28 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (4.2ms)
+  Rendered products/new.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:05:28 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:05:28 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:05:28 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:05:28 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:05:28 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:05:28 -0400
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 17:19:06 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (8.1ms)
+  Rendered products/new.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 82ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:19:06 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:19:06 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:19:06 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:19:06 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:19:06 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:19:06 -0400
+
+
+Started POST "/products" for ::1 at 2015-04-01 17:19:43 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YakVCKZH9BlBBYVqxH+4d0yPguJN1i7hSWq3TK0IPIas+VjWJZIukyXxHDCx6MsXs7kRBrTt/bbIf0bx1F7mzw==", "product"=>{"name"=>"Walkie-Talkie", "description"=>"Good for long distance communication", "target"=>"25", "price"=>"39.99", "end(1i)"=>"2015", "end(2i)"=>"5", "end(3i)"=>"10", "end(4i)"=>"10", "end(5i)"=>"00"}, "commit"=>"Post"}
+  [1m[36m (0.4ms)[0m  [1mSELECT "users"."id" FROM "users"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "end", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Walkie-Talkie"], ["description", "Good for long distance communication"], ["price", 39.99], ["target", 25], ["end", "{1=>2015, 2=>5, 3=>10, 4=>10, 5=>0}"], ["created_at", "2015-04-01 21:19:43.683430"], ["updated_at", "2015-04-01 21:19:43.683430"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/products
+Completed 302 Found in 37ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/products" for ::1 at 2015-04-01 17:19:43 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:19:43')  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:19:43')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `/' for nil:NilClass):
+    25:             %tr.productsbytarget
+    26:                 %td.name= link_to "#{product.name}", product
+    27:                 %td.description= product.description
+    28:                 %td.percent= (product.pledges/product.target.to_f).round(3)*100
+    29:                 %td.price= number_to_currency(product.price)
+    30: 
+    31:     %table.ending_soon
+  app/views/products/index.html.haml:28:in `block in _app_views_products_index_html_haml___3000598482536080268_70320961858000'
+  app/views/products/index.html.haml:24:in `_app_views_products_index_html_haml___3000598482536080268_70320961858000'
+
+
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (91.4ms)
+  [1m[36mProduct Load (1.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price = 39.99)[0m
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateProducts (20150331194440)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal(10,2), "target" integer, "pledges" integer, "start" varchar, "end" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331194440"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to CreateUsers (20150331195812)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "first_name" varchar, "last_name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331195812"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateProducts (20150331194440)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (19.5ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal(10,2), "target" integer, "pledges" integer, "start" varchar, "end" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331194440"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20150331195812)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "first_name" varchar, "last_name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331195812"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.3ms)[0m  DELETE FROM "products"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-01 21:21:35.520540"], ["updated_at", "2015-04-01 21:21:35.520540"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-01 21:21:35.525764"], ["updated_at", "2015-04-01 21:21:35.525764"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-01 21:21:35.528634"], ["updated_at", "2015-04-01 21:21:35.528634"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-01 21:21:35.531578"], ["updated_at", "2015-04-01 21:21:35.531578"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-01 21:21:35.534920"], ["updated_at", "2015-04-01 21:21:35.534920"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-01 21:21:35.537904"], ["updated_at", "2015-04-01 21:21:35.537904"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal(10,2), "target" integer, "pledges" integer, "start" varchar, "end" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "first_name" varchar, "last_name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150331195812')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150331194440')
+
+
+Started POST "/products" for ::1 at 2015-04-01 17:24:48 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YakVCKZH9BlBBYVqxH+4d0yPguJN1i7hSWq3TK0IPIas+VjWJZIukyXxHDCx6MsXs7kRBrTt/bbIf0bx1F7mzw==", "product"=>{"name"=>"Walkie-Talkie", "description"=>"Good for long distance communication", "target"=>"25", "price"=>"39.99", "end(1i)"=>"2015", "end(2i)"=>"5", "end(3i)"=>"10", "end(4i)"=>"10", "end(5i)"=>"00"}, "commit"=>"Post"}
+  [1m[36m (0.6ms)[0m  [1mSELECT "users"."id" FROM "users"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "start", "end", "pledges", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Walkie-Talkie"], ["description", "Good for long distance communication"], ["price", 39.99], ["target", 25], ["start", "2015-04-01 17:24:49"], ["end", "{1=>2015, 2=>5, 3=>10, 4=>10, 5=>0}"], ["pledges", 0], ["created_at", "2015-04-01 21:24:49.078477"], ["updated_at", "2015-04-01 21:24:49.078477"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/products
+Completed 302 Found in 37ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/products" for ::1 at 2015-04-01 17:24:49 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:24:49')  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:24:49')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:24:49')  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 85ms (Views: 83.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:24:49 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:24:49 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:24:49 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:24:49 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:24:49 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:24:49 -0400
+  [1m[36mProduct Load (1.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price = 39.99)[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "users"."id" FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateProducts (20150331194440)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal(10,2), "target" integer, "pledges" integer, "start" varchar, "end" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331194440"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20150331195812)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "first_name" varchar, "last_name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331195812"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateProducts (20150331194440)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal(10,2), "target" integer, "pledges" integer, "start" varchar, "end" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331194440"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to CreateUsers (20150331195812)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "first_name" varchar, "last_name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331195812"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "products"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-01 21:36:57.967191"], ["updated_at", "2015-04-01 21:36:57.967191"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-01 21:36:57.972591"], ["updated_at", "2015-04-01 21:36:57.972591"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-01 21:36:57.975594"], ["updated_at", "2015-04-01 21:36:57.975594"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-01 21:36:57.978334"], ["updated_at", "2015-04-01 21:36:57.978334"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-01 21:36:57.981501"], ["updated_at", "2015-04-01 21:36:57.981501"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-01 21:36:57.984510"], ["updated_at", "2015-04-01 21:36:57.984510"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('ddrucker') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('druckcity@google.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("username", "email", "first_name", "last_name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["username", "ddrucker"], ["email", "druckcity@google.com"], ["first_name", "Dan"], ["last_name", "Drucker"], ["password_digest", "$2a$10$fh8ED/kkLx/YRR0yY/q5AufAu/Rxm6tBKUh/QiDdTgShEXUHuBSue"], ["created_at", "2015-04-01 21:36:58.088677"], ["updated_at", "2015-04-01 21:36:58.088677"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('wgarcia') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('garcia@yahoo.com') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("username", "email", "first_name", "last_name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["username", "wgarcia"], ["email", "garcia@yahoo.com"], ["first_name", "Will"], ["last_name", "Garcia"], ["password_digest", "$2a$10$SZfjAH0jVnw74zoiYMF8S.HeUO3mCcxiVtWMJEOJWII0XMml.j0QK"], ["created_at", "2015-04-01 21:36:58.161060"], ["updated_at", "2015-04-01 21:36:58.161060"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('mgeorges') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('kos@gmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("username", "email", "first_name", "last_name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["username", "mgeorges"], ["email", "kos@gmail.com"], ["first_name", "Markos"], ["last_name", "Georges"], ["password_digest", "$2a$10$PNxnx3vlwTxP99.4XNCXw.Y7FR89noQahN83syy3Q78OiZd09MD6q"], ["created_at", "2015-04-01 21:36:58.238180"], ["updated_at", "2015-04-01 21:36:58.238180"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('wely') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('will@msn.com') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("username", "email", "first_name", "last_name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["username", "wely"], ["email", "will@msn.com"], ["first_name", "Will"], ["last_name", "Ely"], ["password_digest", "$2a$10$yRtFs4GD7WAfW1f6ikp.Eebis47UwhntXdioozygHwjtLY42wTLy."], ["created_at", "2015-04-01 21:36:58.311505"], ["updated_at", "2015-04-01 21:36:58.311505"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal(10,2), "target" integer, "pledges" integer, "start" varchar, "end" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "first_name" varchar, "last_name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150331195812')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150331194440')
+
+
+Started GET "/products" for ::1 at 2015-04-01 17:39:22 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.0ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:39:22')  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:39:22')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:39:22')  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (66.4ms)
+Completed 200 OK in 135ms (Views: 125.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:39:22 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:39:22 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:39:22 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:39:22 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:39:22 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:39:22 -0400
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 17:39:25 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (5.8ms)
+  Rendered products/new.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:39:25 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:39:25 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:39:25 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:39:25 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:39:25 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:39:25 -0400
+
+
+Started POST "/products" for ::1 at 2015-04-01 17:39:43 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DaWlz9RN4tRQbCZZElkH0IVPk1kcHY1top3yeVOgrgjA9egRV5g4XjSYvwNnznSwenkAveUmXjojiAPEKvZ0QQ==", "product"=>{"name"=>"Stuff", "description"=>"Fun", "target"=>"40", "price"=>"35", "end(1i)"=>"2015", "end(2i)"=>"4", "end(3i)"=>"5", "end(4i)"=>"21", "end(5i)"=>"39"}, "commit"=>"Post"}
+
+
+Started GET "/products" for ::1 at 2015-04-01 17:41:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.6ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:41:27')  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:41:27')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:41:27')  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (40.9ms)
+Completed 200 OK in 148ms (Views: 140.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:41:27 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:41:27 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:41:27 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:41:27 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:41:27 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:41:27 -0400
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 17:41:34 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (15.2ms)
+  Rendered products/new.html.haml within layouts/application (25.3ms)
+Completed 200 OK in 72ms (Views: 63.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:41:34 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:41:34 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:41:34 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:41:34 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:41:34 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:41:34 -0400
+
+
+Started POST "/products" for ::1 at 2015-04-01 17:41:47 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"piftl+8I8t0DVX1yhDmu6lJ0WLeQNwBE4Z2k0lm3dUVrd6BJbN0oV2eh5Cjxrt2KrULLU2kM0xNgiFVvIOGvDA==", "product"=>{"name"=>"Stuff", "description"=>"cool", "target"=>"4", "price"=>"3", "end(1i)"=>"2015", "end(2i)"=>"4", "end(3i)"=>"11", "end(4i)"=>"21", "end(5i)"=>"41"}, "commit"=>"Post"}
+
+
+Started GET "/products" for ::1 at 2015-04-01 17:42:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:42:37')  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:42:37')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:42:37')  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (39.1ms)
+Completed 200 OK in 140ms (Views: 132.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:42:37 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:42:37 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:42:37 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:42:37 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:42:37 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:42:38 -0400
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 17:43:35 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (15.6ms)
+  Rendered products/new.html.haml within layouts/application (25.7ms)
+Completed 200 OK in 78ms (Views: 69.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:43:35 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:43:35 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:43:35 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:43:35 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:43:35 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:43:35 -0400
+
+
+Started POST "/products" for ::1 at 2015-04-01 17:43:43 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Fv/3gk9CqSltpUAL/1ishwdqxN0lzpFDr7b2Yq9oPYhC7IAiujQLsFCDFpaahHS4ys4942s6RKPqypk8+t6vw==", "product"=>{"name"=>"Stuff", "description"=>"cool", "target"=>"5", "price"=>"8", "end(1i)"=>"2015", "end(2i)"=>"4", "end(3i)"=>"3", "end(4i)"=>"21", "end(5i)"=>"43"}, "commit"=>"Post"}
+
+
+Started GET "/products" for ::1 at 2015-04-01 17:45:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:45:14')  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:45:14')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:45:14')  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (38.1ms)
+Completed 200 OK in 137ms (Views: 129.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:45:14 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:45:14 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:45:14 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:45:14 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:45:14 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:45:14 -0400
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 17:45:16 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (13.2ms)
+  Rendered products/new.html.haml within layouts/application (26.7ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:45:16 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:45:16 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:45:16 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:45:16 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:45:16 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:45:16 -0400
+
+
+Started POST "/products" for ::1 at 2015-04-01 17:45:26 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36NCZ9JbfMqkdn2wgnHbtB4PuzGc9Fls7Kig5ETyKEES8w+5UY6mQMCC5Or35qjU4Tko1WXPijttvVFZPaTyCA==", "product"=>{"name"=>"Stuff", "description"=>"xool", "target"=>"9", "price"=>"8", "end(1i)"=>"2015", "end(2i)"=>"4", "end(3i)"=>"3", "end(4i)"=>"21", "end(5i)"=>"45"}, "commit"=>"Post"}
+
+
+Started GET "/products" for 127.0.0.1 at 2015-04-01 17:45:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:45:55')  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:45:55')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:45:55')  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (38.6ms)
+Completed 200 OK in 133ms (Views: 125.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for 127.0.0.1 at 2015-04-01 17:45:55 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for 127.0.0.1 at 2015-04-01 17:45:55 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 17:45:55 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 17:45:55 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 17:45:55 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 17:45:55 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-04-01 17:45:56 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (16.1ms)
+  Rendered products/new.html.haml within layouts/application (28.5ms)
+Completed 200 OK in 73ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for 127.0.0.1 at 2015-04-01 17:45:56 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for 127.0.0.1 at 2015-04-01 17:45:56 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 17:45:56 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 17:45:56 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 17:45:56 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 17:45:56 -0400
+
+
+Started POST "/products" for 127.0.0.1 at 2015-04-01 17:46:06 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vd+esANgGVpiDxLF8frffV0svfxbe/zo2aRUMGtpknmYj9NugLXD0Ab7i5+EbawdohouGKJAL79YsaWNEj9IMA==", "product"=>{"name"=>"stuff", "description"=>"cool", "target"=>"5", "price"=>"9", "end(1i)"=>"2015", "end(2i)"=>"4", "end(3i)"=>"1", "end(4i)"=>"21", "end(5i)"=>"45"}, "commit"=>"Post"}
+  [1m[36m (0.1ms)[0m  [1mSELECT "users"."id" FROM "users"[0m
+
+
+Started GET "/products" for ::1 at 2015-04-01 17:48:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:48:11')  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:48:11')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:48:11')  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (38.9ms)
+Completed 200 OK in 143ms (Views: 136.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:48:11 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:48:11 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:48:11 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:48:11 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:48:11 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:48:11 -0400
+
+
+Started GET "/products/new" for ::1 at 2015-04-01 17:48:13 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (13.9ms)
+  Rendered products/new.html.haml within layouts/application (23.5ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:48:13 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:48:13 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:48:13 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:48:13 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:48:13 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:48:13 -0400
+
+
+Started POST "/products" for ::1 at 2015-04-01 17:48:53 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VrrBNIB5UVxb/sqgVl5SP1temYoh3l9ECVn36nzlqFGb6ozqA6yL1j8KU/ojySFfpGgKbtjljBOITAZXBbNyGA==", "product"=>{"name"=>"Walkie-Talkie", "description"=>"Helps people communicate without cell phones.", "target"=>"25", "price"=>"39.99", "end(1i)"=>"2015", "end(2i)"=>"6", "end(3i)"=>"1", "end(4i)"=>"10", "end(5i)"=>"30"}, "commit"=>"Post"}
+  [1m[36m (0.2ms)[0m  [1mSELECT "users"."id" FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "start", "end", "pledges", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Walkie-Talkie"], ["description", "Helps people communicate without cell phones."], ["price", 39.99], ["target", 25], ["start", "2015-04-01 17:48:53"], ["end", "2015-06-01 10:30:00"], ["pledges", 0], ["user_id", 4], ["created_at", "2015-04-01 21:48:53.283087"], ["updated_at", "2015-04-01 21:48:53.283087"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/products
+Completed 302 Found in 16ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/products" for ::1 at 2015-04-01 17:48:53 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:48:53')  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:48:53')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-01 17:48:53')  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:48:53 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:48:53 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:48:53 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:48:53 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:48:53 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:48:53 -0400
+
+
+Started GET "/products/7" for ::1 at 2015-04-01 17:49:14 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered products/show.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 79ms (Views: 63.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:49:15 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:49:15 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:49:15 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:49:15 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:49:15 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:49:15 -0400
+
+
+Started GET "/products/4" for ::1 at 2015-04-01 17:49:20 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered products/show.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 51ms (Views: 50.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:49:20 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:49:20 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:49:20 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:49:20 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:49:20 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:49:20 -0400
+
+
+Started GET "/products/7" for ::1 at 2015-04-01 17:49:22 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered products/show.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/products-f1a5ae0eb6419177a911314b44911e50.css?body=1" for ::1 at 2015-04-01 17:49:22 -0400
+
+
+Started GET "/assets/application-00e07eb469cbb386270e72fcffddfa57.css?body=1" for ::1 at 2015-04-01 17:49:22 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-01 17:49:22 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-01 17:49:22 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-01 17:49:22 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-01 17:49:22 -0400
+  [1m[36mProduct Load (1.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price = 39.99)[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]

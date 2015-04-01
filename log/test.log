@@ -989,3 +989,4 @@ Processing by ProductsController#index as HTML
 Completed 500 Internal Server Error in 53ms
   [1m[36m (2.7ms)[0m  [1mrollback transaction[0m
 >>>>>>> 078340984b0c59ce2ded4980445bea510132a730
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m

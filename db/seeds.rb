@@ -67,4 +67,35 @@ Product.create!(
             :start => "2015-01-01 12:00:00",
             :end => "2015-04-29 12:00:00",
             :user_id => 6)
+        
+        User.create!(
+			:username => "ddrucker",
+			:email => "druckcity@google.com",
+			:first_name => "Dan",
+			:last_name => "Drucker",
+			:password => "football",
+			:password_confirmation => "football")
+        
+        User.create!(
+			:username => "wgarcia",
+			:email => "garcia@yahoo.com",
+			:first_name => "Will",
+			:last_name => "Garcia",
+			:password => "ilovecars",
+			:password_confirmation => "ilovecars")
+        
+        User.create!(
+			:username => "mgeorges",
+			:email => "kos@gmail.com",
+			:first_name => "Markos",
+			:last_name => "Georges",
+			:password => "flacco",
+			:password_confirmation => "flacco")
 
+        User.create!(
+			:username => "wely",
+			:email => "will@msn.com",
+			:first_name => "Will",
+			:last_name => "Ely",
+			:password => "batavia",
+			:password_confirmation => "batavia")
