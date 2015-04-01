@@ -4,18 +4,22 @@ body {
   font-size: 18pt;
   font-weight: 200;
   font-style: normal;
-  background-color: #006633;
-  color: white; 
+  background-image: url(http://i.ytimg.com/vi/fVsONlc3OUY/maxresdefault.jpg);
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #980000; 
 }
 body #main {
-  background-color: #CC6600;
-  color: #FFF0B8;
+  background-color: #e0e0e0;
+  opacity: 1;
+  color: #980000;
   width: 90%;
   left: 5%;
   position: relative;
   padding: 10px;
   border: 5px solid #CC3300;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 body h4{
   font-family: Helvetica, sans-serif;
@@ -23,8 +27,9 @@ body h4{
   font-size: 28pt;
   font-weight: 500;
   font-style: normal;
-  background-color: #006633;
-  color: white; 
+  background-color: transparent;
+  color: white;
+  text-shadow: black;
 }
 body h3 {
   font-family: Helvetica, sans-serif;
@@ -32,7 +37,8 @@ body h3 {
   font-weight: 200;
   font-style: normal;
   text-align: center; 
-  background-color: #CC6600;
+  opacity 1.0;
+  background-color: transparent;
 }
 body h2 {
   font-family: Helvetica, sans-serif;
@@ -48,15 +54,15 @@ body h1 {
   font-weight: 200;
   font-style: normal;
   text-align: left;
-  background-color: #CC6600;
+  background-color: transparent;
 }
 body .newly_listed {
   position: relative;
   top: -5px;
   width: 20%;
   left: 0%;
-  background-color: #6D8DB7;
-  color: #FFD3B8;
+  background-color: #ffcc33;
+  color: #980000;
   padding: 10px;
   margin-bottom: 20px;
   text-align: left;
@@ -64,14 +70,17 @@ body .newly_listed {
   font-size: 13pt;
   font-weight: 200;
   font-style: normal; 
+  border: 5px solid #980000;
+  border-radius: 10px;
 }
 body .ending_soon {
   position: absolute;
   top: 90px;
   width: 20%;
   left: 35%;
-  background-color: #6D8DB7;
-  color: #FFD3B8;
+  opacity: 1.0;
+  background-color: #ffcc33;
+  color: #980000;
   padding: 10px;
   margin-bottom: 20px;
   text-align: left;
@@ -79,14 +88,16 @@ body .ending_soon {
   font-size: 13pt;
   font-weight: 200;
   font-style: normal; 
+  border: 5px solid #980000;
+  border-radius: 10px;
 }
 body .close_to_target {
   position: absolute;
   top: 90px;
   width: 20%;
   left: 70%;
-  background-color: #6D8DB7;
-  color: #FFD3B8;
+  background-color: #ffcc33;
+  color: #980000;
   padding: 10px;
   margin-bottom: 20px;
   text-align: left;
@@ -94,6 +105,8 @@ body .close_to_target {
   font-size: 13pt;
   font-weight: 200;
   font-style: normal; 
+  border: 5px solid #980000;
+  border-radius: 10px;
 }
 body .products_table caption {
   font-family: Helvetica, sans-serif;
@@ -105,9 +118,21 @@ body th {
   font-weight: bold; 
 }
 body a:link, body a:visited, body .products_table th {
-  color: #A9511D;
-  background-color: #6D8DB7; 
+  color: #336600;
+  background-color: transparent; 
 }
 body .price {
     text-align: right; 
+}
+body .back_link:link {
+  color: #980000;
+  text-align: right;
+  font-family: Helvetica, sans-serif;
+  font-size: 13pt;
+}
+body .product_form {
+  color: #980000;
+  text-align: left;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
 }
