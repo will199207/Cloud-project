@@ -2,10 +2,45 @@
     %h3 Welcome! Below are some hot products!
 
     %table.newly_listed
-        %th Newly Listed!
-            
+        %caption Newly Listed!
+        %th Product
+        %th Listed At
+        %th Price
+        - @new.each do |product|
+            %tr.productrow
+                %td.name= link_to "#{product.name}", product 
+                %td.description= product.description
+                %td.timecreated= product.start.strftime("%H:%M:%S")
+                %td.price= number_to_currency(product.price)
+        
     %table.close_to_target
-        %th Close To Target!
-            
+        %caption Close To Target!
+        %th Product
+        %th Description
+        %th % of Target
+        %th Price
+        - @almost.each do |product|
+            %tr.productrow
+                %td.name= link_to "#{product.name}", product
+                %td.description= product.description
+                %td.percent= (product.pledges/product.target.to_f).round(2)
+                %td.price= number_to_currency(product.price)
+
     %table.ending_soon
-        %th Ending Soon!
+        %caption Ending Soon!
+        %th Product
+        %th Description 
+        %th Time left
+        %th Price
+        -@expiring.each do |product|
+            %tr.productrow
+                %tr.product= link_to "#{product.name}", product
+                %tr.description= product.description 
+                %tr.timeleft= product.end.strftime("%H:%M:%S")
+                %tr.price= number_to_currency(product.price)
+
+
+
+
+
+ 
