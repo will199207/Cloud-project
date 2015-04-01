@@ -10,7 +10,7 @@ RSpec.describe "show page", type: :feature do
             :pledges => 50,
             :start => "2015-01-22 12:00:00",
             :end => "2015-04-02 12:00:00",
-            :userid => 1)
+            :user_id => 1)
 
         Product.create!(
             :name => "Laptop",
@@ -20,6 +20,27 @@ RSpec.describe "show page", type: :feature do
             :pledges => 6,
             :start => "2014-01-01 12:00:00",
             :end => "2015-04-03 12:00:00",
-            :userid => 1)
-        visit
+            :user_id => 2)
+
+        visit "/products"
+    end
+    
+    it "should should have a link to product 'Laptop'" do 
+        expect(page).to have_link("Laptop")
+    end 
+
+    it "should have a link to product '20 oz Bottles of Coke Cola'" do 
+        expect(page).to have_link("20 oz Bottles of Coke Cola")
+    end 
+
+    it "should show the page for each product when it's link is clicked" do 
+        click_link("Laptop")
+        expect(page).to have_link("Back to Home")
+        expect(page).to have_content("Laptop")
+        expect(page).to have_content("Probably need one")
+        expect(page).to have_content("2")
+        expect(page).to have_content("Pictures")
+        expect(page).to have_content("550.00"
+    end
+
 
