@@ -25,6 +25,14 @@ body h3 {
   text-align: center; 
   background-color: #CC6600;
 }
+body h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: 200;
+  font-style: noraml;
+  text-align: center;
+  background-color: #CC6600;
+}
 body .newly_listed {
   position: relative;
   top: -5px;

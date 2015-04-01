@@ -1,3 +1,9 @@
 #main
+  %h3 #{@product.name}
+  %h2 Listing Expires: #{@product.end.to_formatted.to_s}
   %table.products_table
-
+    %tr.products_header
+    %th Pledges Made So Far
+    %th Target Number of Pledges
+    %th Price
+    
