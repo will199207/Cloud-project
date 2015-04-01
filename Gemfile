@@ -5,6 +5,11 @@ ruby '2.2.0'
 # Added by us
 gem 'bcrypt', '3.1.7'
 
+group :test do
+  gem 'simplecov', :require => false
+  gem 'database_cleaner'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use SCSS for stylesheets
