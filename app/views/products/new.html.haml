@@ -1,9 +1,9 @@
 #main
 
-    %h2=link_to "Back to Index Page", products_path
-
     %h3 Create a New Product Listing
 
     = form_tag '/products', :method => :post do
-        .product_form_label= render :partial => 'product_form'
-        .product_form_field= submit_tag 'Post'
+        .product_form= render :partial => 'product_form'
+        .product_form= submit_tag 'Post'
+    %br
+    .back_link=link_to "Back to Index Page", products_path

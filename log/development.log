@@ -2974,6 +2974,7 @@ Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for
 
 
 Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-03-31 22:25:46 -0400
+<<<<<<< HEAD
   [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE (start > 2015-03-31 22:10:02)[0m
 SQLite3::SQLException: near "22": syntax error: SELECT "products".* FROM "products" WHERE (start > 2015-03-31 22:10:02)
   [1m[35mProduct Load (27.9ms)[0m  SELECT "products".* FROM "products" WHERE (start > 2015-03-31)
@@ -2990,3 +2991,1021 @@ SQLite3::SQLException: near "0": syntax error: SELECT "products".* FROM "product
 SQLite3::SQLException: unrecognized token: "6T04": SELECT "products".* FROM "products" WHERE (end > 2001-W05-6T04:05:06+07:00)
   [1m[36mProduct Load (2.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2001-W05-6T04:05:06+07:00')[0m
   [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2001-W05-6T04:05:06+07:00')
+=======
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:05:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (132.8ms)
+Completed 200 OK in 659ms (Views: 644.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/products-2723b84496b52a26e48875cf8a3c6efc.css?body=1" for 127.0.0.1 at 2015-04-01 00:05:08 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:05:08 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:05:08 -0400
+
+
+Started GET "/assets/application-f926b1cf175495736793d0c072568f12.css?body=1" for 127.0.0.1 at 2015-04-01 00:05:08 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:05:08 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:05:08 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:06:04 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (18.4ms)
+Completed 200 OK in 107ms (Views: 105.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/products-c132b0155fbfad98127cdb376a8748b6.css?body=1" for 127.0.0.1 at 2015-04-01 00:06:05 -0400
+
+
+Started GET "/assets/application-f2158fd8f196ceebd8d8f7a0fb992916.css?body=1" for 127.0.0.1 at 2015-04-01 00:06:05 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:06:05 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:06:05 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:06:05 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:06:05 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:07:50 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (2.5ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (22.1ms)
+Completed 200 OK in 131ms (Views: 126.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/products-c96d141252b60db29149c5f0b5c3e82b.css?body=1" for 127.0.0.1 at 2015-04-01 00:07:50 -0400
+
+
+Started GET "/assets/application-f29b8c71fc910ac6f18ae252650ade5e.css?body=1" for 127.0.0.1 at 2015-04-01 00:07:50 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:07:50 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:07:50 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:07:50 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:07:50 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:08:17 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (2.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (17.7ms)
+Completed 200 OK in 113ms (Views: 109.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/products-8cae1bb63d7a704cf245f52f84533b2f.css?body=1" for 127.0.0.1 at 2015-04-01 00:08:17 -0400
+
+
+Started GET "/assets/application-081f34f1f2894b991f42f9b47455b2e6.css?body=1" for 127.0.0.1 at 2015-04-01 00:08:17 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:08:17 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:08:17 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:08:17 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:08:17 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:08:55 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (5.6ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (23.4ms)
+Completed 200 OK in 115ms (Views: 108.0ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/products-0f07309891b4ce5a55729e545b58fcfc.css?body=1" for 127.0.0.1 at 2015-04-01 00:08:55 -0400
+
+
+Started GET "/assets/application-94653d389837540966462a7c51c6c8af.css?body=1" for 127.0.0.1 at 2015-04-01 00:08:55 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:08:55 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:08:55 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:08:55 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:08:55 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:09:19 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (21.8ms)
+Completed 200 OK in 106ms (Views: 104.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/products-05af06f731a478500377d10967ee4c8b.css?body=1" for 127.0.0.1 at 2015-04-01 00:09:19 -0400
+
+
+Started GET "/assets/application-add0e56d7312ee35c2bd3b87997b9b59.css?body=1" for 127.0.0.1 at 2015-04-01 00:09:19 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:09:19 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:09:19 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:09:19 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:09:19 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:10:06 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 104ms (Views: 102.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/products-4c1634ae4fb1a0aa8751e3e8f8839790.css?body=1" for 127.0.0.1 at 2015-04-01 00:10:06 -0400
+
+
+Started GET "/assets/application-3f7da4548455873bfd147fa7a93f6cbf.css?body=1" for 127.0.0.1 at 2015-04-01 00:10:06 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:10:07 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:10:07 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:10:07 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:10:07 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:10:48 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (2.2ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (16.2ms)
+Completed 200 OK in 102ms (Views: 99.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/products-e9ee1d3474c630b2963c85d2c30feda6.css?body=1" for 127.0.0.1 at 2015-04-01 00:10:48 -0400
+
+
+Started GET "/assets/application-52270251169c8bedf7656391a1d2cbe7.css?body=1" for 127.0.0.1 at 2015-04-01 00:10:48 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:10:48 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:10:48 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:10:48 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:10:48 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:12:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (38.8ms)
+Completed 200 OK in 259ms (Views: 257.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/products-b09d8a47fc7420e0055c5b19f8640a1f.css?body=1" for 127.0.0.1 at 2015-04-01 00:12:40 -0400
+
+
+Started GET "/assets/application-c00cec192a2bc1c141e03132a54c0c85.css?body=1" for 127.0.0.1 at 2015-04-01 00:12:40 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:12:40 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:12:40 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:12:40 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:12:40 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:13:24 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (18.8ms)
+Completed 200 OK in 116ms (Views: 114.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/products-f8d395677b19a9546820b0f17152b6d4.css?body=1" for 127.0.0.1 at 2015-04-01 00:13:24 -0400
+
+
+Started GET "/assets/application-f6713d48ffc1a93672057e95ee11ba39.css?body=1" for 127.0.0.1 at 2015-04-01 00:13:24 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:13:24 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:13:24 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:13:24 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:13:24 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:14:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (60.1ms)
+Completed 200 OK in 256ms (Views: 254.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/products-c7ca8e971aed2ce64022c76d0a72c44c.css?body=1" for 127.0.0.1 at 2015-04-01 00:14:41 -0400
+
+
+Started GET "/assets/application-ee31f07a57243d72900620f6bc7d7c57.css?body=1" for 127.0.0.1 at 2015-04-01 00:14:41 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:14:41 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:14:41 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:14:41 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:14:41 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:15:05 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (30.7ms)
+Completed 200 OK in 167ms (Views: 165.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/products-e360121a9d3517c236865fe031f6428c.css?body=1" for 127.0.0.1 at 2015-04-01 00:15:05 -0400
+
+
+Started GET "/assets/application-99efd2940a7151c6fe788ddd7a7cdc85.css?body=1" for 127.0.0.1 at 2015-04-01 00:15:05 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:15:05 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:15:05 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:15:05 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:15:05 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:15:09 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (29.7ms)
+Completed 200 OK in 123ms (Views: 121.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/products-e360121a9d3517c236865fe031f6428c.css?body=1" for 127.0.0.1 at 2015-04-01 00:15:09 -0400
+
+
+Started GET "/assets/application-99efd2940a7151c6fe788ddd7a7cdc85.css?body=1" for 127.0.0.1 at 2015-04-01 00:15:09 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:15:09 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:15:09 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:15:09 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:15:09 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:18:39 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (1.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (34.6ms)
+Completed 200 OK in 159ms (Views: 155.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/products-0829df8938ea787c5166b45d28ac6402.css?body=1" for 127.0.0.1 at 2015-04-01 00:18:39 -0400
+
+
+Started GET "/assets/application-71811e9aba778e011930de1456a89ad1.css?body=1" for 127.0.0.1 at 2015-04-01 00:18:39 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:18:39 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:18:39 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:18:39 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:18:39 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:18:55 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (25.4ms)
+Completed 200 OK in 305ms (Views: 303.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/products-cfb9cc150f1779f84574302a9a0b9471.css?body=1" for 127.0.0.1 at 2015-04-01 00:18:55 -0400
+
+
+Started GET "/assets/application-f8757bb65f34f7f011342e7cf63ea713.css?body=1" for 127.0.0.1 at 2015-04-01 00:18:55 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:18:55 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:18:55 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:18:55 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:18:55 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:19:55 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 101ms (Views: 99.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/products-5f522d77d0076283bf62ae2e0a8a73db.css?body=1" for 127.0.0.1 at 2015-04-01 00:19:56 -0400
+
+
+Started GET "/assets/application-57f8d03f9e988001a6f090b094325f0d.css?body=1" for 127.0.0.1 at 2015-04-01 00:19:56 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:19:56 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:19:56 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:19:56 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:19:56 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:20:25 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (22.0ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (38.9ms)
+Completed 200 OK in 120ms (Views: 97.0ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/assets/products-db94f25f427ddd686481ae1ced023992.css?body=1" for 127.0.0.1 at 2015-04-01 00:20:25 -0400
+
+
+Started GET "/assets/application-2014bc5e7b8b3748de9c081a16fe27f6.css?body=1" for 127.0.0.1 at 2015-04-01 00:20:25 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:20:25 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:20:25 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:20:25 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:20:25 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:21:20 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (16.8ms)
+Completed 200 OK in 107ms (Views: 104.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/products-a6936aa11a8a4a31cd7602e24d0a42fd.css?body=1" for 127.0.0.1 at 2015-04-01 00:21:20 -0400
+
+
+Started GET "/assets/application-6698b52e2d07841ff6151316016063ee.css?body=1" for 127.0.0.1 at 2015-04-01 00:21:20 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:21:20 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:21:20 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:21:20 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:21:20 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:21:43 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (17.5ms)
+Completed 200 OK in 105ms (Views: 102.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/products-b16b438b86e1fa0f420d17aed8120449.css?body=1" for 127.0.0.1 at 2015-04-01 00:21:43 -0400
+
+
+Started GET "/assets/application-5fa11a5b91a28cfc6bf3f1274ae321eb.css?body=1" for 127.0.0.1 at 2015-04-01 00:21:43 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:21:43 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:21:43 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:21:43 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:21:43 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:22:47 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 112ms (Views: 110.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/products-7dc00dcc621ca3522b1f42d244a02600.css?body=1" for 127.0.0.1 at 2015-04-01 00:22:47 -0400
+
+
+Started GET "/assets/application-ab7d3328c585312429675786ea1d0900.css?body=1" for 127.0.0.1 at 2015-04-01 00:22:47 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:22:47 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:22:47 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:22:47 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:22:47 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:23:48 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (17.3ms)
+Completed 200 OK in 121ms (Views: 119.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/products-8589d7afba5078225de4386d0f74aab5.css?body=1" for 127.0.0.1 at 2015-04-01 00:23:48 -0400
+
+
+Started GET "/assets/application-2634a5186f4f9df838d4ec04b623e509.css?body=1" for 127.0.0.1 at 2015-04-01 00:23:48 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:23:48 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:23:48 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:23:48 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:23:48 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:25:07 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (14.9ms)
+Completed 200 OK in 105ms (Views: 103.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/products-12b860bbf22685294404ef2e0a7e582a.css?body=1" for 127.0.0.1 at 2015-04-01 00:25:07 -0400
+
+
+Started GET "/assets/application-ecf3ee429b2debccc9677fa910a73bd5.css?body=1" for 127.0.0.1 at 2015-04-01 00:25:07 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:25:07 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:25:07 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:25:07 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:25:07 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:25:54 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (2.1ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (21.4ms)
+Completed 200 OK in 118ms (Views: 114.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/products-e17df4399cbf736aa064e3389caef881.css?body=1" for 127.0.0.1 at 2015-04-01 00:25:54 -0400
+
+
+Started GET "/assets/application-a6df6b7c83d774f2bf072bccd70f983f.css?body=1" for 127.0.0.1 at 2015-04-01 00:25:54 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:25:55 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:25:55 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:25:55 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:25:55 -0400
+
+
+Started GET "/products/" for 127.0.0.1 at 2015-04-01 00:27:56 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (16.2ms)
+Completed 200 OK in 112ms (Views: 110.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-e58ec09b496f445e96f54d1bd1d627a1.css?body=1" for 127.0.0.1 at 2015-04-01 00:27:56 -0400
+
+
+Started GET "/assets/products-8f70ae5aac6e6bef167cbb3836218d90.css?body=1" for 127.0.0.1 at 2015-04-01 00:27:56 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:27:56 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:27:56 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:27:56 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:27:56 -0400
+
+
+Started GET "/products/1" for 127.0.0.1 at 2015-04-01 00:28:31 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/show.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 164ms (Views: 81.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:28:32 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:28:32 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:28:32 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:28:32 -0400
+
+
+Started GET "/products/1" for 127.0.0.1 at 2015-04-01 00:29:45 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered products/show.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 90ms (Views: 88.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/products-9fcb485488c63bf2835c2cc6bd2db31d.css?body=1" for 127.0.0.1 at 2015-04-01 00:29:45 -0400
+
+
+Started GET "/assets/application-2ba1b535213035165112eb4c97589f06.css?body=1" for 127.0.0.1 at 2015-04-01 00:29:45 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:29:46 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:29:46 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:29:46 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:29:46 -0400
+
+
+Started GET "/products/1" for 127.0.0.1 at 2015-04-01 00:30:56 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/show.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 94ms (Views: 93.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/products-3a3ade0ea665165ff16bc654782ef594.css?body=1" for 127.0.0.1 at 2015-04-01 00:30:56 -0400
+
+
+Started GET "/assets/application-ae4234a1af2683b1428375bb3039f7da.css?body=1" for 127.0.0.1 at 2015-04-01 00:30:56 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:30:56 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:30:56 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:30:56 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:30:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 00:31:05 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-04-01 00:31:05 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.1ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (2.0ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (18.1ms)
+Completed 200 OK in 86ms (Views: 81.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:31:06 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:31:06 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:31:06 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:31:06 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-04-01 00:32:14 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (2.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (2.6ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (25.6ms)
+Completed 200 OK in 116ms (Views: 109.8ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application-a25ebda4fe96534ab290214bfe57dcf7.css?body=1" for 127.0.0.1 at 2015-04-01 00:32:15 -0400
+
+
+Started GET "/assets/products-aefc07cce7e0da09f74857a0cd152133.css?body=1" for 127.0.0.1 at 2015-04-01 00:32:15 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:15 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:15 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:15 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:15 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-04-01 00:32:18 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (31.7ms)
+  Rendered products/new.html.haml within layouts/application (135.5ms)
+Completed 200 OK in 183ms (Views: 183.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:18 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:18 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:18 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:18 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-04-01 00:32:29 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (19.2ms)
+Completed 200 OK in 86ms (Views: 84.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:29 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:29 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:29 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:29 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-04-01 00:32:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/products-04dbc9e40497bf699028a88d78191c83.css?body=1" for 127.0.0.1 at 2015-04-01 00:32:41 -0400
+
+
+Started GET "/assets/application-b483010cbef024bde0c056ee1518655d.css?body=1" for 127.0.0.1 at 2015-04-01 00:32:41 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:41 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:41 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:41 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:41 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-04-01 00:32:45 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (2.8ms)
+  Rendered products/new.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 75ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:45 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:45 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:45 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:32:45 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-04-01 00:37:25 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (4.5ms)
+  Rendered products/new.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 76ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-04dbc9e40497bf699028a88d78191c83.css?body=1" for 127.0.0.1 at 2015-04-01 00:37:25 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:37:25 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:37:25 -0400
+
+
+Started GET "/assets/application-b483010cbef024bde0c056ee1518655d.css?body=1" for 127.0.0.1 at 2015-04-01 00:37:25 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:37:25 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:37:25 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-04-01 00:38:59 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 75ms (Views: 73.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/products-04dbc9e40497bf699028a88d78191c83.css?body=1" for 127.0.0.1 at 2015-04-01 00:39:00 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:39:00 -0400
+
+
+Started GET "/assets/application-b483010cbef024bde0c056ee1518655d.css?body=1" for 127.0.0.1 at 2015-04-01 00:39:00 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:39:00 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:39:00 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:39:00 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-04-01 00:40:15 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (132.7ms)
+Completed 500 Internal Server Error in 138ms
+
+ActionView::Template::Error (undefined local variable or method `new_product_page' for #<#<Class:0x94868c8>:0xabdaf88>):
+    39:                 %td.timeleft= product.end
+    40:                 %td.price= number_to_currency(product.price)
+    41:                 
+    42:     =link_to "Create New Product", new_product_page
+    43: 
+    44: 
+    45: 
+  app/views/products/index.html.haml:42:in `_app_views_products_index_html_haml___165887186_90099180'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (10.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (7.7ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (63.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-04-01 00:40:29 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (61.0ms)
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (undefined local variable or method `new_product' for #<#<Class:0x94868c8>:0xa8bc144>):
+    39:                 %td.timeleft= product.end
+    40:                 %td.price= number_to_currency(product.price)
+    41:                 
+    42:     =link_to "Create New Product", new_product
+    43: 
+    44: 
+    45: 
+  app/views/products/index.html.haml:42:in `_app_views_products_index_html_haml___165887186_88371420'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (14.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.8ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (55.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-04-01 00:41:17 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (29.6ms)
+Completed 200 OK in 97ms (Views: 95.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/products-04dbc9e40497bf699028a88d78191c83.css?body=1" for 127.0.0.1 at 2015-04-01 00:41:17 -0400
+
+
+Started GET "/assets/application-b483010cbef024bde0c056ee1518655d.css?body=1" for 127.0.0.1 at 2015-04-01 00:41:17 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:41:17 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:41:17 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:41:17 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:41:17 -0400
+
+
+Started GET "/products" for 127.0.0.1 at 2015-04-01 00:41:59 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY start DESC LIMIT 10[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products"  ORDER BY target - pledges ASC LIMIT 10
+  [1m[36mProduct Load (1.7ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY end ASC LIMIT 10[0m
+  Rendered products/index.html.haml within layouts/application (32.2ms)
+Completed 200 OK in 103ms (Views: 99.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/products-04dbc9e40497bf699028a88d78191c83.css?body=1" for 127.0.0.1 at 2015-04-01 00:41:59 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-01 00:41:59 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-01 00:41:59 -0400
+
+
+Started GET "/assets/application-b483010cbef024bde0c056ee1518655d.css?body=1" for 127.0.0.1 at 2015-04-01 00:41:59 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-01 00:41:59 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-01 00:41:59 -0400
+>>>>>>> 0a8b025765a416d584bcc6b7e552818611cf18e6
