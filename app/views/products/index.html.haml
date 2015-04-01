@@ -9,7 +9,7 @@
         %th Listed At
         %th Price
         - @new.each do |product|
-            %tr.productsbynew
+            %tr.product
                 %td.name= link_to "#{product.name}", product 
                 %td.description= product.description
                 %td.timecreated= product.start
@@ -22,7 +22,7 @@
         %th % of Target
         %th Price
         - @almost.each do |product|
-            %tr.productsbytarget
+            %tr.product
                 %td.name= link_to "#{product.name}", product
                 %td.description= product.description
                 %td.percent= (product.pledges/product.target.to_f).round(3)*100
@@ -35,7 +35,7 @@
         %th Time left
         %th Price
         -@expiring.each do |product|
-            %tr.productsbyending
+            %tr.product
                 %td.name= link_to "#{product.name}", product
                 %td.description= product.description 
                 %td.timeleft= product.end

@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe "index page", type: :feature do 
     
     let (:newly_added) { ["NEW CAR!", "Children's Toy", "20 oz Bottles of Coke Cola", "Tires", "Noise Canceling Head Phones", "Laptop"] }
-    let (:close_to_target) { [ "Noise Canceling Head Phones", "Children's Toy", "20 oz Bottles of Coke Cola", "Laptop", "Tires", "NEW! CAR"] }
-    let (:ending) { ["20 oz Bottles of Coke Cola", "Laptop", "Noise Canceling Head Phones", "Tires", "Children's Toy", "NEW! CAR"] }
+    let (:close_to_target) { [ "Noise Canceling Head Phones", "Children's Toy", "20 oz Bottles of Coke Cola", "Laptop", "Tires", "NEW CAR!"] }
+    let (:ending) { ["20 oz Bottles of Coke Cola", "Laptop", "Noise Canceling Head Phones", "Tires", "Children's Toy", "NEW CAR!"] }
 
     before :each do
         Product.create!(
@@ -64,7 +64,7 @@ RSpec.describe "index page", type: :feature do
             :target => 300,
             :pledges => 30,
             :start => "2015-01-01 12:00:00",
-            :end => "2015-04-29 12:00:00",
+            :end => "2015-04-29 12:00:00", 
             :user_id => 6)
 
         visit "/products"
@@ -72,21 +72,37 @@ RSpec.describe "index page", type: :feature do
 
 
     it "should show products in order by date added under Newly Added" do 
-        product_date_added = []
-        page.find(".productsbynew").all("name").each { |x| product_date_added << x.text }
-        expect(product_date_added).to match_array(newly_added)
+        products_date_added = []
+        start = []
+        page.find(".newly_listed").all(".product").each do |x| 
+            products_date_added << x.find(".name").text 
+            start << x.find(".timecreated").text
+        end
+        expect(products_date_added).to match_array(newly_added)
+        expect(start).to match_array(start.sort)
     end 
 
     it "should show products close to their target" do 
         products_close_to_target = []
-        page.find(".productsbytarget").all("name").each { |x| products_close_to_target << x.text }
+        percents = []
+        page.find(".close_to_target").all(".product").each do |x| 
+            products_close_to_target << x.find(".name").text 
+            percents << x.find(".percent").text
+        end
         expect(products_close_to_target).to match_array(close_to_target)
+        expect(percents).to match_array(percents.sort.reverse)
+
     end 
 
     it "should show products that are close to expiring" do 
         products_ending = []
-        page.all(".productsbyending").each { |x| products_ending << x.text }
+        end_date = []
+        page.find(".ending_soon").all(".product").each do |x| 
+            products_ending << x.find(".name").text 
+            end_date << x.find(".timeleft").text            
+        end
         expect(products_ending).to match_array(ending)
+        expect(end_date).to match_array(end_date.sort)
     end 
     
     it "should have a search button" do
@@ -94,8 +110,7 @@ RSpec.describe "index page", type: :feature do
     end
 
     it "should have five categories" do
-        #expect(page).to have_content("Auto")
-        pending "add some code"
+        expect(page).to have_content("Auto")
     end
 
 end
