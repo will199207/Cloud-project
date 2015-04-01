@@ -5,8 +5,8 @@ class Product < ActiveRecord::Base
         self.where("end > #{DateTime.now.to_formatted_s(:db)}")
     end
 
-    def self.are_active
-        self.where("end <= #{DateTime.now.to_formateed_s(:db)}")
+    def self.not_active
+        self.where("end <= #{DateTime.now.to_formatted_s(:db)}")
     end
 
     def self.target_not_hit

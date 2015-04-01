@@ -1,7 +1,7 @@
 #main
   %h3 #{@product.name}
   %h2 Listing Expires: #{@product.end.to_formatted_s}
-  %h2 Time left: 
+  %h2 Time Left:
   %table.products_table
     %tr.products_header
       %th Pledges Made So Far
@@ -11,8 +11,6 @@
       %td= @product.pledges
       %td= @product.target
       %td= number_to_currency(@product.price)
-
-/* put the form to enter pledges here */
 
   %h2 Product Description
   %h1= @product.description
