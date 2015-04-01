@@ -1,0 +1,98 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/ddrucker/Desktop/GroupBuy/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/ddrucker/Desktop/GroupBuy/app/helpers/products_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/ddrucker/Desktop/GroupBuy/app/controllers/products_controller.rb": [
+        1,
+        1,
+        8,
+        8,
+        8,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/ddrucker/Desktop/GroupBuy/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/ddrucker/Desktop/GroupBuy/app/models/product.rb": [
+        1,
+        1,
+        null,
+        1,
+        24,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        8,
+        null,
+        null,
+        1,
+        8,
+        null,
+        null,
+        1,
+        8,
+        null,
+        null
+      ],
+      "/Users/ddrucker/Desktop/GroupBuy/app/models/user.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1427916425
+  },
+  "Cucumber Features": {
+    "coverage": {
+    },
+    "timestamp": 1427916479
+  }
+}
