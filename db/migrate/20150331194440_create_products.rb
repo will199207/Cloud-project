@@ -6,8 +6,8 @@ class CreateProducts < ActiveRecord::Migration
       t.decimal :price, :precision => 10, :scale => 2
       t.integer :target
       t.integer :pledges
-      t.datetime :start
-      t.datetime :end
+      t.string :start
+      t.string  :end
       t.integer :user_id
       t.timestamps null: false
     end

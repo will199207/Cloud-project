@@ -2,11 +2,12 @@ class Product < ActiveRecord::Base
     belongs_to :user
 
     def self.are_active
-        self.where("end > #{DateTime.now.to_formatted_s(:db)}")
+        #self.where("end > #{DateTime.now.to_formatted_s(:db)}")
+        self
     end
 
-    def self.are_active
-        self.where("end <= #{DateTime.now.to_formateed_s(:db)}")
+    def self.not_active
+        self.where("end < #{DateTime.now.to_formatted_s(:db)}")
     end
 
     def self.target_not_hit

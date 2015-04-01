@@ -10,8 +10,8 @@ body {
 body #main {
   background-color: #CC6600;
   color: #FFF0B8;
-  width: 80%;
-  left: 10%;
+  width: 90%;
+  left: 5%;
   position: relative;
   padding: 10px;
   border: 5px solid #CC3300;
@@ -37,7 +37,7 @@ body .newly_listed {
   position: relative;
   top: -5px;
   width: 20%;
-  left: 10%;
+  left: 0%;
   background-color: #6D8DB7;
   color: #FFD3B8;
   padding: 10px;
@@ -52,7 +52,7 @@ body .ending_soon {
   position: absolute;
   top: 90px;
   width: 20%;
-  left: 40%;
+  left: 35%;
   background-color: #6D8DB7;
   color: #FFD3B8;
   padding: 10px;

@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 20150331195812) do
     t.decimal  "price",       precision: 10, scale: 2
     t.integer  "target"
     t.integer  "pledges"
-    t.datetime "start"
-    t.datetime "end"
+    t.string   "start"
+    t.string   "end"
     t.integer  "user_id"
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false
