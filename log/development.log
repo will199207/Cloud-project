@@ -9046,3 +9046,285 @@ Processing by Devise::SessionsController#new as HTML
   Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (5.0ms)
   Rendered /Users/ddrucker/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (14.3ms)
 Completed 200 OK in 79ms (Views: 77.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-02 17:11:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.9ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-02 17:11:14')  ORDER BY start DESC LIMIT 10
+  [1m[36mProduct Load (1.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE (end > '2015-04-02 17:11:14')  ORDER BY ((target * 1.0)/pledges) ASC LIMIT 10[0m
+  [1m[35mProduct Load (2.7ms)[0m  SELECT  "products".* FROM "products" WHERE (end > '2015-04-02 17:11:14')  ORDER BY end ASC LIMIT 10
+  Rendered products/index.html.haml within layouts/application (1082.3ms)
+Completed 200 OK in 5861ms (Views: 5641.3ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/assets/products-eab0b40dc12e40dde4e3b2e26bf4577b.css?body=1" for 127.0.0.1 at 2015-04-02 17:11:21 -0400
+
+
+Started GET "/assets/application-32ed0f1fc9e4d5b897b041d7d99b0bd0.css?body=1" for 127.0.0.1 at 2015-04-02 17:11:22 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-02 17:11:23 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-02 17:11:23 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-02 17:11:24 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-02 17:11:24 -0400
+
+
+Started GET "/products/2" for 127.0.0.1 at 2015-04-02 17:11:49 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (1.5ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered products/show.html.haml within layouts/application (226.4ms)
+Completed 200 OK in 1482ms (Views: 1299.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-02 17:11:52 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-02 17:11:52 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-02 17:11:52 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-02 17:11:52 -0400
+
+
+Started GET "/products/2" for 127.0.0.1 at 2015-04-02 17:20:29 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProduct Load (7.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered products/show.html.haml within layouts/application (68.9ms)
+Completed 200 OK in 1231ms (Views: 1205.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application-32ed0f1fc9e4d5b897b041d7d99b0bd0.css?body=1" for 127.0.0.1 at 2015-04-02 17:20:32 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-02 17:20:32 -0400
+
+
+Started GET "/assets/products-eab0b40dc12e40dde4e3b2e26bf4577b.css?body=1" for 127.0.0.1 at 2015-04-02 17:20:32 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-02 17:20:32 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-02 17:20:32 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-02 17:20:32 -0400
+
+
+Started GET "/products/2" for 127.0.0.1 at 2015-04-02 17:21:50 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered products/show.html.haml within layouts/application (105.2ms)
+Completed 200 OK in 1313ms (Views: 1284.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/products-eab0b40dc12e40dde4e3b2e26bf4577b.css?body=1" for 127.0.0.1 at 2015-04-02 17:21:53 -0400
+
+
+Started GET "/assets/application-32ed0f1fc9e4d5b897b041d7d99b0bd0.css?body=1" for 127.0.0.1 at 2015-04-02 17:21:53 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-02 17:21:53 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-02 17:21:53 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-02 17:21:53 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-02 17:21:54 -0400
+
+
+Started GET "/products/2" for 127.0.0.1 at 2015-04-02 17:24:41 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProduct Load (34.8ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered products/show.html.haml within layouts/application (57.9ms)
+Completed 200 OK in 1500ms (Views: 1435.4ms | ActiveRecord: 34.8ms)
+
+
+Started GET "/assets/products-eab0b40dc12e40dde4e3b2e26bf4577b.css?body=1" for 127.0.0.1 at 2015-04-02 17:24:44 -0400
+
+
+Started GET "/assets/application-32ed0f1fc9e4d5b897b041d7d99b0bd0.css?body=1" for 127.0.0.1 at 2015-04-02 17:24:44 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-02 17:24:44 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-02 17:24:44 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-02 17:24:44 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-02 17:24:45 -0400
+
+
+Started GET "/products/2" for 127.0.0.1 at 2015-04-02 18:08:26 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (16.7ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered products/show.html.haml within layouts/application (34.9ms)
+Completed 500 Internal Server Error in 305ms
+
+SyntaxError (/home/csvm/GroupBuy/app/views/products/show.html.haml:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+...ml::Helpers.html_escape((tl[0]" days "tl[1]" hours "tl[2]" m...
+...                               ^
+/home/csvm/GroupBuy/app/views/products/show.html.haml:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...rs.html_escape((tl[0]" days "tl[1]" hours "tl[2]" minutes "t...
+...                               ^
+/home/csvm/GroupBuy/app/views/products/show.html.haml:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+...tml_escape((tl[0]" days "tl[1]" hours "tl[2]" minutes "tl[3]...
+...                               ^
+/home/csvm/GroupBuy/app/views/products/show.html.haml:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...((tl[0]" days "tl[1]" hours "tl[2]" minutes "tl[3]" seconds"...
+...                               ^
+/home/csvm/GroupBuy/app/views/products/show.html.haml:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+...[0]" days "tl[1]" hours "tl[2]" minutes "tl[3]" seconds"))}"
+...                               ^
+/home/csvm/GroupBuy/app/views/products/show.html.haml:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...l[1]" hours "tl[2]" minutes "tl[3]" seconds"))}"
+...                               ^
+/home/csvm/GroupBuy/app/views/products/show.html.haml:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+..." hours "tl[2]" minutes "tl[3]" seconds"))}"
+...                               ^):
+  app/views/products/show.html.haml:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/products/show.html.haml:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/products/show.html.haml:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/products/show.html.haml:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/products/show.html.haml:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/products/show.html.haml:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/products/show.html.haml:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (44.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (21.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (10.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (14.8ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (477.5ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2015-04-02 18:09:37 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProduct Load (1.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered products/show.html.haml within layouts/application (71.4ms)
+Completed 500 Internal Server Error in 220ms
+
+SyntaxError (/home/csvm/GroupBuy/app/views/products/show.html.haml:6: syntax error, unexpected ')', expecting '='
+...scape((tl[0],tl[1],tl[2],tl[3]))}"
+...                               ^
+/home/csvm/GroupBuy/app/views/products/show.html.haml:22: syntax error, unexpected ',', expecting ')'
+));}\n", 0, false);::Haml::Util.html_...
+        ^
+/home/csvm/GroupBuy/app/views/products/show.html.haml:22: syntax error, unexpected keyword_ensure, expecting tSTRING_DEND
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/csvm/GroupBuy/app/views/products/show.html.haml:22: syntax error, unexpected keyword_end, expecting tSTRING_DEND
+...uffer.upper if @haml_buffer;end;
+...                               ^
+/home/csvm/GroupBuy/app/views/products/show.html.haml:25: syntax error, unexpected keyword_end, expecting tSTRING_DEND):
+  app/views/products/show.html.haml:6: syntax error, unexpected ')', expecting '='
+  app/views/products/show.html.haml:22: syntax error, unexpected ',', expecting ')'
+  app/views/products/show.html.haml:22: syntax error, unexpected keyword_ensure, expecting tSTRING_DEND
+  app/views/products/show.html.haml:22: syntax error, unexpected keyword_end, expecting tSTRING_DEND
+  app/views/products/show.html.haml:25: syntax error, unexpected keyword_end, expecting tSTRING_DEND
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (72.7ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (34.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (25.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (4.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (580.1ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2015-04-02 18:10:58 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered products/show.html.haml within layouts/application (87.7ms)
+Completed 200 OK in 758ms (Views: 726.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/products-eab0b40dc12e40dde4e3b2e26bf4577b.css?body=1" for 127.0.0.1 at 2015-04-02 18:11:00 -0400
+
+
+Started GET "/assets/application-32ed0f1fc9e4d5b897b041d7d99b0bd0.css?body=1" for 127.0.0.1 at 2015-04-02 18:11:00 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-02 18:11:00 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-02 18:11:00 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-02 18:11:00 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-02 18:11:01 -0400
+
+
+Started GET "/products/2" for 127.0.0.1 at 2015-04-02 18:11:51 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered products/show.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 748ms (Views: 492.3ms | ActiveRecord: 45.9ms)
+
+
+Started GET "/assets/products-eab0b40dc12e40dde4e3b2e26bf4577b.css?body=1" for 127.0.0.1 at 2015-04-02 18:11:53 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-02 18:11:53 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-02 18:11:53 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-02 18:11:53 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-02 18:11:54 -0400
+
+
+Started GET "/assets/application-32ed0f1fc9e4d5b897b041d7d99b0bd0.css?body=1" for 127.0.0.1 at 2015-04-02 18:11:54 -0400
+
+
+Started GET "/products/2" for 127.0.0.1 at 2015-04-02 18:13:19 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (14.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered products/show.html.haml within layouts/application (31.8ms)
+Completed 200 OK in 718ms (Views: 511.1ms | ActiveRecord: 36.8ms)
+
+
+Started GET "/assets/products-eab0b40dc12e40dde4e3b2e26bf4577b.css?body=1" for 127.0.0.1 at 2015-04-02 18:13:21 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-02 18:13:21 -0400
+
+
+Started GET "/assets/application-32ed0f1fc9e4d5b897b041d7d99b0bd0.css?body=1" for 127.0.0.1 at 2015-04-02 18:13:21 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-02 18:13:21 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-02 18:13:22 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-02 18:13:22 -0400
