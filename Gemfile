@@ -4,6 +4,9 @@ ruby '2.2.0'
 
 # Added by us
 gem 'bcrypt', '3.1.7'
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
 
 group :test do
   gem 'simplecov', :require => false

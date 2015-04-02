@@ -69,7 +69,6 @@ Product.create!(
             :user_id => 6)
         
         User.create!(
-			:username => "ddrucker",
 			:email => "druckcity@google.com",
 			:first_name => "Dan",
 			:last_name => "Drucker",
@@ -77,7 +76,6 @@ Product.create!(
 			:password_confirmation => "football")
         
         User.create!(
-			:username => "wgarcia",
 			:email => "garcia@yahoo.com",
 			:first_name => "Will",
 			:last_name => "Garcia",
@@ -85,17 +83,15 @@ Product.create!(
 			:password_confirmation => "ilovecars")
         
         User.create!(
-			:username => "mgeorges",
 			:email => "kos@gmail.com",
 			:first_name => "Markos",
 			:last_name => "Georges",
-			:password => "flacco",
-			:password_confirmation => "flacco")
+			:password => "flaccosucks",
+			:password_confirmation => "flaccosucks")
 
         User.create!(
-			:username => "wely",
 			:email => "will@msn.com",
 			:first_name => "Will",
 			:last_name => "Ely",
-			:password => "batavia",
-			:password_confirmation => "batavia")
+			:password => "bataviany",
+			:password_confirmation => "bataviany")
