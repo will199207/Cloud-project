@@ -1,7 +1,8 @@
 #main
   %h3 #{@product.name}
-  %h5 Listing Expires: #{@product.end}
-  %h5 Time Left: #{(DateTime.parse(@product.end) - DateTime.now)}
+  -end_date = DateTime.parse(@product.end)
+  %h5 Listing Expires: #{end_date.strftime("%A %B %e, %Y at %l:%M %p")}
+  %h5 Time Left:
   %table.products_table
     %tr.products_header
       %th Pledges Made So Far
