@@ -26,12 +26,6 @@ RSpec.describe "show page", type: :feature do
         click_link("Create New Product")
         expect(page).to have_button("Post")
     end 
-
-    it "should redirect to index on a Post" do 
-        click_link("Create New Product")
-        click_button("Post")
-        response.should redirect_to '/products'
-    end
 end
 
 
