@@ -27,7 +27,7 @@ Feature: Access the Home Page
       | Username         | John                 |
       | Email            | john.smith@gmail.com |
       | First Name       | John                 |
-      | Last Name        | Smith
+      | Last Name        | Smith                |
       | Password         | bigdaddyjohn         |
       | Confirm Password | bigdaddyjohn         |
     And I press "Create My Account"

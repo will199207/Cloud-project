@@ -45,6 +45,18 @@ Given /^(?:|I )am on (.+)$/ do |page_name|
   visit path_to(page_name)
 end
 
+Given /^these products:$/i do |table|
+    table.hashes.each do |fhash|
+        Product.create!(fhash)
+    end
+end
+
+Given /^these users:$/i do |table|
+    table.hashes.each do |fhash|
+        User.create!(fhash)
+    end
+end
+
 When /^(?:|I )go to (.+)$/ do |page_name|
   visit path_to(page_name)
 end
