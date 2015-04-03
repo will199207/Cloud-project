@@ -10,21 +10,20 @@ Feature: Access the Home Page
       | Water Bed   | More motion in the ocean  | 500.00 |  100   |   34    | 2015-03-21 08:00:00 | 2015-04-04 08:30:00 |    4    |
 
     Given these Users:
-      | id | username   | email                     | first_name | last_name |    password       |   
-      |  1 | Markos     | mgeorges@colgate.edu      | Markos     | Georges   | greekfreak        |
-      |  2 | Garcia     | wgarcia@colgate.edu       | William    | Garcia    | chiefcia          |
-      |  3 | Will       | rely@colgate.edu          | Willets    | Ely       | presidentwill     |
-      |  4 | DAN        | ddrucker@colgate.edu      | Daniel     | Drucker   | GOHAWKS           |
+      | id | email                     | first_name | last_name |    password       |   
+      |  1 | mgeorges@colgate.edu      | Markos     | Georges   | greekfreak        |
+      |  2 | wgarcia@colgate.edu       | William    | Garcia    | chiefcia          |
+      |  3 | rely@colgate.edu          | Willets    | Ely       | presidentwill     |
+      |  4 | ddrucker@colgate.edu      | Daniel     | Drucker   | GOHAWKSS          |
 
   Scenario: Get to the Sign Up Page
     Given I am on the login page
-    When I press "Sign Up"
+    When I follow "Sign Up"
     Then I should be on the sign up Page
 
   Scenario: Sign Up to GroupBuy
     Given I am on the sign up page
     When I fill in the following:
-      | Username         | John                 |
       | Email            | john.smith@gmail.com |
       | First Name       | John                 |
       | Last Name        | Smith                |
@@ -39,8 +38,8 @@ Feature: Access the Home Page
   Scenario: Log in to GroupBuy
     Given I am on the login page
     When I fill in the following:
-      | Username | Markos     |
-      | Password | greekfreak |
+      | email    | mgeorges@colgate.edu |
+      | Password | greekfreak           |
     And I press "Sign Up"
     Then I should be on the index page
     And I should see "Welcome, Markos"

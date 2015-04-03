@@ -11,21 +11,21 @@ Feature: Create new product
       | Water Bed   | More motion in the ocean  | 500.00 |  100   |   34    | 2015-03-21 08:00:00 | 2015-04-04 08:30:00 |    4    |
 
     Given these Users:
-      | id | username   | email                     | first_name | last_name |    password       |   
-      |  1 | Markos     | mgeorges@colgate.edu      | Markos     | Georges   | greekfreak        |
-      |  2 | Garcia     | wgarcia@colgate.edu       | William    | Garcia    | chiefcia          |
-      |  3 | Will       | rely@colgate.edu          | Willets    | Ely       | presidentwill     |
-      |  4 | DAN        | ddrucker@colgate.edu      | Daniel     | Drucker   | GOHAWKS           |
+      | id | email                     | first_name | last_name |    password       |   
+      |  1 | mgeorges@colgate.edu      | Markos     | Georges   | greekfreak        |
+      |  2 | wgarcia@colgate.edu       | William    | Garcia    | chiefcia          |
+      |  3 | rely@colgate.edu          | Willets    | Ely       | presidentwill     |
+      |  4 | ddrucker@colgate.edu      | Daniel     | Drucker   | GOHAWKSS          |
 
   Scenario: Create a new product
     Given I am on the create new product page
     And my "user_id" is "1"
     When I fill in the following:
-      | Name        | Kitten Mittens                |
-      | Description | Keeps your noisey cats quiet  |
-      | Price       | 4.98                          |
-      | Target      | 30                            |
-      | End         | 2015-05-21 17:00:00           |
+      | Name            | Kitten Mittens                |
+      | Description     | Keeps your noisey cats quiet  |
+      | Price           | 4.98                          |
+      | Target          | 30                            |
+      | End             | 2015-05-21 17:00:00           |
     And I press "Post"
     Then I should be on the products page
     And I should see "Kitten Mittens has been added by Markos and is now waiting on pledges"

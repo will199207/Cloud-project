@@ -57,6 +57,10 @@ Given /^these users:$/i do |table|
     end
 end
 
+Given /^my "user_id" is "(\d+)"$/ do |user|
+    @user = User.find(user)
+end
+
 When /^(?:|I )go to (.+)$/ do |page_name|
   visit path_to(page_name)
 end

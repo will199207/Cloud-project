@@ -13,14 +13,14 @@ Feature: Pledge to buy a Product
       | Chubbies    | The most radical shorts   |  42.50 |   25   |   20    | 2015-03-25 09:26:31 | 2015-06-21 23:59:59 |     7     |
 
     Given these Users:
-      | id | username   | email                     | first_name | last_name |    password       |
-      |  1 | Markos     | mgeorges@colgate.edu      | Markos     | Georges   | greekfreak        |
-      |  2 | Garcia     | wgarcia@colgate.edu       | William    | Garcia    | chiefcia          |
-      |  3 | Will       | rely@colgate.edu          | Willets    | Ely       | presidentwill     |
-      |  4 | DAN        | ddrucker@colgate.edu      | Daniel     | Drucker   | GOHAWKS           |
-      |  5 | poacher    | hunter.dude@aol.com       | Ron        | Jeremy    | I<3Hunting        |
-      |  6 | John       | john.smith@gmail.com      | John       | Smith     | bigdaddyjohn      |
-      |  7 | Chubsters  | chubsternation@gmail.com  | Tom        | Selleck   | shortsRevolution  |
+      | id | email                     | first_name | last_name |    password       |
+      |  1 | mgeorges@colgate.edu      | Markos     | Georges   | greekfreak        |
+      |  2 | wgarcia@colgate.edu       | William    | Garcia    | chiefcia          |
+      |  3 | rely@colgate.edu          | Willets    | Ely       | presidentwill     |
+      |  4 | ddrucker@colgate.edu      | Daniel     | Drucker   | GOHAWKSS          |
+      |  5 | hunter.dude@aol.com       | Ron        | Jeremy    | I<3Hunting        |
+      |  6 | john.smith@gmail.com      | John       | Smith     | bigdaddyjohn      |
+      |  7 | chubsternation@gmail.com  | Tom        | Selleck   | shortsRevolution  |
 
   Scenario: Pledge to buy a Product
     Given I am on the login page
