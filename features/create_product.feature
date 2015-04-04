@@ -16,19 +16,16 @@ Feature: Create new product
       |  2 | wgarcia@colgate.edu       | William    | Garcia    | chiefcia          |
       |  3 | rely@colgate.edu          | Willets    | Ely       | presidentwill     |
       |  4 | ddrucker@colgate.edu      | Daniel     | Drucker   | GOHAWKSS          |
-
   Scenario: Create a new product
     Given I am on the create new product page
     And my "user_id" is "1"
     When I fill in the following:
-      | Name            | Kitten Mittens                |
-      | Description     | Keeps your noisey cats quiet  |
-      | Price           | 4.98                          |
-      | Target          | 30                            |
-      | End             | 2015-05-21 17:00:00           |
+      | name            | Kitten Mittens                |
+      | description     | Keeps your noisey cats quiet  |
+      | price           | 4.98                          |
+      | target          | 30                            |
+      | end             | 2015-05-21 17:00:00           |
     And I press "Post"
     Then I should be on the products page
-    And I should see "Kitten Mittens has been added by Markos and is now waiting on pledges"
+    And I should see "New product Kitten Mittens created successfully"
     And I should see that "Kitten Mittens" has a price of "$4.98"
-    And I should see that "Kitten Mittens" has a target of "30"
-    And I should see that "Kitten Mittens" expires on "2015-05-21 17:00:00"

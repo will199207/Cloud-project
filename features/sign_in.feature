@@ -18,20 +18,18 @@ Feature: Access the Home Page
 
   Scenario: Get to the Sign Up Page
     Given I am on the login page
-    When I follow "Sign Up"
-    Then I should be on the sign up Page
+    When I follow "Sign up"
+    Then I should be on the sign up page
 
   Scenario: Sign Up to GroupBuy
     Given I am on the sign up page
     When I fill in the following:
-      | Email            | john.smith@gmail.com |
-      | First Name       | John                 |
-      | Last Name        | Smith                |
+      | email            | john.smith@gmail.com |
       | Password         | bigdaddyjohn         |
       | Confirm Password | bigdaddyjohn         |
-    And I press "Create My Account"
+    And I press "Sign up"
     Then I should be on the index page
-    And I should see "Welcome, John"
+    And I should see "Welcome! You have signed up successfully."
     And I should see "Wolf Cola"
     And I should see "Xbox One"
 
@@ -40,7 +38,17 @@ Feature: Access the Home Page
     When I fill in the following:
       | email    | mgeorges@colgate.edu |
       | Password | greekfreak           |
-    And I press "Sign Up"
+    And I press "Log in"
     Then I should be on the index page
-    And I should see "Welcome, Markos"
+    And I should see "Signed in successfully."
     And I should see "Wolf Cola"
+
+  Scenario: Attempt to Sign Up with an email that is already used
+    Given I am on the sign up page
+    When I fill in the following:
+      | email            | rely@colgate.edu  |
+      | password         | willets123        |
+      | confirm password | willets123        |
+    And I press "Sign up"
+    Then I should be on the sign up page
+    And I should see "Email has already been taken"

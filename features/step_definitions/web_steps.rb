@@ -93,8 +93,8 @@ end
 # based on naming conventions.
 #
 When /^(?:|I )fill in the following:$/ do |fields|
-  fields.rows_hash.each do |name, value|
-    When %{I fill in "#{name}" with "#{value}"}
+  fields.rows_hash.each do |field, value|
+    fill_in(field, :with => value)
   end
 end
 
@@ -152,6 +152,17 @@ Then /^(?:|I )should not see \/([^\/]*)\/$/ do |regexp|
   else
     assert page.has_no_xpath?('//*', :text => regexp)
   end
+end
+
+Then(/^I should see that "(.*?)" has a price of "(.*?)"$/) do |arg1, arg2|
+  visit "/products"
+    all(".newly_listed").each do |row|
+        name = row.find(".name").value
+        if name == arg1
+            pirce = row.find(".price").value
+            price.should be(arg2)
+        end
+    end
 end
 
 Then /^the "([^"]*)" field(?: within (.*))? should contain "([^"]*)"$/ do |field, parent, value|
