@@ -23,10 +23,13 @@ Devise.setup do |config|
 
   require 'omniauth-google-oauth2'
   
-  APP_SECRET = "-----BEGIN PRIVATE KEY-----\nMIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAMAv0rzd5UxiCnuV\nQd4UDdQmP9leq11my/fVamOlWGQqYJk8FJSVkmqe6W77z4GIRjAuPhNW/QUz5qdK\nyxdFHva74S7qzj9+dtl69N22CP2mFiO07ASNzHTCWwkPO23uExGEQu8sI97KQxdK\nLpi60ef18pc29B2zac9kbY8Hp2SzAgMBAAECgYBZ7kbzn/XrXzk+iSJwU/wAmQFp\nqvYPV8n8J76H8FhDTt0y9z0+JhuEjuX2zBhWqbkGVK0xiZQOejHleIc+VVbeFuCr\niPWZdlsxl0v+PbitXyd09uMNNbc4oqKsaQwomc4TPo1XirOj1BqhmOA3YAsqnJf9\nfxCXBL7zFpJWeNqpoQJBAPugq7wwgVULHH1VGuCSa7kea84yPjvraoouDAee57+1\nRu/tvIzdHZbv7+g9eatMaZ4IQqKq6BlYYdMP4FSHHGMCQQDDhr0NO4LxfnAHYtOS\nzIA2kjE1K1Hczov4MBF+C1oDeFYyywANHUdZyY+EL5O1r9x1MbYMBE51ZZDzFLsv\nsr9xAkEAxlfo5wdo+usuQtDxxbFE/n+vRLKwAbVYnqEbVGp6jM/ModVIudSVvWNW\nPT8wB8nMuwgR1n1XRJs5SRCLqLVztwJAJz6J/3fsZlA8aB8b3CETsuBQ5B0Xxzvl\nuCDdwfDBVmT22CcKkZdI1Oqx1ZQ/D36GvzcFFRBgNwv1tfR5Ra+Y4QJAOGX5X4lN\nlJfs0TCoMOH3MWsf9Whc675Mj1HL/gF/bHnQLBl6Jx50daVMnBSje8qCBg4FKnJi\nXrBtpvXLvyPH1g\u003d\u003d\n-----END PRIVATE KEY-----\n"
+ # APP_SECRET = "-----BEGIN PRIVATE KEY-----\nMIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAMAv0rzd5UxiCnuV\nQd4UDdQmP9leq11my/fVamOlWGQqYJk8FJSVkmqe6W77z4GIRjAuPhNW/QUz5qdK\nyxdFHva74S7qzj9+dtl69N22CP2mFiO07ASNzHTCWwkPO23uExGEQu8sI97KQxdK\nLpi60ef18pc29B2zac9kbY8Hp2SzAgMBAAECgYBZ7kbzn/XrXzk+iSJwU/wAmQFp\nqvYPV8n8J76H8FhDTt0y9z0+JhuEjuX2zBhWqbkGVK0xiZQOejHleIc+VVbeFuCr\niPWZdlsxl0v+PbitXyd09uMNNbc4oqKsaQwomc4TPo1XirOj1BqhmOA3YAsqnJf9\nfxCXBL7zFpJWeNqpoQJBAPugq7wwgVULHH1VGuCSa7kea84yPjvraoouDAee57+1\nRu/tvIzdHZbv7+g9eatMaZ4IQqKq6BlYYdMP4FSHHGMCQQDDhr0NO4LxfnAHYtOS\nzIA2kjE1K1Hczov4MBF+C1oDeFYyywANHUdZyY+EL5O1r9x1MbYMBE51ZZDzFLsv\nsr9xAkEAxlfo5wdo+usuQtDxxbFE/n+vRLKwAbVYnqEbVGp6jM/ModVIudSVvWNW\nPT8wB8nMuwgR1n1XRJs5SRCLqLVztwJAJz6J/3fsZlA8aB8b3CETsuBQ5B0Xxzvl\nuCDdwfDBVmT22CcKkZdI1Oqx1ZQ/D36GvzcFFRBgNwv1tfR5Ra+Y4QJAOGX5X4lN\nlJfs0TCoMOH3MWsf9Whc675Mj1HL/gF/bHnQLBl6Jx50daVMnBSje8qCBg4FKnJi\nXrBtpvXLvyPH1g\u003d\u003d\n-----END PRIVATE KEY-----\n"
   
-  APP_ID = "60484279918-mot1mj74l8v9srq7cf3k8jqc6b1sjt0t.apps.googleusercontent.com"
+  #APP_ID = "60484279918-mot1mj74l8v9srq7cf3k8jqc6b1sjt0t.apps.googleusercontent.com"
+  
 
+  APP_SECRET = "E1V4eJRTD_wOuNHbi8AV2a5v"
+  APP_ID = "60484279918-8u48rcighd2stvm87mb50esjigsi7ca2.apps.googleusercontent.com"
   config.omniauth :google_oauth2, APP_ID, APP_SECRET, { access_type: "offline", approval_prompt: "" }
   
   

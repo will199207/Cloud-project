@@ -1,17 +1,20 @@
 class ProductsController < ApplicationController
     def index
-        @new = Product.are_active.newest.limit(10)
-        @almost = Product.are_active.almost_targeted.limit(10)
-        @expiring = Product.are_active.almost_expired.limit(10)
+        @new = Product.are_active.newest
+        @almost = Product.are_active.almost_targeted
+        @expiring = Product.are_active.almost_expired
     end
 
     def show
 	@product = Product.find(params[:id])
     end
 
+<<<<<<< HEAD
+=======
     def confirm
         @product = Product.find(params[:id])
     end
+>>>>>>> 4b74d4998de98a38c13532e9d66c4552a3bc6a3f
     def new
 	@product = Product.new
     end

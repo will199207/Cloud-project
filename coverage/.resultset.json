@@ -1,7 +1,11 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
+      "/home/csvm/GroupBuy/app/models/user.rb": [
+=======
       "/Users/ddrucker/Desktop/GroupBuy/app/models/user.rb": [
+>>>>>>> 4b74d4998de98a38c13532e9d66c4552a3bc6a3f
         1,
         null,
         null,
@@ -10,6 +14,39 @@
         null,
         1,
         null,
+<<<<<<< HEAD
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/csvm/GroupBuy/app/helpers/application_helper.rb": [
+=======
+>>>>>>> 4b74d4998de98a38c13532e9d66c4552a3bc6a3f
         1,
         1,
         null,
@@ -141,24 +178,34 @@
         null
       ]
     },
+<<<<<<< HEAD
+    "timestamp": 1428204607
+=======
     "timestamp": 1428608629
+>>>>>>> 4b74d4998de98a38c13532e9d66c4552a3bc6a3f
   },
   "Cucumber Features": {
     "coverage": {
       "/home/csvm/GroupBuy/app/models/user.rb": [
         1,
         null,
+<<<<<<< HEAD
+=======
         null,
         1,
         null,
         null,
         1,
+>>>>>>> 4b74d4998de98a38c13532e9d66c4552a3bc6a3f
         null,
         28,
         1,
         null,
         null,
+<<<<<<< HEAD
+=======
         null,
+>>>>>>> 4b74d4998de98a38c13532e9d66c4552a3bc6a3f
         1,
         0,
         0,
@@ -192,8 +239,35 @@
         null,
         null,
         null,
+        null,
         1,
         0,
+<<<<<<< HEAD
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1428204345
+=======
         null,
         null,
         1,
@@ -289,5 +363,6 @@
       ]
     },
     "timestamp": 1428182608
+>>>>>>> 4b74d4998de98a38c13532e9d66c4552a3bc6a3f
   }
 }
