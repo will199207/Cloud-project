@@ -6,9 +6,15 @@ class ProductsController < ApplicationController
     end
 
     def show
-		@product = Product.find(params[:id])
+	@product = Product.find(params[:id])
     end
 
+<<<<<<< HEAD
+=======
+    def confirm
+        @product = Product.find(params[:id])
+    end
+>>>>>>> 4b74d4998de98a38c13532e9d66c4552a3bc6a3f
     def new
 	@product = Product.new
     end
