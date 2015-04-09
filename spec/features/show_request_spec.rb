@@ -9,7 +9,7 @@ RSpec.describe "show page", type: :feature do
             :target => 100,
             :pledges => 50,
             :start => "2015-01-22 12:00:00",
-            :end => "2015-04-02 12:00:00",
+            :end => "2015-08-02 12:00:00",
             :user_id => 1)
 
         Product.create!(
@@ -19,7 +19,7 @@ RSpec.describe "show page", type: :feature do
             :target => 20,
             :pledges => 6,
             :start => "2014-01-01 12:00:00",
-            :end => "2015-04-03 12:00:00",
+            :end => "2015-08-03 12:00:00",
             :user_id => 2)
 
         visit "/products"

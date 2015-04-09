@@ -13401,3 +13401,1398 @@ Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.0ms)
   [1m[35m (0.2ms)[0m  rollback transaction
 >>>>>>> cf8293369d8f4d07a0f33ab996278ddc91cc65d8
 >>>>>>> 4b74d4998de98a38c13532e9d66c4552a3bc6a3f
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 57ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (9.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:43:10.162746"], ["updated_at", "2015-04-09 20:43:10.162746"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:43:10.194041"], ["updated_at", "2015-04-09 20:43:10.194041"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:43:10.199749"], ["updated_at", "2015-04-09 20:43:10.199749"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:43:10.207620"], ["updated_at", "2015-04-09 20:43:10.207620"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:43:10.214216"], ["updated_at", "2015-04-09 20:43:10.214216"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:43:10.220273"], ["updated_at", "2015-04-09 20:43:10.220273"]]
+  [1m[35m (0.5ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:43:10 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (94.6ms)
+Completed 200 OK in 419ms (Views: 416.4ms | ActiveRecord: 1.5ms)
+  [1m[35m (2.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:43:10.682711"], ["updated_at", "2015-04-09 20:43:10.682711"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:43:10.688045"], ["updated_at", "2015-04-09 20:43:10.688045"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:43:10.694610"], ["updated_at", "2015-04-09 20:43:10.694610"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:43:10.698350"], ["updated_at", "2015-04-09 20:43:10.698350"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:43:10.702256"], ["updated_at", "2015-04-09 20:43:10.702256"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:43:10.715320"], ["updated_at", "2015-04-09 20:43:10.715320"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:43:10 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY start DESC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.7ms)
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:43:10.765797"], ["updated_at", "2015-04-09 20:43:10.765797"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:43:10.770997"], ["updated_at", "2015-04-09 20:43:10.770997"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:43:10.776241"], ["updated_at", "2015-04-09 20:43:10.776241"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:43:10.784994"], ["updated_at", "2015-04-09 20:43:10.784994"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:43:10.797794"], ["updated_at", "2015-04-09 20:43:10.797794"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:43:10.801589"], ["updated_at", "2015-04-09 20:43:10.801589"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:43:10 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.8ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:43:10.852012"], ["updated_at", "2015-04-09 20:43:10.852012"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:43:10.857917"], ["updated_at", "2015-04-09 20:43:10.857917"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:43:10.863702"], ["updated_at", "2015-04-09 20:43:10.863702"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:43:10.867716"], ["updated_at", "2015-04-09 20:43:10.867716"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:43:10.871407"], ["updated_at", "2015-04-09 20:43:10.871407"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:43:10.875001"], ["updated_at", "2015-04-09 20:43:10.875001"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:43:10 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY start DESC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.8ms)
+  [1m[36m (3.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:43:10.916177"], ["updated_at", "2015-04-09 20:43:10.916177"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:43:10.922384"], ["updated_at", "2015-04-09 20:43:10.922384"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:43:10.929819"], ["updated_at", "2015-04-09 20:43:10.929819"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:43:10.933958"], ["updated_at", "2015-04-09 20:43:10.933958"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:43:10.938097"], ["updated_at", "2015-04-09 20:43:10.938097"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:43:10.946264"], ["updated_at", "2015-04-09 20:43:10.946264"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:43:10 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 1.1ms)
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:43:10 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.3ms)[0m  begin transaction
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:43:10 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:10')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.8ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:43:11 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (37.3ms)
+  Rendered products/new.html.haml within layouts/application (58.1ms)
+Completed 200 OK in 66ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:43:11 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 1.0ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:43:11 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (7.7ms)
+  Rendered products/new.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:43:11.137435"], ["updated_at", "2015-04-09 20:43:11.137435"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:43:11.143588"], ["updated_at", "2015-04-09 20:43:11.143588"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:43:11 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 11ms (Views: 4.7ms | ActiveRecord: 1.7ms)
+  [1m[35m (2.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:43:11.179064"], ["updated_at", "2015-04-09 20:43:11.179064"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:43:11.188477"], ["updated_at", "2015-04-09 20:43:11.188477"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:43:11 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.5ms)
+  [1m[36m (1.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:43:11.221360"], ["updated_at", "2015-04-09 20:43:11.221360"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:43:11.226726"], ["updated_at", "2015-04-09 20:43:11.226726"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:43:11 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:43:11')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:46:58.608395"], ["updated_at", "2015-04-09 20:46:58.608395"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:46:58.645973"], ["updated_at", "2015-04-09 20:46:58.645973"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:46:58.653663"], ["updated_at", "2015-04-09 20:46:58.653663"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:46:58.659508"], ["updated_at", "2015-04-09 20:46:58.659508"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:46:58.663704"], ["updated_at", "2015-04-09 20:46:58.663704"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:46:58.673635"], ["updated_at", "2015-04-09 20:46:58.673635"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:46:58 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:58')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:58')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:58')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (71.3ms)
+Completed 200 OK in 135ms (Views: 132.2ms | ActiveRecord: 1.4ms)
+  [1m[35m (2.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:46:58.834715"], ["updated_at", "2015-04-09 20:46:58.834715"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:46:58.856120"], ["updated_at", "2015-04-09 20:46:58.856120"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:46:58.864071"], ["updated_at", "2015-04-09 20:46:58.864071"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (9.0ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:46:58.869277"], ["updated_at", "2015-04-09 20:46:58.869277"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:46:58.882096"], ["updated_at", "2015-04-09 20:46:58.882096"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:46:58.886155"], ["updated_at", "2015-04-09 20:46:58.886155"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:46:58 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:58')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:58')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:58')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.9ms)
+  [1m[36m (2.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:46:58.931720"], ["updated_at", "2015-04-09 20:46:58.931720"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:46:58.937104"], ["updated_at", "2015-04-09 20:46:58.937104"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:46:58.942253"], ["updated_at", "2015-04-09 20:46:58.942253"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:46:58.946362"], ["updated_at", "2015-04-09 20:46:58.946362"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:46:58.950337"], ["updated_at", "2015-04-09 20:46:58.950337"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:46:58.954810"], ["updated_at", "2015-04-09 20:46:58.954810"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:46:58 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:58')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:58')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:58')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.8ms)
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:46:58.993857"], ["updated_at", "2015-04-09 20:46:58.993857"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:46:58.999477"], ["updated_at", "2015-04-09 20:46:58.999477"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:46:59.005203"], ["updated_at", "2015-04-09 20:46:59.005203"]]
+  [1m[35m (0.7ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:46:59.010048"], ["updated_at", "2015-04-09 20:46:59.010048"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:46:59.014492"], ["updated_at", "2015-04-09 20:46:59.014492"]]
+  [1m[35m (3.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:46:59.021434"], ["updated_at", "2015-04-09 20:46:59.021434"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:46:59 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY start DESC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (2.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 3.0ms)
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:46:59.054909"], ["updated_at", "2015-04-09 20:46:59.054909"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:46:59.059821"], ["updated_at", "2015-04-09 20:46:59.059821"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:46:59.064401"], ["updated_at", "2015-04-09 20:46:59.064401"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:46:59.068339"], ["updated_at", "2015-04-09 20:46:59.068339"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:46:59.073692"], ["updated_at", "2015-04-09 20:46:59.073692"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:46:59.080345"], ["updated_at", "2015-04-09 20:46:59.080345"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:46:59 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (4.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 4.7ms)
+  [1m[35m (2.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:46:59 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 1.6ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:46:59 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 1.3ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:46:59 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (33.1ms)
+  Rendered products/new.html.haml within layouts/application (52.8ms)
+Completed 200 OK in 57ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:46:59 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.9ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:46:59 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (11.2ms)
+  Rendered products/new.html.haml within layouts/application (17.5ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:46:59.272879"], ["updated_at", "2015-04-09 20:46:59.272879"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.5ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:46:59.282454"], ["updated_at", "2015-04-09 20:46:59.282454"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:46:59 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:46:59.316419"], ["updated_at", "2015-04-09 20:46:59.316419"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (9.5ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:46:59.322516"], ["updated_at", "2015-04-09 20:46:59.322516"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:46:59 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.6ms)
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:46:59.353922"], ["updated_at", "2015-04-09 20:46:59.353922"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:46:59.359218"], ["updated_at", "2015-04-09 20:46:59.359218"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:46:59 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:46:59')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 69ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:48:14.037185"], ["updated_at", "2015-04-09 20:48:14.037185"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:48:14.063545"], ["updated_at", "2015-04-09 20:48:14.063545"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:48:14.070846"], ["updated_at", "2015-04-09 20:48:14.070846"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:48:14.078159"], ["updated_at", "2015-04-09 20:48:14.078159"]]
+  [1m[35m (1.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:48:14.083877"], ["updated_at", "2015-04-09 20:48:14.083877"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:48:14.089311"], ["updated_at", "2015-04-09 20:48:14.089311"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:48:14 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (67.6ms)
+Completed 200 OK in 129ms (Views: 126.3ms | ActiveRecord: 1.5ms)
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:48:14.247090"], ["updated_at", "2015-04-09 20:48:14.247090"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:48:14.274720"], ["updated_at", "2015-04-09 20:48:14.274720"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:48:14.279490"], ["updated_at", "2015-04-09 20:48:14.279490"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:48:14.290855"], ["updated_at", "2015-04-09 20:48:14.290855"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:48:14.295612"], ["updated_at", "2015-04-09 20:48:14.295612"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:48:14.300155"], ["updated_at", "2015-04-09 20:48:14.300155"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:48:14 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY start DESC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.8ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:48:14.333813"], ["updated_at", "2015-04-09 20:48:14.333813"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:48:14.338639"], ["updated_at", "2015-04-09 20:48:14.338639"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-04-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:48:14.344002"], ["updated_at", "2015-04-09 20:48:14.344002"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-05-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:48:14.349037"], ["updated_at", "2015-04-09 20:48:14.349037"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-04-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:48:14.353104"], ["updated_at", "2015-04-09 20:48:14.353104"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-04-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:48:14.359834"], ["updated_at", "2015-04-09 20:48:14.359834"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:48:14 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (16.8ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.8ms)
+  [1m[35m (1.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:48:14 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY start DESC
+  [1m[36mProduct Load (1.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 1.8ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:48:14 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.9ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:48:14 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (30.5ms)
+  Rendered products/new.html.haml within layouts/application (53.0ms)
+Completed 200 OK in 57ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:48:14 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 1.0ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:48:14 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (5.2ms)
+  Rendered products/new.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (8.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:48:14.539503"], ["updated_at", "2015-04-09 20:48:14.539503"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:48:14.551655"], ["updated_at", "2015-04-09 20:48:14.551655"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:48:14 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (4.0ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 11ms (Views: 5.6ms | ActiveRecord: 5.0ms)
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:48:14.586958"], ["updated_at", "2015-04-09 20:48:14.586958"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (4.9ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:48:14.598802"], ["updated_at", "2015-04-09 20:48:14.598802"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:48:14 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 12ms (Views: 3.7ms | ActiveRecord: 0.9ms)
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (18.7ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:48:14.631506"], ["updated_at", "2015-04-09 20:48:14.631506"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:48:14.687875"], ["updated_at", "2015-04-09 20:48:14.687875"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:48:14 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:48:14')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 1.4ms)
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 64ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (10.0ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-08-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:50:02.096188"], ["updated_at", "2015-04-09 20:50:02.096188"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-08-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:50:02.120292"], ["updated_at", "2015-04-09 20:50:02.120292"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-08-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:50:02.125505"], ["updated_at", "2015-04-09 20:50:02.125505"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:50:02.129709"], ["updated_at", "2015-04-09 20:50:02.129709"]]
+  [1m[35m (2.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-08-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:50:02.136688"], ["updated_at", "2015-04-09 20:50:02.136688"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-08-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:50:02.141506"], ["updated_at", "2015-04-09 20:50:02.141506"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:02 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (85.6ms)
+Completed 200 OK in 153ms (Views: 144.9ms | ActiveRecord: 1.6ms)
+  [1m[35m (1.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-08-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:50:02.339442"], ["updated_at", "2015-04-09 20:50:02.339442"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-08-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:50:02.345208"], ["updated_at", "2015-04-09 20:50:02.345208"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-08-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:50:02.351053"], ["updated_at", "2015-04-09 20:50:02.351053"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:50:02.356231"], ["updated_at", "2015-04-09 20:50:02.356231"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-08-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:50:02.359679"], ["updated_at", "2015-04-09 20:50:02.359679"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-08-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:50:02.374959"], ["updated_at", "2015-04-09 20:50:02.374959"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:02 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY start DESC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (28.8ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.9ms)
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-08-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:50:02.434693"], ["updated_at", "2015-04-09 20:50:02.434693"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-08-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:50:02.439508"], ["updated_at", "2015-04-09 20:50:02.439508"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-08-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:50:02.445287"], ["updated_at", "2015-04-09 20:50:02.445287"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-1 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:50:02.449226"], ["updated_at", "2015-04-09 20:50:02.449226"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-08-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:50:02.453134"], ["updated_at", "2015-04-09 20:50:02.453134"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-08-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:50:02.457041"], ["updated_at", "2015-04-09 20:50:02.457041"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:02 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 22ms (Views: 15.6ms | ActiveRecord: 0.8ms)
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:02 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:02 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.8ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:50:02 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (37.0ms)
+  Rendered products/new.html.haml within layouts/application (58.9ms)
+Completed 200 OK in 63ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:02 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.8ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:50:02 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (5.9ms)
+  Rendered products/new.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:50:02.687881"], ["updated_at", "2015-04-09 20:50:02.687881"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:50:02.697624"], ["updated_at", "2015-04-09 20:50:02.697624"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:02 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.7ms)
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:50:02.729374"], ["updated_at", "2015-04-09 20:50:02.729374"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:50:02.734128"], ["updated_at", "2015-04-09 20:50:02.734128"]]
+  [1m[36m (0.7ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:02 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY start DESC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.8ms)
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:50:02.764713"], ["updated_at", "2015-04-09 20:50:02.764713"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:50:02.777099"], ["updated_at", "2015-04-09 20:50:02.777099"]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:02 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:02')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.7ms)
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 117ms (Views: 112.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (2.9ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.9ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-08-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:50:53.521355"], ["updated_at", "2015-04-09 20:50:53.521355"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-08-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:50:53.563706"], ["updated_at", "2015-04-09 20:50:53.563706"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-08-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:50:53.576416"], ["updated_at", "2015-04-09 20:50:53.576416"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (7.9ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-01 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:50:53.594133"], ["updated_at", "2015-04-09 20:50:53.594133"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-08-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:50:53.618718"], ["updated_at", "2015-04-09 20:50:53.618718"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-08-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:50:53.695465"], ["updated_at", "2015-04-09 20:50:53.695465"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:53 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:53')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:53')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:53')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (141.5ms)
+Completed 200 OK in 243ms (Views: 239.9ms | ActiveRecord: 1.2ms)
+  [1m[35m (1.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-08-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:50:54.090723"], ["updated_at", "2015-04-09 20:50:54.090723"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-08-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:50:54.095835"], ["updated_at", "2015-04-09 20:50:54.095835"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-08-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:50:54.103448"], ["updated_at", "2015-04-09 20:50:54.103448"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-01 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:50:54.107528"], ["updated_at", "2015-04-09 20:50:54.107528"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-08-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:50:54.116251"], ["updated_at", "2015-04-09 20:50:54.116251"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-08-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:50:54.120651"], ["updated_at", "2015-04-09 20:50:54.120651"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:54 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY start DESC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (34.2ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.9ms)
+  [1m[36m (5.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-08-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:50:54.194040"], ["updated_at", "2015-04-09 20:50:54.194040"]]
+  [1m[36m (3.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-08-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:50:54.203602"], ["updated_at", "2015-04-09 20:50:54.203602"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-08-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:50:54.208070"], ["updated_at", "2015-04-09 20:50:54.208070"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-01 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:50:54.215696"], ["updated_at", "2015-04-09 20:50:54.215696"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-08-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:50:54.222841"], ["updated_at", "2015-04-09 20:50:54.222841"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-08-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:50:54.226310"], ["updated_at", "2015-04-09 20:50:54.226310"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:54 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (20.6ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 1.6ms)
+  [1m[35m (1.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:54 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:54 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 1.1ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:50:54 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (38.9ms)
+  Rendered products/new.html.haml within layouts/application (65.0ms)
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:54 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.8ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:50:54 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (6.1ms)
+  Rendered products/new.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:50:54.472434"], ["updated_at", "2015-04-09 20:50:54.472434"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:50:54.482012"], ["updated_at", "2015-04-09 20:50:54.482012"]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:54 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 1.4ms)
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (7.5ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:50:54.517841"], ["updated_at", "2015-04-09 20:50:54.517841"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:50:54.525318"], ["updated_at", "2015-04-09 20:50:54.525318"]]
+  [1m[36m (4.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:54 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (7.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 13ms (Views: 4.3ms | ActiveRecord: 7.6ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:50:54.563855"], ["updated_at", "2015-04-09 20:50:54.563855"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:50:54.570533"], ["updated_at", "2015-04-09 20:50:54.570533"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:50:54 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:50:54')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.8ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.6ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-07-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:51:40.167599"], ["updated_at", "2015-04-09 20:51:40.167599"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-07-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:51:40.195897"], ["updated_at", "2015-04-09 20:51:40.195897"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-07-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:51:40.201242"], ["updated_at", "2015-04-09 20:51:40.201242"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-01 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:51:40.212950"], ["updated_at", "2015-04-09 20:51:40.212950"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-09-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:51:40.218386"], ["updated_at", "2015-04-09 20:51:40.218386"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-10-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:51:40.222892"], ["updated_at", "2015-04-09 20:51:40.222892"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:51:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (68.9ms)
+Completed 200 OK in 133ms (Views: 130.3ms | ActiveRecord: 1.5ms)
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-07-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:51:40.398670"], ["updated_at", "2015-04-09 20:51:40.398670"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-07-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:51:40.403288"], ["updated_at", "2015-04-09 20:51:40.403288"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-07-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:51:40.409299"], ["updated_at", "2015-04-09 20:51:40.409299"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-01 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:51:40.413127"], ["updated_at", "2015-04-09 20:51:40.413127"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-09-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:51:40.416676"], ["updated_at", "2015-04-09 20:51:40.416676"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-10-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:51:40.432403"], ["updated_at", "2015-04-09 20:51:40.432403"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:51:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (19.2ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.8ms)
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-07-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:51:40.478331"], ["updated_at", "2015-04-09 20:51:40.478331"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-07-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:51:40.483558"], ["updated_at", "2015-04-09 20:51:40.483558"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-07-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:51:40.488395"], ["updated_at", "2015-04-09 20:51:40.488395"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-01 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:51:40.493216"], ["updated_at", "2015-04-09 20:51:40.493216"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-09-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:51:40.497154"], ["updated_at", "2015-04-09 20:51:40.497154"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-10-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:51:40.505197"], ["updated_at", "2015-04-09 20:51:40.505197"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:51:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (23.1ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.9ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:51:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:51:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.8ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:51:40 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (41.0ms)
+  Rendered products/new.html.haml within layouts/application (60.8ms)
+Completed 200 OK in 66ms (Views: 65.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:51:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.8ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:51:40 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (6.2ms)
+  Rendered products/new.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:51:40.699856"], ["updated_at", "2015-04-09 20:51:40.699856"]]
+  [1m[36m (8.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:51:40.714072"], ["updated_at", "2015-04-09 20:51:40.714072"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:51:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.0ms)
+  [1m[35m (8.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (4.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:51:40.754251"], ["updated_at", "2015-04-09 20:51:40.754251"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:51:40.765032"], ["updated_at", "2015-04-09 20:51:40.765032"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:51:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 1.0ms)
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-04-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:51:40.791900"], ["updated_at", "2015-04-09 20:51:40.791900"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-04-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:51:40.798629"], ["updated_at", "2015-04-09 20:51:40.798629"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:51:40 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:51:40')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.9ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-07-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:54:24.596803"], ["updated_at", "2015-04-09 20:54:24.596803"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.8ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-07-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:54:24.617056"], ["updated_at", "2015-04-09 20:54:24.617056"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-07-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:54:24.627987"], ["updated_at", "2015-04-09 20:54:24.627987"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-01 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:54:24.645022"], ["updated_at", "2015-04-09 20:54:24.645022"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-09-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:54:24.654747"], ["updated_at", "2015-04-09 20:54:24.654747"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-10-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:54:24.659526"], ["updated_at", "2015-04-09 20:54:24.659526"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:54:24 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:24')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:24')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:24')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (82.7ms)
+Completed 200 OK in 176ms (Views: 167.9ms | ActiveRecord: 2.0ms)
+  [1m[35m (4.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-07-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:54:24.915693"], ["updated_at", "2015-04-09 20:54:24.915693"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-07-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:54:24.920683"], ["updated_at", "2015-04-09 20:54:24.920683"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-07-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:54:24.926038"], ["updated_at", "2015-04-09 20:54:24.926038"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-01 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:54:24.930447"], ["updated_at", "2015-04-09 20:54:24.930447"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-09-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:54:24.940834"], ["updated_at", "2015-04-09 20:54:24.940834"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-10-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:54:24.945393"], ["updated_at", "2015-04-09 20:54:24.945393"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:54:24 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:24')  ORDER BY start DESC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:24')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:24')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (25.8ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 1.0ms)
+  [1m[36m (2.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-07-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:54:25.015294"], ["updated_at", "2015-04-09 20:54:25.015294"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-07-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:54:25.022086"], ["updated_at", "2015-04-09 20:54:25.022086"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-07-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-09 20:54:25.027667"], ["updated_at", "2015-04-09 20:54:25.027667"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-01 12:00:00"], ["user_id", 4], ["created_at", "2015-04-09 20:54:25.032215"], ["updated_at", "2015-04-09 20:54:25.032215"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-09-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-09 20:54:25.035802"], ["updated_at", "2015-04-09 20:54:25.035802"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-10-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-09 20:54:25.042879"], ["updated_at", "2015-04-09 20:54:25.042879"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:54:25 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (4.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (22.6ms)
+Completed 200 OK in 26ms (Views: 19.8ms | ActiveRecord: 4.9ms)
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:54:25 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:54:25 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (1.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 1.9ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:54:25 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (31.1ms)
+  Rendered products/new.html.haml within layouts/application (57.8ms)
+Completed 200 OK in 62ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:54:25 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY start DESC
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.9ms)
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 16:54:25 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (5.1ms)
+  Rendered products/new.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-08-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:54:25.236944"], ["updated_at", "2015-04-09 20:54:25.236944"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-08-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:54:25.247083"], ["updated_at", "2015-04-09 20:54:25.247083"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:54:25 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 1.1ms)
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-08-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:54:25.286084"], ["updated_at", "2015-04-09 20:54:25.286084"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-08-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:54:25.290892"], ["updated_at", "2015-04-09 20:54:25.290892"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:54:25 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY start DESC
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY ((target * 1.0)/pledges) ASC[0m
+  [1m[35mProduct Load (3.8ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (43.2ms)
+Completed 200 OK in 45ms (Views: 39.9ms | ActiveRecord: 4.6ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-08-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-09 20:54:25.359138"], ["updated_at", "2015-04-09 20:54:25.359138"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-08-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-09 20:54:25.364223"], ["updated_at", "2015-04-09 20:54:25.364223"]]
+  [1m[35m (1.6ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/products" for 127.0.0.1 at 2015-04-09 16:54:25 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY ((target * 1.0)/pledges) ASC
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-09 16:54:25')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.9ms)
+Started GET "/products/2" for 127.0.0.1 at 2015-04-09 16:54:25 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered products/show.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 81ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
