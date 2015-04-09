@@ -14,40 +14,34 @@
     %table.newly_listed
         %caption Newly Listed!
         %th Product
-        %th Description
         %th Listed At
         %th Price
         - @new.each do |product|
             %tr.product
                 %td.name= link_to "#{product.name}", product 
-                %td.description= product.description
                 %td.timecreated= product.start
                 %td.price= number_to_currency(product.price)
         
     %table.close_to_target
         %caption Close To Target!
         %th Product
-        %th Description
         %th % of Target
         %th Price
         - @almost.each do |product|
             %tr.product
                 %td.name= link_to "#{product.name}", product
-                %td.description= product.description
                 %td.percent= (product.pledges/product.target.to_f).round(3)*100
                 %td.price= number_to_currency(product.price)
 
     %table.ending_soon
         %caption Ending Soon!
         %th Product
-        %th Description 
         %th Time left
         %th Price
         -@expiring.each do |product|
             %tr.product
-                %td.name= link_to "#{product.name}", product
-                %td.description= product.description 
-                %td.timeleft= product.end
+                %td.name= link_to "#{product.name}", product 
+                %td.timeleft= "#{time_left(product.end)}"
                 %td.price= number_to_currency(product.price)
                 
     =link_to "Create New Product", new_product_path

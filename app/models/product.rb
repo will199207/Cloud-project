@@ -31,6 +31,6 @@ class Product < ActiveRecord::Base
     end
 
     def self.almost_targeted
-        self.order("((target * 1.0)/pledges) ASC")
+        self.order("(pledges/(target * 1.0)) DESC")
     end
 end
