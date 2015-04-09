@@ -29,4 +29,16 @@ RSpec.describe ProductsController, type: :controller do
       expect(response).to render_template(:show)
     end
   end
+
+  describe "POST #create" do
+    it "fails to create a product, redirect to #new page with flash" do
+      p = Product.new
+      Product.should_receive(:new).and_return(p)
+      p.should_receive(:save).and_return(nil)
+      post :create, { :product => { "name"=>"dummy", "price"=>"11.50" } }
+      response.should redirect_to(new_product_path)
+      expect(flash[:alert]).to be_present
+    end
+  end
+   
 end
