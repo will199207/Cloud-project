@@ -10,10 +10,12 @@ gem 'omniauth-google-oauth2'
 gem 'haml'
 gem "erb2haml", :group => :development
 
+
 group :test do
   gem 'haml-rails'
   gem 'simplecov', :require => false
   gem 'database_cleaner'
+  gem 'autotest-rails'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
