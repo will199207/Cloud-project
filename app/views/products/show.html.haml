@@ -13,8 +13,12 @@
       %td= @product.target
       %td= number_to_currency(@product.price)
 
+  = form_tag "/products/#{@product.id}/confirm_pledge" do
+    = label_tag 'Place an order'
+    = number_field_tag 'pledges', 0, in: 1...(1 + @product.target - @product.pledges) 
+    = submit_tag 'Pledge!'
+
   %h2 Product Description
   %h1= @product.description
 
-
-=link_to "Back to Home", products_path
+= link_to "Back to Homepage", products_path
