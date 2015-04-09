@@ -7,8 +7,11 @@ gem 'bcrypt', '3.1.7'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
+gem 'haml'
+gem "erb2haml", :group => :development
 
 group :test do
+  gem 'haml-rails'
   gem 'simplecov', :require => false
   gem 'database_cleaner'
 end
