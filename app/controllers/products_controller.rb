@@ -8,23 +8,19 @@ class ProductsController < ApplicationController
     def show
 	@product = Product.find(params[:id])
     end
-
-<<<<<<< HEAD
-=======
     def confirm
         @product = Product.find(params[:id])
     end
->>>>>>> 4b74d4998de98a38c13532e9d66c4552a3bc6a3f
     def new
 	@product = Product.new
     end
 
     def create
-		values = create_update_params
-		values[:start] = DateTime.now.to_formatted_s(:db)
+	values = create_update_params
+	values[:start] = DateTime.now.to_formatted_s(:db)
         values[:end] = fix_date(values.delete("end(1i)"), values.delete("end(2i)"), values.delete("end(3i)"), values.delete("end(4i)"), values.delete("end(5i)")) 
-		values[:pledges] = 0
-		values[:user_id] = User.pluck(:id).sample
+	values[:pledges] = 0
+	values[:user_id] = User.pluck(:id).sample
         p = Product.new(values)
         if p.save
             flash[:notice] = "New product #{p.name} created successfully"
@@ -35,18 +31,17 @@ class ProductsController < ApplicationController
         end
     end
 
-
-private
+    private
     def create_update_params
         params.require(:product).permit(:name, :description, :price, :target, :pledges, :start, :end, :user_id)
     end
-end
 
-def fix_date(year, month, day, hour, minute)
-    s = String.new
-    month = month.to_s
-    day = day.to_s
-    month = month.prepend("0") if month.length == 1
-    day = day.prepend("0") if day.length == 1
-    s << year.to_s << "-" << month << "-" << day << " " << hour.to_s << ":" << minute.to_s << ":" << "00"
+    def fix_date(year, month, day, hour, minute)
+        s = String.new
+        month = month.to_s
+        day = day.to_s
+        month = month.prepend("0") if month.length == 1
+        day = day.prepend("0") if day.length == 1
+        s << year.to_s << "-" << month << "-" << day << " " << hour.to_s << ":" << minute.to_s << ":" << "00"
+    end
 end
