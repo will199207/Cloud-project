@@ -136,3 +136,8 @@ body .product_form {
   font-family: Helvetica, sans-serif;
   font-size: 12pt;
 }
+body .centered_table {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
