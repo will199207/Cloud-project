@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/ddrucker/Desktop/GroupBuy/app/models/user.rb": [
+      "/home/csvm/GroupBuy/app/models/user.rb": [
         1,
         null,
         null,
@@ -39,15 +39,15 @@
         null,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/helpers/application_helper.rb": [
+      "/home/csvm/GroupBuy/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/helpers/products_helper.rb": [
+      "/home/csvm/GroupBuy/app/helpers/products_helper.rb": [
         1,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/controllers/products_controller.rb": [
+      "/home/csvm/GroupBuy/app/controllers/products_controller.rb": [
         1,
         1,
         10,
@@ -96,14 +96,14 @@
         null,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/controllers/application_controller.rb": [
+      "/home/csvm/GroupBuy/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/models/product.rb": [
+      "/home/csvm/GroupBuy/app/models/product.rb": [
         1,
         1,
         null,
@@ -142,6 +142,6 @@
         null
       ]
     },
-    "timestamp": 1428622670
+    "timestamp": 1428623241
   }
 }
