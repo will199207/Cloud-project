@@ -94,7 +94,28 @@ end
 #
 When /^(?:|I )fill in the following:$/ do |fields|
   fields.rows_hash.each do |field, value|
-    fill_in(field, :with => value)
+    if (field == 'Expiration Date')
+        months = {"01" => "January", "02" => "February", "03" => "March", "04" => "April", "05" => "May", "06" => "June", "07" => "July", "08" => "August", "09" => "September", "10" => "October", "11" => "November", "12" => "December"}
+        date = value.split(/\s/)[0].split(/-/)
+        month = months[date[1]]
+        print months["05"]
+        time = value.split(/\s/)[1].split(/:/)
+        select date[0].to_i, from: "product[end(1i)]"
+        select month, from: "product[end(2i)]"
+        select date[2].to_i, from: "product[end(3i)]"
+        if (time[0].to_i == 0)
+            select "00", from: "product[end(4i)]"
+        else
+            select time[0].to_i, from: "product[end(4i)]"
+        end
+        if (time[1].to_i == 0)
+            select "00", from: "product[end(5i)]"
+        else
+            select time[1].to_i, from: "product[end(5i)]"
+        end
+    else
+        fill_in(field, :with => value)
+    end
   end
 end
 
@@ -156,11 +177,11 @@ end
 
 Then(/^I should see that "(.*?)" has a price of "(.*?)"$/) do |arg1, arg2|
   visit "/products"
-    all(".newly_listed").each do |row|
-        name = row.find(".name").value
+    page.find(".newly_listed").all(".product").each do |row|
+        name = row.find(".name").text
         if name == arg1
-            pirce = row.find(".price").value
-            price.should be(arg2)
+            price = row.find(".price").text
+            expect(price).to match(arg2)
         end
     end
 end

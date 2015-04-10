@@ -20,11 +20,11 @@ Feature: Create new product
     Given I am on the create new product page
     And my "user_id" is "1"
     When I fill in the following:
-      | name            | Kitten Mittens                |
-      | description     | Keeps your noisey cats quiet  |
-      | price           | 4.98                          |
-      | target          | 30                            |
-      | end             | 2015-05-21 17:00:00           |
+      | Product Name            | Kitten Mittens                |
+      | Product Description     | Keeps your noisey cats quiet  |
+      | Target Number for Sale  | 30                            |
+      | Price                   | 4.98                          |
+      | Expiration Date         | 2015-05-21 17:00:00           |
     And I press "Post"
     Then I should be on the products page
     And I should see "New product Kitten Mittens created successfully"
