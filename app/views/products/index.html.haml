@@ -14,12 +14,12 @@
     %table.newly_listed
         %caption Newly Listed!
         %th Product
-        %th Listed At
+        %th Listed On
         %th Price
         - @new.each do |product|
             %tr.product
                 %td.name= link_to "#{product.name}", product 
-                %td.timecreated= product.start
+                %td.timecreated= listed_on(product.start)
                 %td.price= number_to_currency(product.price)
         
     %table.close_to_target
