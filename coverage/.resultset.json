@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/ddrucker/Desktop/GroupBuy/app/models/user.rb": [
+      "/home/csvm/GroupBuy/app/models/user.rb": [
         1,
         null,
         null,
@@ -10,7 +10,7 @@
         null,
         1,
         null,
-        1,
+        7,
         1,
         null,
         null,
@@ -39,15 +39,23 @@
         null,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/helpers/application_helper.rb": [
+      "/home/csvm/GroupBuy/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/helpers/products_helper.rb": [
+      "/home/csvm/GroupBuy/app/helpers/products_helper.rb": [
         1,
+        1,
+        25,
+        25,
+        25,
+        25,
+        25,
+        null,
+        null,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/controllers/products_controller.rb": [
+      "/home/csvm/GroupBuy/app/controllers/products_controller.rb": [
         1,
         1,
         10,
@@ -96,14 +104,14 @@
         null,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/controllers/application_controller.rb": [
+      "/home/csvm/GroupBuy/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/models/product.rb": [
+      "/home/csvm/GroupBuy/app/models/product.rb": [
         1,
         1,
         null,
@@ -142,11 +150,19 @@
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1428622670
   },
   "Cucumber Features": {
     "coverage": {
       "/Users/ddrucker/Desktop/GroupBuy/app/models/user.rb": [
+=======
+    "timestamp": 1428629551
+  },
+  "Cucumber Features": {
+    "coverage": {
+      "/home/csvm/GroupBuy/app/models/user.rb": [
+>>>>>>> aed2e370428a5930c39768fc6efb42492328d3f1
         1,
         null,
         null,
@@ -184,7 +200,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/ddrucker/Desktop/GroupBuy/app/models/product.rb": [
+=======
+      "/home/csvm/GroupBuy/app/models/product.rb": [
+>>>>>>> aed2e370428a5930c39768fc6efb42492328d3f1
         1,
         1,
         null,
@@ -222,7 +242,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/ddrucker/Desktop/GroupBuy/app/controllers/products_controller.rb": [
+=======
+      "/home/csvm/GroupBuy/app/controllers/products_controller.rb": [
+>>>>>>> aed2e370428a5930c39768fc6efb42492328d3f1
         1,
         1,
         0,
@@ -271,18 +295,30 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/ddrucker/Desktop/GroupBuy/app/controllers/application_controller.rb": [
+=======
+      "/home/csvm/GroupBuy/app/controllers/application_controller.rb": [
+>>>>>>> aed2e370428a5930c39768fc6efb42492328d3f1
         1,
         null,
         null,
         1,
         null
       ],
+<<<<<<< HEAD
       "/Users/ddrucker/Desktop/GroupBuy/app/helpers/application_helper.rb": [
         1,
         null
       ],
       "/Users/ddrucker/Desktop/GroupBuy/app/helpers/products_helper.rb": [
+=======
+      "/home/csvm/GroupBuy/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/csvm/GroupBuy/app/helpers/products_helper.rb": [
+>>>>>>> aed2e370428a5930c39768fc6efb42492328d3f1
         1,
         1,
         0,
@@ -295,6 +331,10 @@
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1428625142
+=======
+    "timestamp": 1428625178
+>>>>>>> aed2e370428a5930c39768fc6efb42492328d3f1
   }
 }
