@@ -11,6 +11,7 @@ gem 'haml'
 gem "erb2haml", :group => :development
 
 
+
 group :test do
   gem 'simplecov', :require => false
   gem 'database_cleaner'
@@ -58,7 +59,6 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
   gem 'rspec-rails'
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
@@ -67,6 +67,6 @@ end
 
 
 group :production do
-  #gem 'pg'
+  gem 'pg'
   gem 'rails_12factor'
 end
