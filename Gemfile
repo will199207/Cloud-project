@@ -12,7 +12,6 @@ gem "erb2haml", :group => :development
 
 
 group :test do
-  gem 'haml-rails'
   gem 'simplecov', :require => false
   gem 'database_cleaner'
   gem 'autotest-rails'
@@ -68,6 +67,6 @@ end
 
 
 group :production do
-  gem 'pg'
+  #gem 'pg'
   gem 'rails_12factor'
 end

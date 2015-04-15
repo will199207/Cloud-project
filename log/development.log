@@ -11695,3 +11695,68 @@ Migrating to AddProviderToUsers (20150401221244)
   [1m[36m (48.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150331194440')[0m
   [1m[35m (28.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150331195812')
   [1m[36m (36.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150401220625')[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-14 19:31:00 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-14 19:31:00')  ORDER BY start DESC
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-14 19:31:00')  ORDER BY (pledges/(target * 1.0)) DESC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-14 19:31:00')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (215.6ms)
+Completed 200 OK in 770ms (Views: 716.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/products-58169ebff16aa414ee8b4910da2592a9.css?body=1" for 127.0.0.1 at 2015-04-14 19:31:01 -0400
+
+
+Started GET "/assets/application-9a875c9e7d1c22d51de87dd29f6b78a2.css?body=1" for 127.0.0.1 at 2015-04-14 19:31:01 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-14 19:31:01 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-14 19:31:01 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-14 19:31:01 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-14 19:31:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-15 12:18:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-15 12:18:18')  ORDER BY start DESC
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-15 12:18:18')  ORDER BY (pledges/(target * 1.0)) DESC[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-15 12:18:18')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (539.6ms)
+Completed 200 OK in 2008ms (Views: 1931.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-15 12:18:20 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-15 12:18:20')  ORDER BY start DESC[0m
+  [1m[35mProduct Load (14.6ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-15 12:18:20')  ORDER BY (pledges/(target * 1.0)) DESC
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-15 12:18:20')  ORDER BY end ASC[0m
+  Rendered products/index.html.haml within layouts/application (103.4ms)
+Completed 200 OK in 210ms (Views: 193.6ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/assets/products-58169ebff16aa414ee8b4910da2592a9.css?body=1" for 127.0.0.1 at 2015-04-15 12:18:21 -0400
+
+
+Started GET "/assets/application-9a875c9e7d1c22d51de87dd29f6b78a2.css?body=1" for 127.0.0.1 at 2015-04-15 12:18:21 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-15 12:18:21 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-15 12:18:21 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-15 12:18:21 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-15 12:18:21 -0400
