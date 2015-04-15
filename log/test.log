@@ -15181,6 +15181,237 @@ Processing by ProductsController#show as HTML
   Rendered products/show.html.haml within layouts/application (4.3ms)
 Completed 200 OK in 15ms (Views: 5.4ms | ActiveRecord: 0.2ms)
   [1m[35m (0.6ms)[0m  rollback transaction
+<<<<<<< HEAD
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Wolf Cola"], ["description", "Bubbly and delicious"], ["price", 0.25], ["target", 24], ["pledges", 4], ["start", "2015-03-30 09:00:00"], ["end", "2015-05-01 12:00:00"], ["user_id", 1], ["created_at", "2015-04-10 00:19:01.009980"], ["updated_at", "2015-04-10 00:19:01.009980"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Xbox One"], ["description", "Second-rate game console"], ["price", 300.0], ["target", 100], ["pledges", 69], ["start", "2015-04-16 10:00:00"], ["end", "2015-06-15 17:00:00"], ["user_id", 2], ["created_at", "2015-04-10 00:19:01.016571"], ["updated_at", "2015-04-10 00:19:01.016571"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Water Bed"], ["description", "More motion in the ocean"], ["price", 500.0], ["target", 100], ["pledges", 34], ["start", "2015-03-21 08:00:00"], ["end", "2015-04-04 08:30:00"], ["user_id", 4], ["created_at", "2015-04-10 00:19:01.019561"], ["updated_at", "2015-04-10 00:19:01.019561"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'mgeorges@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 1], ["email", "mgeorges@colgate.edu"], ["first_name", "Markos"], ["last_name", "Georges"], ["encrypted_password", "$2a$04$cDuBl5vDDvpV57HBWzN7OOXnldqr76yk0p4yNzsBUeH0BDZp6rsGi"], ["created_at", "2015-04-10 00:19:01.061598"], ["updated_at", "2015-04-10 00:19:01.061598"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'wgarcia@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 2], ["email", "wgarcia@colgate.edu"], ["first_name", "William"], ["last_name", "Garcia"], ["encrypted_password", "$2a$04$B5wnVnMS7iJMcNNJNZx7Ae7a.EgWU3tWuk2wgRlpeMQ38tBBMPj32"], ["created_at", "2015-04-10 00:19:01.067625"], ["updated_at", "2015-04-10 00:19:01.067625"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'rely@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 3], ["email", "rely@colgate.edu"], ["first_name", "Willets"], ["last_name", "Ely"], ["encrypted_password", "$2a$04$6loUEzHlDazcOd4yZ2msW.TNz9JfDS0rF.k9//ebFfaU0.NIxzhea"], ["created_at", "2015-04-10 00:19:01.073612"], ["updated_at", "2015-04-10 00:19:01.073612"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ddrucker@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 4], ["email", "ddrucker@colgate.edu"], ["first_name", "Daniel"], ["last_name", "Drucker"], ["encrypted_password", "$2a$04$bonivA36tDzR5Op2sGt0ye5Ivu..S1OE391/pPBfGMLwprmePsuxC"], ["created_at", "2015-04-10 00:19:01.078494"], ["updated_at", "2015-04-10 00:19:01.078494"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products/new" for 127.0.0.1 at 2015-04-09 20:19:01 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (25.7ms)
+  Rendered products/new.html.haml within layouts/application (36.5ms)
+Completed 200 OK in 125ms (Views: 124.5ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Wolf Cola"], ["description", "Bubbly and delicious"], ["price", 0.25], ["target", 24], ["pledges", 4], ["start", "2015-03-30 09:00:00"], ["end", "2015-05-01 12:00:00"], ["user_id", 1], ["created_at", "2015-04-10 00:19:01.297504"], ["updated_at", "2015-04-10 00:19:01.297504"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Xbox One"], ["description", "Second-rate game console"], ["price", 300.0], ["target", 100], ["pledges", 69], ["start", "2015-04-16 10:00:00"], ["end", "2015-06-15 17:00:00"], ["user_id", 2], ["created_at", "2015-04-10 00:19:01.300203"], ["updated_at", "2015-04-10 00:19:01.300203"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Water Bed"], ["description", "More motion in the ocean"], ["price", 500.0], ["target", 100], ["pledges", 34], ["start", "2015-03-21 08:00:00"], ["end", "2015-04-04 08:30:00"], ["user_id", 4], ["created_at", "2015-04-10 00:19:01.302795"], ["updated_at", "2015-04-10 00:19:01.302795"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'mgeorges@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 1], ["email", "mgeorges@colgate.edu"], ["first_name", "Markos"], ["last_name", "Georges"], ["encrypted_password", "$2a$04$6U.V3Ncz/0Z6luZb64X4KeRLHKApp.I3aRni80uAkVNM4XmEq7Nhi"], ["created_at", "2015-04-10 00:19:01.317989"], ["updated_at", "2015-04-10 00:19:01.317989"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'wgarcia@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 2], ["email", "wgarcia@colgate.edu"], ["first_name", "William"], ["last_name", "Garcia"], ["encrypted_password", "$2a$04$y3DYZaP4biyjolOyWyJqO.n9xDSA0/vZbZdEBrajFFTWmoUbRl0N6"], ["created_at", "2015-04-10 00:19:01.323143"], ["updated_at", "2015-04-10 00:19:01.323143"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'rely@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 3], ["email", "rely@colgate.edu"], ["first_name", "Willets"], ["last_name", "Ely"], ["encrypted_password", "$2a$04$P9z7YSNYUROwu0Df0i0Mp.pKUahPVvUcPuBv.ZHjZ4RCVlnM6MKX2"], ["created_at", "2015-04-10 00:19:01.328211"], ["updated_at", "2015-04-10 00:19:01.328211"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ddrucker@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 4], ["email", "ddrucker@colgate.edu"], ["first_name", "Daniel"], ["last_name", "Drucker"], ["encrypted_password", "$2a$04$0gMvNLvhth9Q9yOYarzr.eLwJNtxhzR8B3nECwUmBUdeFb7D.TBJe"], ["created_at", "2015-04-10 00:19:01.332931"], ["updated_at", "2015-04-10 00:19:01.332931"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-09 20:19:01 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (11.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (39.3ms)
+Completed 200 OK in 60ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-09 20:19:01 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.haml (7.4ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wolf Cola"], ["description", "Bubbly and delicious"], ["price", 0.25], ["target", 24], ["pledges", 4], ["start", "2015-03-30 09:00:00"], ["end", "2015-05-01 12:00:00"], ["user_id", 1], ["created_at", "2015-04-10 00:19:01.482082"], ["updated_at", "2015-04-10 00:19:01.482082"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Xbox One"], ["description", "Second-rate game console"], ["price", 300.0], ["target", 100], ["pledges", 69], ["start", "2015-04-16 10:00:00"], ["end", "2015-06-15 17:00:00"], ["user_id", 2], ["created_at", "2015-04-10 00:19:01.484691"], ["updated_at", "2015-04-10 00:19:01.484691"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Water Bed"], ["description", "More motion in the ocean"], ["price", 500.0], ["target", 100], ["pledges", 34], ["start", "2015-03-21 08:00:00"], ["end", "2015-04-04 08:30:00"], ["user_id", 4], ["created_at", "2015-04-10 00:19:01.488283"], ["updated_at", "2015-04-10 00:19:01.488283"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'mgeorges@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["email", "mgeorges@colgate.edu"], ["first_name", "Markos"], ["last_name", "Georges"], ["encrypted_password", "$2a$04$e2Nq7oCLHwHigC0F9B5XjeTXwNr.MeNzhBz4PJB/ldqYETRNrhdVu"], ["created_at", "2015-04-10 00:19:01.504931"], ["updated_at", "2015-04-10 00:19:01.504931"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'wgarcia@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 2], ["email", "wgarcia@colgate.edu"], ["first_name", "William"], ["last_name", "Garcia"], ["encrypted_password", "$2a$04$GcvjSKWsZpbUZdHzQRDoDuzfQ0jJCnUTwszyW17yEVMmpJeu/4j32"], ["created_at", "2015-04-10 00:19:01.510930"], ["updated_at", "2015-04-10 00:19:01.510930"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'rely@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 3], ["email", "rely@colgate.edu"], ["first_name", "Willets"], ["last_name", "Ely"], ["encrypted_password", "$2a$04$.XRcvoB3Eb1MiG2zG/4HXOqnipjUhfvx4E5wqSMMDmDDu6ZTWO.b."], ["created_at", "2015-04-10 00:19:01.516590"], ["updated_at", "2015-04-10 00:19:01.516590"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ddrucker@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 4], ["email", "ddrucker@colgate.edu"], ["first_name", "Daniel"], ["last_name", "Drucker"], ["encrypted_password", "$2a$04$pvv9jI0aBjY4e2kP8Otg/eHq/boyeI.EkcfHpEZmj1FBwiIwvTmC2"], ["created_at", "2015-04-10 00:19:01.522041"], ["updated_at", "2015-04-10 00:19:01.522041"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-09 20:19:01 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.haml (5.4ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Wolf Cola"], ["description", "Bubbly and delicious"], ["price", 0.25], ["target", 24], ["pledges", 4], ["start", "2015-03-30 09:00:00"], ["end", "2015-05-01 12:00:00"], ["user_id", 1], ["created_at", "2015-04-10 00:19:01.559270"], ["updated_at", "2015-04-10 00:19:01.559270"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Xbox One"], ["description", "Second-rate game console"], ["price", 300.0], ["target", 100], ["pledges", 69], ["start", "2015-04-16 10:00:00"], ["end", "2015-06-15 17:00:00"], ["user_id", 2], ["created_at", "2015-04-10 00:19:01.563229"], ["updated_at", "2015-04-10 00:19:01.563229"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Water Bed"], ["description", "More motion in the ocean"], ["price", 500.0], ["target", 100], ["pledges", 34], ["start", "2015-03-21 08:00:00"], ["end", "2015-04-04 08:30:00"], ["user_id", 4], ["created_at", "2015-04-10 00:19:01.566249"], ["updated_at", "2015-04-10 00:19:01.566249"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'mgeorges@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 1], ["email", "mgeorges@colgate.edu"], ["first_name", "Markos"], ["last_name", "Georges"], ["encrypted_password", "$2a$04$cFi5gOnqY/Mel5E.njX6luzGE75V//QJ5rRN4pvdeVy4RspTxrsoS"], ["created_at", "2015-04-10 00:19:01.585721"], ["updated_at", "2015-04-10 00:19:01.585721"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'wgarcia@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 2], ["email", "wgarcia@colgate.edu"], ["first_name", "William"], ["last_name", "Garcia"], ["encrypted_password", "$2a$04$iENfw5GiM4NSW/gyhNNMfOSXH.YvaBfqHPMAykJ519Ecxodbm4sf."], ["created_at", "2015-04-10 00:19:01.592853"], ["updated_at", "2015-04-10 00:19:01.592853"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'rely@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 3], ["email", "rely@colgate.edu"], ["first_name", "Willets"], ["last_name", "Ely"], ["encrypted_password", "$2a$04$fz2cFfSufk.Ky/D1eV64T.JQbUWrrpS246d9RmZMSJj5ZpsSgdywK"], ["created_at", "2015-04-10 00:19:01.599030"], ["updated_at", "2015-04-10 00:19:01.599030"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ddrucker@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 4], ["email", "ddrucker@colgate.edu"], ["first_name", "Daniel"], ["last_name", "Drucker"], ["encrypted_password", "$2a$04$YFKUx4msbdBY3139BwbGGORKCYDTflbwa1EPUodZpA5X9lc.8DGfa"], ["created_at", "2015-04-10 00:19:01.604852"], ["updated_at", "2015-04-10 00:19:01.604852"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-09 20:19:01 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (4.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wolf Cola"], ["description", "Bubbly and delicious"], ["price", 0.25], ["target", 24], ["pledges", 4], ["start", "2015-03-30 09:00:00"], ["end", "2015-05-01 12:00:00"], ["user_id", 1], ["created_at", "2015-04-10 00:19:01.638537"], ["updated_at", "2015-04-10 00:19:01.638537"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Xbox One"], ["description", "Second-rate game console"], ["price", 300.0], ["target", 100], ["pledges", 69], ["start", "2015-04-16 10:00:00"], ["end", "2015-06-15 17:00:00"], ["user_id", 2], ["created_at", "2015-04-10 00:19:01.642916"], ["updated_at", "2015-04-10 00:19:01.642916"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Water Bed"], ["description", "More motion in the ocean"], ["price", 500.0], ["target", 100], ["pledges", 34], ["start", "2015-03-21 08:00:00"], ["end", "2015-04-04 08:30:00"], ["user_id", 4], ["created_at", "2015-04-10 00:19:01.646084"], ["updated_at", "2015-04-10 00:19:01.646084"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'mgeorges@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["email", "mgeorges@colgate.edu"], ["first_name", "Markos"], ["last_name", "Georges"], ["encrypted_password", "$2a$04$U6NTn.ZOqT9LPS0Odd9dNOsOxmWk0bCZjhfrZ.0m71g6PIcMeydy6"], ["created_at", "2015-04-10 00:19:01.660379"], ["updated_at", "2015-04-10 00:19:01.660379"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'wgarcia@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 2], ["email", "wgarcia@colgate.edu"], ["first_name", "William"], ["last_name", "Garcia"], ["encrypted_password", "$2a$04$iA3jdJf5xB9p7TurMTq6Pe8gZSH2wE/mI6SpeNrKUW7buASzEG9Z."], ["created_at", "2015-04-10 00:19:01.666866"], ["updated_at", "2015-04-10 00:19:01.666866"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'rely@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 3], ["email", "rely@colgate.edu"], ["first_name", "Willets"], ["last_name", "Ely"], ["encrypted_password", "$2a$04$PdUU97Y9W1bHu3/Zq1dlXedRUZlQIphpP/xJxb8ALgJJhU56KPWLa"], ["created_at", "2015-04-10 00:19:01.672469"], ["updated_at", "2015-04-10 00:19:01.672469"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ddrucker@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 4], ["email", "ddrucker@colgate.edu"], ["first_name", "Daniel"], ["last_name", "Drucker"], ["encrypted_password", "$2a$04$xYiIBfNqTIwHiZoQBRIyx.aSIkWRKGZMJymbvaH3tGK7ZYzbUuiNi"], ["created_at", "2015-04-10 00:19:01.677331"], ["updated_at", "2015-04-10 00:19:01.677331"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-09 20:19:01 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.haml (3.5ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Wolf Cola"], ["description", "Bubbly and delicious"], ["price", 0.25], ["target", 24], ["pledges", 4], ["start", "2015-03-30 09:00:00"], ["end", "2015-05-01 12:00:00"], ["user_id", 1], ["created_at", "2015-04-10 00:19:01.711806"], ["updated_at", "2015-04-10 00:19:01.711806"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Xbox One"], ["description", "Second-rate game console"], ["price", 300.0], ["target", 100], ["pledges", 69], ["start", "2015-04-16 10:00:00"], ["end", "2015-06-15 17:00:00"], ["user_id", 2], ["created_at", "2015-04-10 00:19:01.714798"], ["updated_at", "2015-04-10 00:19:01.714798"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Water Bed"], ["description", "More motion in the ocean"], ["price", 500.0], ["target", 100], ["pledges", 34], ["start", "2015-03-21 08:00:00"], ["end", "2015-04-04 08:30:00"], ["user_id", 4], ["created_at", "2015-04-10 00:19:01.717625"], ["updated_at", "2015-04-10 00:19:01.717625"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wolf Pelts"], ["description", "soft and furry"], ["price", 54.99], ["target", 50], ["pledges", 48], ["start", "2015-02-14 14:30:54"], ["end", "2015-07-04 23:59:59"], ["user_id", 5], ["created_at", "2015-04-10 00:19:01.720498"], ["updated_at", "2015-04-10 00:19:01.720498"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Chubbies"], ["description", "The most radical shorts"], ["price", 42.5], ["target", 25], ["pledges", 20], ["start", "2015-03-25 09:26:31"], ["end", "2015-06-21 23:59:59"], ["user_id", 7], ["created_at", "2015-04-10 00:19:01.722887"], ["updated_at", "2015-04-10 00:19:01.722887"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'mgeorges@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 1], ["email", "mgeorges@colgate.edu"], ["first_name", "Markos"], ["last_name", "Georges"], ["encrypted_password", "$2a$04$HFH6Sx2Do5wEsUPkautCx.33.271ZNIbZ5L6PjP/8ENZ8XOoar.yy"], ["created_at", "2015-04-10 00:19:01.744410"], ["updated_at", "2015-04-10 00:19:01.744410"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'wgarcia@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 2], ["email", "wgarcia@colgate.edu"], ["first_name", "William"], ["last_name", "Garcia"], ["encrypted_password", "$2a$04$CdfHUjjLxVdp4bREbUeus.gjdtwfKaLcwRepgHOWxXv7RHKBzBZw."], ["created_at", "2015-04-10 00:19:01.749612"], ["updated_at", "2015-04-10 00:19:01.749612"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'rely@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 3], ["email", "rely@colgate.edu"], ["first_name", "Willets"], ["last_name", "Ely"], ["encrypted_password", "$2a$04$41ooklfJmOGhzUI3FdceqOCTrzTRd31vhzKTDIrJP2EUfRjCwYLMy"], ["created_at", "2015-04-10 00:19:01.755015"], ["updated_at", "2015-04-10 00:19:01.755015"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ddrucker@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 4], ["email", "ddrucker@colgate.edu"], ["first_name", "Daniel"], ["last_name", "Drucker"], ["encrypted_password", "$2a$04$3WQQCQbmfgr5PTdlQ3SVRurFi7w7EcV7bq9.OGnrc6iWFCKT.TkDe"], ["created_at", "2015-04-10 00:19:01.760773"], ["updated_at", "2015-04-10 00:19:01.760773"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'hunter.dude@aol.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 5], ["email", "hunter.dude@aol.com"], ["first_name", "Ron"], ["last_name", "Jeremy"], ["encrypted_password", "$2a$04$tu9BFCICgVluwDROfFfJLesEtw4tiYHFphUut596/DWZK3TwJdIVq"], ["created_at", "2015-04-10 00:19:01.766136"], ["updated_at", "2015-04-10 00:19:01.766136"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'john.smith@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 6], ["email", "john.smith@gmail.com"], ["first_name", "John"], ["last_name", "Smith"], ["encrypted_password", "$2a$04$DrYr45TyjSzS.7TXgMyF1e1HnA0jLds5xBqrE6JF1pzUyMVyThJBe"], ["created_at", "2015-04-10 00:19:01.771828"], ["updated_at", "2015-04-10 00:19:01.771828"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'chubsternation@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("id", "email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 7], ["email", "chubsternation@gmail.com"], ["first_name", "Tom"], ["last_name", "Selleck"], ["encrypted_password", "$2a$04$NdEuQeowNVE7ajAcLS00S.NgoMjHkrYBAaaj7nwhTMuF2qBIO9IiW"], ["created_at", "2015-04-10 00:19:01.777649"], ["updated_at", "2015-04-10 00:19:01.777649"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-09 20:19:01 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (4.2ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+=======
   [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
@@ -19196,6 +19427,7 @@ Completed 200 OK in 41ms (Views: 8.6ms | ActiveRecord: 0.2ms)
   [1m[35mSQL (1.2ms)[0m  INSERT INTO "users" ("email", "first_name", "last_name", "encrypted_password", "provider", "uid", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["email", "will@msn.com"], ["first_name", "Will"], ["last_name", "Ely"], ["encrypted_password", "$2a$04$frQkpZAxsdlExNQPg9/5H.woHI6zVA2IyAvCU2XUkUSU4.E90mz/K"], ["provider", "google"], ["uid", "99999"], ["created_at", "2015-04-10 01:32:30.282117"], ["updated_at", "2015-04-10 01:32:30.282117"]]
   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (8.4ms)[0m  rollback transaction
+<<<<<<< HEAD
   [1m[36mActiveRecord::SchemaMigration Load (13.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35m (0.4ms)[0m  begin transaction
   [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
@@ -20124,3 +20356,6 @@ Completed 200 OK in 32ms (Views: 8.9ms | ActiveRecord: 0.4ms)
   [1m[35mSQL (2.7ms)[0m  INSERT INTO "users" ("email", "first_name", "last_name", "encrypted_password", "provider", "uid", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["email", "will@msn.com"], ["first_name", "Will"], ["last_name", "Ely"], ["encrypted_password", "$2a$04$dKo16Y3lk6.dMl5yGRccJeQXSO/bkguHQPYwkZNLJwJp86bpxPVqW"], ["provider", "google"], ["uid", "99999"], ["created_at", "2015-04-10 04:25:14.013132"], ["updated_at", "2015-04-10 04:25:14.013132"]]
   [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (1.8ms)[0m  rollback transaction
+=======
+>>>>>>> aed2e370428a5930c39768fc6efb42492328d3f1
+>>>>>>> f44e4748fae6437fc595035fdb28d346e652b1de

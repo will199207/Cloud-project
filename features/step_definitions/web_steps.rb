@@ -41,14 +41,19 @@ When /^(.*) within (.*[^:]):$/ do |step, parent, table_or_string|
   with_scope(parent) { When "#{step}:", table_or_string }
 end
 
+Given /^(?:|I )have searched for "([^"]*)"$/ do |string|
+    steps %Q{
+        When I fill in "search" with "#{string}"
+        Then I should be on the search page
+    }
+end
+
 Given /^(?:|I )am on (.+)$/ do |page_name|
   visit path_to(page_name)
 end
 
 Given /^these products:$/i do |table|
     table.hashes.each do |fhash|
-        Product.create!(fhash)
-    end
 end
 
 Given /^these users:$/i do |table|
@@ -116,6 +121,18 @@ end
 
 When /^(?:|I )attach the file "([^"]*)" to "([^"]*)"$/ do |path, field|
   attach_file(field, File.expand_path(path))
+end
+
+Then /^(?:|I )should see product "([^"]*)" in "([^"]*)" order$/ do |field, sort_by|
+    array = Array.new
+    all('.productrow').each do |row|
+        array << row.find(".#{field}").text
+    end
+    if sort_by == "sorted"
+        array.should == array.sort
+    else
+        array.should == array.sort.reverse!
+    end
 end
 
 Then /^(?:|I )should see "([^"]*)"$/ do |text|
