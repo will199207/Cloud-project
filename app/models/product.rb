@@ -1,5 +1,11 @@
 class Product < ActiveRecord::Base
     belongs_to :user
+    
+    # search stuff --------------------------------------------
+    def self.search(query)
+        where("name like ?", "%#{query}%") 
+    end
+    #search stuff ----------------------------------------------
 
     def self.are_active
         self.where("end > '#{DateTime.now.to_formatted_s(:db)}'")

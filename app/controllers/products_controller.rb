@@ -14,8 +14,13 @@ class ProductsController < ApplicationController
     def new
 	@product = Product.new
     end
+
     def search 
-        @product = Product.all()
+        if params[:search]
+            @products = User.search(params[:search]).order("created_at DESC")
+        else
+            @products = User.all.order('created_at DESC')
+        end
     end
 
     def create
