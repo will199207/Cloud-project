@@ -15,12 +15,32 @@ class ProductsController < ApplicationController
 		@product = Product.new
     end
 
-    def search 
-        if params[:search]
-            @products = Product.search(params[:search]).order("created_at DESC")
-        else
-            @products = Product.all.order('created_at DESC')
-        end
+    def search
+		if params.has_key?(:search) and params.has_key?(:field)
+			@products = Product.search(params[:search]).sort_by(params[:field])
+			return @products
+		else
+			
+			if params.has_key?(:search)
+				order = params[:search]
+                session[:search] = params[:search]
+			elsif session.has_key?(:search)
+                order = session[:search]
+            else
+                order = ""
+            end
+			
+			if params.has_key?(:field)
+				field = params[:field]
+                session[:field] = params[:field]
+			elsif session.has_key?(:field)
+                field = session[:field]
+            else
+                field = ""
+			end
+			
+		end
+		redirect_to search_path :search => order, :field => field
     end
 
     def create
