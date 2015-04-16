@@ -25,8 +25,8 @@ Feature: Pledge to buy a Product
   Scenario: Pledge to buy a Product
     Given I am on the login page
     When I fill in the following:
-      | email    | john.smith@gmail.com     |
-      | Password | bigdaddyjohn             |
+      | user_email    | john.smith@gmail.com     |
+      | user_password | bigdaddyjohn             |
     And I press "Sign up"
     Then I should be on the index page
     And I should see "Welcome, Markos"

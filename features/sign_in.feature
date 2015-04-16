@@ -28,7 +28,7 @@ Feature: Access the Home Page
       | user_password               | bigdaddyjohn         |
       | user_password_confirmation  | bigdaddyjohn         |
     And I press "Sign up"
-    Then I should be on the products page
+    Then I should be on the home page
     And I should see "Welcome! You have signed up successfully."
     And I should see "Wolf Cola"
     And I should see "Xbox One"
@@ -39,16 +39,16 @@ Feature: Access the Home Page
       | user_email    | mgeorges@colgate.edu |
       | user_password | greekfreak           |
     And I press "Log in"
-    Then I should be on the products page
+    Then I should be on the home page
     And I should see "Signed in successfully."
     And I should see "Wolf Cola"
 
   Scenario: Attempt to Sign Up with an email that is already used
     Given I am on the sign up page
     When I fill in the following:
-      | user_email       | rely@colgate.edu  |
-      | user_password    | willets123        |
-      | confirm password | willets123        |
+      | user_email                  | rely@colgate.edu  |
+      | user_password               | willets123        |
+      | user_password_confirmation  | willets123        |
     And I press "Sign up"
-    Then I should be on the sign up page
+    Then I should be on the users page
     And I should see "Email has already been taken"
