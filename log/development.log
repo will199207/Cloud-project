@@ -14328,3 +14328,22 @@ Migrating to AddProviderToUsers (20150401221244)
   [1m[36m (55.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150331194440')[0m
   [1m[35m (66.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150331195812')
   [1m[36m (49.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150401220625')[0m
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-04-16 17:15:54 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (56.5ms)
+  Rendered products/new.html.haml within layouts/application (74.7ms)
+Completed 200 OK in 371ms (Views: 321.9ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 17:15:55 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 17:15:55 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 17:15:55 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 17:15:55 -0400
