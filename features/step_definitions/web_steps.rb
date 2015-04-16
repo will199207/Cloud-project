@@ -70,6 +70,11 @@ Given /^my "user_id" is "(\d+)"$/ do |user|
   @user = User.find(user)
 end
 
+Given /^I sort by "([^"]*)"$/ do |sort_field|
+  byebug
+  fill_in('field', :with => sort_field)
+end
+
 When /^(?:|I )go to (.+)$/ do |page_name|
   visit path_to(page_name)
 end

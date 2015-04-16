@@ -80,21 +80,26 @@ Feature: Search products by name and/or description
     
   Scenario: Search for product and sort by price
     Given I have searched for "o"
-    And I sort by "price: low to high"
+    And I sort by "Price low to high"
     Then I should see product "price" in "sorted" order
     
   Scenario: Search for product and sort by price
     Given I have searched for "o"
-    And I sort by "price: high to low"
+    And I sort by "Price high to low"
     Then I should see product "price" in "reverse sorted" order
     
   Scenario: Search for product and sort by end date
     Given I have searched for "o"
-    And I sort by "ending soonest"
+    And I sort by "Ending Soonest"
     Then I should see product "end_date" in "sorted" order
     
   Scenario: Search for product and sort by pledges needed to hit target
     Given I have searched for "o"
-    And I sort by "closest to target"
+    And I sort by "Close to Tilt"
     Then I should see product target - pledges order
+
+  Scenario: Search for product and sort by newly listed
+    Given I have searched for "o"
+    And I sort by "Newly Listed"
+    Then I should see product "start_date" in "sorted" order
    
