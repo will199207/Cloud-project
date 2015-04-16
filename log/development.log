@@ -14142,3 +14142,189 @@ Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 12
 
 
 Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 16:07:22 -0400
+
+
+Started GET "/search?utf8=%E2%9C%93&search=searhc" for 127.0.0.1 at 2015-04-16 16:09:00 -0400
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"searhc"}
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE (name like '%searhc%')  ORDER BY created_at DESC
+  Rendered products/search.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 382ms (Views: 380.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 16:09:01 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 16:09:01 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 16:09:01 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 16:09:01 -0400
+
+
+Started GET "/search?utf8=%E2%9C%93&search=searhc" for 127.0.0.1 at 2015-04-16 16:10:29 -0400
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"searhc"}
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE (name like '%searhc%')  ORDER BY created_at DESC[0m
+  Rendered products/search.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 242ms (Views: 240.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 16:10:30 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 16:10:30 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 16:10:30 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 16:10:30 -0400
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-04-16 16:14:28 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cpWF4GEvgRMIPbGPqTbD6mnPDI8gA5NxwyPWcgpXjYQpZ9g2o8phaVLqnKUr1pnUBpF10Jyz1cIPMn3UPg4U0w=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 31ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-16 16:14:29 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-16 16:14:29')  ORDER BY start DESC
+  [1m[36mProduct Load (8.9ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-16 16:14:29')  ORDER BY (pledges/(target * 1.0)) DESC[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-16 16:14:29')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (145.2ms)
+Completed 200 OK in 370ms (Views: 341.7ms | ActiveRecord: 18.3ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 16:14:29 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 16:14:29 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 16:14:30 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 16:14:30 -0400
+  [1m[36m (36.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (60.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateProducts (20150331194440)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal(10,2), "target" integer, "pledges" integer, "start" varchar, "end" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331194440"]]
+  [1m[35m (70.4ms)[0m  commit transaction
+Migrating to CreateUsers (20150331195812)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (17.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331195812"]]
+  [1m[35m (54.4ms)[0m  commit transaction
+Migrating to AddDeviseToUsers (20150401220625)
+  [1m[36m (8.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  ALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "encrypted_password" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "reset_password_token" varchar
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "reset_password_sent_at" datetime[0m
+  [1m[35m (21.3ms)[0m  ALTER TABLE "users" ADD "remember_created_at" datetime
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "sign_in_count" integer DEFAULT 0 NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "current_sign_in_at" datetime
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "last_sign_in_at" datetime[0m
+  [1m[35m (6.5ms)[0m  ALTER TABLE "users" ADD "current_sign_in_ip" varchar
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "last_sign_in_ip" varchar[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.5ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150401220625"]]
+  [1m[35m (72.2ms)[0m  commit transaction
+Migrating to AddProviderToUsers (20150401221244)
+  [1m[36m (4.9ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.1ms)[0m  ALTER TABLE "users" ADD "provider" varchar
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "uid" varchar[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150401221244"]]
+  [1m[36m (86.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (6.9ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (33.5ms)[0m  DELETE FROM "products"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "20 oz Bottles of Coke Cola"], ["description", "Cheap Caffinee"], ["price", 1.5], ["target", 100], ["pledges", 50], ["start", "2015-01-22 12:00:00"], ["end", "2015-07-02 12:00:00"], ["user_id", 1], ["created_at", "2015-04-16 20:16:26.264809"], ["updated_at", "2015-04-16 20:16:26.264809"]]
+  [1m[36m (75.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Laptop"], ["description", "Probably need one"], ["price", 550.0], ["target", 20], ["pledges", 6], ["start", "2014-01-01 12:00:00"], ["end", "2015-07-03 12:00:00"], ["user_id", 2], ["created_at", "2015-04-16 20:16:26.345163"], ["updated_at", "2015-04-16 20:16:26.345163"]]
+  [1m[35m (58.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Children's Toy"], ["description", "Keep the kids quiet"], ["price", 15.99], ["target", 200], ["pledges", 150], ["start", "2015-02-20 12:00:00"], ["end", "2015-07-30 12:00:00"], ["user_id", 3], ["created_at", "2015-04-16 20:16:26.408390"], ["updated_at", "2015-04-16 20:16:26.408390"]]
+  [1m[36m (61.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "NEW CAR!"], ["description", "Four wheels and a engine"], ["price", 35000.0], ["target", 10], ["pledges", 2], ["start", "2015-04-01 12:00:00"], ["end", "2015-08-01 12:00:00"], ["user_id", 4], ["created_at", "2015-04-16 20:16:26.476036"], ["updated_at", "2015-04-16 20:16:26.476036"]]
+  [1m[35m (59.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Noise Canceling Head Phones"], ["description", "Good for planes"], ["price", 120.0], ["target", 35], ["pledges", 30], ["start", "2014-12-25 12:00:00"], ["end", "2015-09-04 12:00:00"], ["user_id", 5], ["created_at", "2015-04-16 20:16:26.540427"], ["updated_at", "2015-04-16 20:16:26.540427"]]
+  [1m[36m (64.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "target", "pledges", "start", "end", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tires"], ["description", "Round and made of ruber"], ["price", 220.0], ["target", 300], ["pledges", 30], ["start", "2015-01-01 12:00:00"], ["end", "2015-10-29 12:00:00"], ["user_id", 6], ["created_at", "2015-04-16 20:16:26.610899"], ["updated_at", "2015-04-16 20:16:26.610899"]]
+  [1m[35m (58.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'druckcity@google.com' LIMIT 1
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "users" ("email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "druckcity@google.com"], ["first_name", "Dan"], ["last_name", "Drucker"], ["encrypted_password", "$2a$10$SYaOQTJgX8PpICy05a0sROnxVhLdzKpcTdYg4VOtQTGGG0.ZRg7Ne"], ["created_at", "2015-04-16 20:16:26.954915"], ["updated_at", "2015-04-16 20:16:26.954915"]]
+  [1m[35m (47.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'garcia@yahoo.com' LIMIT 1
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "users" ("email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "garcia@yahoo.com"], ["first_name", "Will"], ["last_name", "Garcia"], ["encrypted_password", "$2a$10$v.INHdHe8NwBhZw8MrjSFOm8yEBc68ndO3lFxs2yKb8k9q42NhPaK"], ["created_at", "2015-04-16 20:16:27.215897"], ["updated_at", "2015-04-16 20:16:27.215897"]]
+  [1m[35m (43.4ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'kos@gmail.com' LIMIT 1
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "users" ("email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "kos@gmail.com"], ["first_name", "Markos"], ["last_name", "Georges"], ["encrypted_password", "$2a$10$uaTRw7ieJZ4ENND8/hESl.QbwqRuvXZGy25wc4k/OtHBlmhsKxfQq"], ["created_at", "2015-04-16 20:16:27.487122"], ["updated_at", "2015-04-16 20:16:27.487122"]]
+  [1m[35m (29.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'will@msn.com' LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "users" ("email", "first_name", "last_name", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "will@msn.com"], ["first_name", "Will"], ["last_name", "Ely"], ["encrypted_password", "$2a$10$.1s30V5ynDRjiwQarxfwU.SXSDcf1F5Y8Phhx83s.SuJgGD6WDaYW"], ["created_at", "2015-04-16 20:16:27.708775"], ["updated_at", "2015-04-16 20:16:27.708775"]]
+  [1m[35m (36.0ms)[0m  commit transaction
+  [1m[36m (74.6ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" decimal(10,2), "target" integer, "pledges" integer, "start" varchar, "end" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (64.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "provider" varchar, "uid" varchar) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (60.7ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.5ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (61.7ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (66.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (73.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (56.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150401221244')
+  [1m[36m (55.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150331194440')[0m
+  [1m[35m (66.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150331195812')
+  [1m[36m (49.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150401220625')[0m

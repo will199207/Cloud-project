@@ -12,7 +12,7 @@ class ProductsController < ApplicationController
         @product = Product.find(params[:id])
     end
     def new
-		@product = Product.new
+	@product = Product.new
     end
 
     def search 
@@ -24,8 +24,8 @@ class ProductsController < ApplicationController
     end
 
     def create
-		values = create_update_params
-		values[:start] = DateTime.now.to_formatted_s(:db)
+	values = create_update_params
+	values[:start] = DateTime.now.to_formatted_s(:db)
         values[:end] = fix_date(values.delete("end(1i)"), values.delete("end(2i)"), values.delete("end(3i)"), values.delete("end(4i)"), values.delete("end(5i)")) 
 		values[:pledges] = 0
 		values[:user_id] = User.pluck(:id).sample
