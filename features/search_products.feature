@@ -6,12 +6,16 @@ Feature: Search products by name and/or description
   Background: GroupBuy has several products and users
     Given these Products:
       | name         |       description         | price  | target | pledges |          start      |          end        | user_id |
+<<<<<<< HEAD
       | Wolf Cola    | Bubbly and delicious      |   0.25 |   24   |    4    | 2015-02-28 09:00:00 | 2015-12-01 12:00:00 |    1    |
+=======
+      | Wolf Cola    | Bubbly and delicious      |   0.25 |   24   |    4    | 2015-02-25 09:00:00 | 2015-12-01 12:00:00 |    1    |
+>>>>>>> c70c720894ca22f92615509c191c8aa1a5c48798
       | Xbox One     | Second-rate game console  | 300.00 |  100   |   69    | 2015-03-16 10:00:00 | 2015-09-15 17:00:00 |    2    |
       | Water Bed    | More motion in the ocean  | 500.00 |  100   |   34    | 2015-03-22 08:00:00 | 2015-11-04 08:30:00 |    4    |
       | Turbocharger | Makes wolf cars fast      | 20.55  |  10    |   1     | 2015-01-21 05:00:00 | 2015-08-04 10:30:00 |    4    |
-      | Galaxy SIII  | Better than an iPhone     | 99.99  |  79    |   15    | 2015-02-15 05:00:00 | 2015-08-30 10:30:00 |    3    |
-      | iPhone9      | For those who think alike | 199.99 |  79    |   14    | 2015-02-16 05:00:00 | 2015-08-31 10:30:00 |    3    |
+      | Galaxy SIII  | Better than an iPhone     | 99.99  |  79    |   15    | 2015-02-15 05:00:00 | 2015-08-20 10:30:00 |    3    |
+      | iPhone9      | For those who think alike | 199.99 |  79    |   14    | 2015-02-16 05:00:00 | 2015-08-21 10:30:00 |    3    |
       | Xbox 360     | Outdated 2nd-rate console | 99.99  |  10    |   0     | 2015-03-21 05:00:00 | 2015-08-01 10:30:00 |    2    |
       | Water bottles| For better hydration      | 12.00  |  100   |   37    | 2015-01-01 05:00:00 | 2015-05-04 10:30:00 |    5    |
       | Bubble mix   | More fun for everyone     | 3.00   |  200   |   19    | 2015-03-21 05:00:00 | 2015-10-04 10:30:00 |    1    |
@@ -44,10 +48,10 @@ Feature: Search products by name and/or description
   Scenario: Search for product
     Given I have searched for "iphone"
     Then I should see "iPhone9"
+    But I should see "Galaxy SIII"
     And I should not see "Xbox 360"
     But I should not see "Wolf Cola"
     But I should not see "Turbocharger"
-    But I should not see "Galaxy SIII"
     But I should not see "Water Bed"
     But I should not see "Xbox One"
     But I should not see "Water bottles"

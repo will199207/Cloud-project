@@ -43,7 +43,9 @@ end
 
 Given /^(?:|I )have searched for "([^"]*)"$/ do |string|
     steps %Q{
+        Given I am on the products page
         When I fill in "search" with "#{string}"
+        And I press "Search"
         Then I should be on the search page
     }
 end
@@ -53,17 +55,19 @@ Given /^(?:|I )am on (.+)$/ do |page_name|
 end
 
 Given /^these products:$/i do |table|
-    table.hashes.each do |fhash|
+  table.hashes.each do |fhash|
+    Product.create!(fhash)
+  end
 end
 
 Given /^these users:$/i do |table|
-    table.hashes.each do |fhash|
-        User.create!(fhash)
-    end
+  table.hashes.each do |fhash|
+    User.create!(fhash)
+  end
 end
 
 Given /^my "user_id" is "(\d+)"$/ do |user|
-    @user = User.find(user)
+  @user = User.find(user)
 end
 
 When /^(?:|I )go to (.+)$/ do |page_name|
@@ -84,6 +88,12 @@ end
 
 When /^(?:|I )fill in "([^"]*)" for "([^"]*)"$/ do |value, field|
   fill_in(field, :with => value)
+end
+
+When /^(?:|I )select the following options:$/ do |table|
+  table.rows.each do |selector, value|
+    select(value, :from => selector)
+  end
 end
 
 # Use this to fill in an entire form with data from a table. Example:
@@ -171,15 +181,15 @@ Then /^(?:|I )should not see \/([^\/]*)\/$/ do |regexp|
   end
 end
 
-Then(/^I should see that "(.*?)" has a price of "(.*?)"$/) do |arg1, arg2|
+Then (/^I should see that "(.*?)" has a price of "(.*?)"$/) do |arg1, arg2|
   visit "/products"
-    all(".newly_listed").each do |row|
-        name = row.find(".name").value
-        if name == arg1
-            pirce = row.find(".price").value
-            price.should be(arg2)
-        end
+  find(".newly_listed").all(".product").each do |row|
+    name = row.find(".name").text
+    if name == arg1
+      price = row.find(".price").text
+      expect(price).to eq(arg2)
     end
+  end
 end
 
 Then /^the "([^"]*)" field(?: within (.*))? should contain "([^"]*)"$/ do |field, parent, value|
@@ -296,3 +306,4 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
