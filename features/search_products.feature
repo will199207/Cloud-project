@@ -67,7 +67,7 @@ Feature: Search products by name and/or description
   
   Scenario: Search for product comes back empty
     Given I have searched for "arbitrary"
-    Then I should see flash message "No products match search"
+    Then I should see "No products match search"
     But I should not see "Xbox One"
     But I should not see "Xbox 360"
     But I should not see "Wolf Cola"
