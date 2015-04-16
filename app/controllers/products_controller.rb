@@ -18,6 +18,9 @@ class ProductsController < ApplicationController
     def search
 		if params.has_key?(:search) and params.has_key?(:field)
 			@products = Product.search(params[:search]).sort_by(params[:field])
+			if @products.blank?
+				flash[:alert] = "Search did not return any results"
+			end
 			return @products
 		else
 			
@@ -40,6 +43,7 @@ class ProductsController < ApplicationController
 			end
 			
 		end
+		flash.clear
 		redirect_to search_path :search => order, :field => field
     end
 
