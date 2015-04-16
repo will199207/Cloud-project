@@ -24,6 +24,7 @@ Feature: Create new product
       | product_description | Keeps your noisey cats quiet  |
       | product_price       | 4.98                          |
       | product_target      | 30                            |
+    
     When I select the following options:
       | product_end_1i      | 2015                          |
       | product_end_2i      | May                           |

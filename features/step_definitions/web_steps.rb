@@ -43,7 +43,9 @@ end
 
 Given /^(?:|I )have searched for "([^"]*)"$/ do |string|
     steps %Q{
+        Given I am on the products page
         When I fill in "search" with "#{string}"
+        And I press "Search"
         Then I should be on the search page
     }
 end
@@ -89,8 +91,8 @@ When /^(?:|I )fill in "([^"]*)" for "([^"]*)"$/ do |value, field|
 end
 
 When /^(?:|I )select the following options:$/ do |table|
-  table.hashes.each do |selector, value|
-    page.select(value, :from => 'selector')
+  table.rows.each do |selector, value|
+    select(value, :from => selector)
   end
 end
 
@@ -179,15 +181,15 @@ Then /^(?:|I )should not see \/([^\/]*)\/$/ do |regexp|
   end
 end
 
-Then(/^I should see that "(.*?)" has a price of "(.*?)"$/) do |arg1, arg2|
+Then (/^I should see that "(.*?)" has a price of "(.*?)"$/) do |arg1, arg2|
   visit "/products"
-    all(".newly_listed").each do |row|
-        name = row.find(".name").value
-        if name == arg1
-            pirce = row.find(".price").value
-            price.should be(arg2)
-        end
+  find(".newly_listed").all(".product").each do |row|
+    name = row.find(".name").text
+    if name == arg1
+      price = row.find(".price").text
+      expect(price).to eq(arg2)
     end
+  end
 end
 
 Then /^the "([^"]*)" field(?: within (.*))? should contain "([^"]*)"$/ do |field, parent, value|
