@@ -14,7 +14,7 @@
       <img src="./assets/0.9.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-04-16T18:37:41-04:00">2015-04-16T18:37:41-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-04-16T18:50:07-04:00">2015-04-16T18:50:07-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         10.36
+         10.89
        </span>
     </span> hits/line)
   </h2>
@@ -67,7 +67,7 @@
         <td>37</td>
         <td>32</td>
         <td>5</td>
-        <td>2.1</td>
+        <td>2.3</td>
       </tr>
       
       <tr>
@@ -87,7 +87,7 @@
         <td>13</td>
         <td>11</td>
         <td>2</td>
-        <td>53.9</td>
+        <td>56.1</td>
       </tr>
       
       <tr>
@@ -97,7 +97,7 @@
         <td>27</td>
         <td>23</td>
         <td>4</td>
-        <td>5.9</td>
+        <td>6.3</td>
       </tr>
       
       <tr>
@@ -107,7 +107,7 @@
         <td>14</td>
         <td>6</td>
         <td>8</td>
-        <td>2.4</td>
+        <td>2.6</td>
       </tr>
       
     </tbody>
@@ -123,7 +123,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.04
+         2.23
        </span>
     </span> hits/line)
   </h2>
@@ -165,7 +165,7 @@
         <td>37</td>
         <td>32</td>
         <td>5</td>
-        <td>2.1</td>
+        <td>2.3</td>
       </tr>
       
     </tbody>
@@ -180,7 +180,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.7
+         5.04
        </span>
     </span> hits/line)
   </h2>
@@ -212,7 +212,7 @@
         <td>27</td>
         <td>23</td>
         <td>4</td>
-        <td>5.9</td>
+        <td>6.3</td>
       </tr>
       
       <tr>
@@ -222,7 +222,7 @@
         <td>14</td>
         <td>6</td>
         <td>8</td>
-        <td>2.4</td>
+        <td>2.6</td>
       </tr>
       
     </tbody>
@@ -274,7 +274,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         50.12
+         52.16
        </span>
     </span> hits/line)
   </h2>
@@ -316,7 +316,7 @@
         <td>13</td>
         <td>11</td>
         <td>2</td>
-        <td>53.9</td>
+        <td>56.1</td>
       </tr>
       
     </tbody>
@@ -445,20 +445,20 @@
           <code class="ruby">    def index</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="3">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="13" data-linenumber="3">
+          <span class="hits">13</span>
           
           <code class="ruby">        @new = Product.are_active.newest</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="4">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="13" data-linenumber="4">
+          <span class="hits">13</span>
           
           <code class="ruby">        @almost = Product.are_active.almost_targeted</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="5">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="13" data-linenumber="5">
+          <span class="hits">13</span>
           
           <code class="ruby">        @expiring = Product.are_active.almost_expired</code>
         </li>
@@ -823,32 +823,32 @@
           <code class="ruby">    def time_left(end_time)</code>
         </li>
       
-        <li class="covered" data-hits="87" data-linenumber="3">
-          <span class="hits">87</span>
+        <li class="covered" data-hits="91" data-linenumber="3">
+          <span class="hits">91</span>
           
           <code class="ruby">        end_time = DateTime.parse(end_time)</code>
         </li>
       
-        <li class="covered" data-hits="87" data-linenumber="4">
-          <span class="hits">87</span>
+        <li class="covered" data-hits="91" data-linenumber="4">
+          <span class="hits">91</span>
           
           <code class="ruby">        now = DateTime.now</code>
         </li>
       
-        <li class="covered" data-hits="87" data-linenumber="5">
-          <span class="hits">87</span>
+        <li class="covered" data-hits="91" data-linenumber="5">
+          <span class="hits">91</span>
           
           <code class="ruby">        tl = (end_time - now).to_i # tl for Time Left</code>
         </li>
       
-        <li class="covered" data-hits="87" data-linenumber="6">
-          <span class="hits">87</span>
+        <li class="covered" data-hits="91" data-linenumber="6">
+          <span class="hits">91</span>
           
           <code class="ruby">        if tl &gt;= 2</code>
         </li>
       
-        <li class="covered" data-hits="87" data-linenumber="7">
-          <span class="hits">87</span>
+        <li class="covered" data-hits="91" data-linenumber="7">
+          <span class="hits">91</span>
           
           <code class="ruby">            return &quot;#{tl} days&quot;</code>
         </li>
@@ -877,14 +877,14 @@
           <code class="ruby">    def listed_on(start_date)</code>
         </li>
       
-        <li class="covered" data-hits="131" data-linenumber="12">
-          <span class="hits">131</span>
+        <li class="covered" data-hits="135" data-linenumber="12">
+          <span class="hits">135</span>
           
           <code class="ruby">        start = DateTime.parse(start_date)</code>
         </li>
       
-        <li class="covered" data-hits="131" data-linenumber="13">
-          <span class="hits">131</span>
+        <li class="covered" data-hits="135" data-linenumber="13">
+          <span class="hits">135</span>
           
           <code class="ruby">        start.strftime(&quot;%b %e, &#39;%y&quot;)</code>
         </li>
@@ -1099,8 +1099,8 @@
           <code class="ruby">    def self.are_active</code>
         </li>
       
-        <li class="covered" data-hits="33" data-linenumber="26">
-          <span class="hits">33</span>
+        <li class="covered" data-hits="39" data-linenumber="26">
+          <span class="hits">39</span>
           
           <code class="ruby">        self.where(&quot;end &gt; &#39;#{DateTime.now.to_formatted_s(:db)}&#39;&quot;)</code>
         </li>
@@ -1225,8 +1225,8 @@
           <code class="ruby">    def self.newest</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="47">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="13" data-linenumber="47">
+          <span class="hits">13</span>
           
           <code class="ruby">        self.order(&quot;start DESC&quot;)</code>
         </li>
@@ -1249,8 +1249,8 @@
           <code class="ruby">    def self.almost_expired</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="51">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="13" data-linenumber="51">
+          <span class="hits">13</span>
           
           <code class="ruby">        self.order(&quot;end ASC&quot;)</code>
         </li>
@@ -1273,8 +1273,8 @@
           <code class="ruby">    def self.almost_targeted</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="55">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="13" data-linenumber="55">
+          <span class="hits">13</span>
           
           <code class="ruby">        self.order(&quot;(pledges/(target * 1.0)) DESC&quot;)</code>
         </li>
@@ -1357,8 +1357,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="28" data-linenumber="9">
-          <span class="hits">28</span>
+        <li class="covered" data-hits="31" data-linenumber="9">
+          <span class="hits">31</span>
           
           <code class="ruby">    before_save { self.email = email.downcase }</code>
         </li>
