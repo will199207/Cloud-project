@@ -5,7 +5,7 @@
         %th Product
         %th Description
         %th Listed On
-        %th Price
+        %th.price Price
         - @products.each do |product|
             %tr.product
                 %td.name= link_to "#{product.name}", product
