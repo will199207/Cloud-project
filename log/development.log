@@ -17562,4 +17562,46 @@ Started GET "/assets/application-c2df208cfda6a7c0ae930e74290d5979.css?body=1" fo
 
 Started GET "/assets/products-9d89691ef263de96c45d8e45e44da63a.css?body=1" for 127.0.0.1 at 2015-04-16 16:53:52 -0400
 >>>>>>> d6a1564196c7303486a27f0b4a9a44c0bb6a844b
+<<<<<<< HEAD
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-16 18:39:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (57.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (234.4ms)
+Completed 200 OK in 1086ms (Views: 859.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 18:39:06 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 18:39:06 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 18:39:06 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 18:39:06 -0400
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 18:47:43 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.haml (18.2ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (64.7ms)
+Completed 200 OK in 339ms (Views: 336.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 18:47:43 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 18:47:44 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 18:47:44 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 18:47:44 -0400
+=======
 >>>>>>> c70c720894ca22f92615509c191c8aa1a5c48798
+>>>>>>> 2dceb4491fc792631e079c5caa77ef07ea05c49f
