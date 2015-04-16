@@ -13,7 +13,7 @@ RSpec.describe User, type: :model do
     end 
     context "the create user method" do 
         it "should allow the user to have been created" do 
-            pending
+            
         end
     
         it "should show that user has a correct email" do
