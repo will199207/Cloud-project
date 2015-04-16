@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
     end
 
     def show
-	@product = Product.find(params[:id])
+		@product = Product.find(params[:id])
     end
     def confirm
         @product = Product.find(params[:id])
@@ -27,8 +27,8 @@ class ProductsController < ApplicationController
 	values = create_update_params
 	values[:start] = DateTime.now.to_formatted_s(:db)
         values[:end] = fix_date(values.delete("end(1i)"), values.delete("end(2i)"), values.delete("end(3i)"), values.delete("end(4i)"), values.delete("end(5i)")) 
-	values[:pledges] = 0
-	values[:user_id] = User.pluck(:id).sample
+		values[:pledges] = 0
+		values[:user_id] = User.pluck(:id).sample
         p = Product.new(values)
         if p.save
             flash[:notice] = "New product #{p.name} created successfully"

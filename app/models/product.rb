@@ -2,9 +2,24 @@ class Product < ActiveRecord::Base
     belongs_to :user
     
     # search stuff --------------------------------------------
+    #def self.search(query)
+    #    where("name LIKE ? OR description LIKE ?", "%#{query}%", "%#{query}%") 
+    #end
     def self.search(query)
-        where("name like ?", "%#{query}%") 
-    end
+		return all if query.blank?
+
+		conditions = []
+		search_columns = [ :name, :description ]
+
+		query.split(' ').each do |word|
+			search_columns.each do |column|
+				conditions << " lower(#{column}) LIKE lower(#{sanitize("%#{word}%")}) "
+			end
+		end
+
+		conditions = conditions.join('OR')    
+		self.where(conditions)
+	end
     #search stuff ----------------------------------------------
 
     def self.are_active
