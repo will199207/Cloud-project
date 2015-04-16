@@ -17,9 +17,9 @@ class ProductsController < ApplicationController
 
     def search 
         if params[:search]
-            @products = User.search(params[:search]).order("created_at DESC")
+            @products = Product.search(params[:search]).order("created_at DESC")
         else
-            @products = User.all.order('created_at DESC')
+            @products = Product.all.order('created_at DESC')
         end
     end
 
