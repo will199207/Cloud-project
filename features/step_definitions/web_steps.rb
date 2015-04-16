@@ -71,7 +71,6 @@ Given /^my "user_id" is "(\d+)"$/ do |user|
 end
 
 Given /^I sort by "([^"]*)"$/ do |sort_field|
-  byebug
   fill_in('field', :with => sort_field)
 end
 
