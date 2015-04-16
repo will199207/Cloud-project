@@ -53,17 +53,19 @@ Given /^(?:|I )am on (.+)$/ do |page_name|
 end
 
 Given /^these products:$/i do |table|
-    table.hashes.each do |fhash|
+  table.hashes.each do |fhash|
+    Product.create!(fhash)
+  end
 end
 
 Given /^these users:$/i do |table|
-    table.hashes.each do |fhash|
-        User.create!(fhash)
-    end
+  table.hashes.each do |fhash|
+    User.create!(fhash)
+  end
 end
 
 Given /^my "user_id" is "(\d+)"$/ do |user|
-    @user = User.find(user)
+  @user = User.find(user)
 end
 
 When /^(?:|I )go to (.+)$/ do |page_name|
@@ -296,3 +298,4 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
