@@ -13692,3 +13692,22 @@ Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for
 
 
 Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 15:42:14 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 16:00:36 -0400
+Processing by ProductsController#search as HTML
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products"  ORDER BY created_at DESC
+  Rendered products/search.html.haml within layouts/application (24.1ms)
+Completed 200 OK in 232ms (Views: 230.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 16:00:36 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 16:00:36 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 16:00:36 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 16:00:37 -0400
