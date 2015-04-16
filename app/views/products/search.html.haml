@@ -20,7 +20,7 @@
                 %td.name= link_to "#{product.name}", product
                 %td.description= product.description
                 %td.timecreated= listed_on(product.start)
-                %td.timeending= listed_on(product.end)
+                %td.timeending= listing_expires(product.end)
                 %td.pledges= product.pledges
                 %td.target= product.target
                 %td.tilting= product.target - product.pledges
