@@ -14328,3 +14328,115 @@ Migrating to AddProviderToUsers (20150401221244)
   [1m[36m (55.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150331194440')[0m
   [1m[35m (66.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150331195812')
   [1m[36m (49.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150401220625')[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-16 16:49:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (11.7ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-16 16:49:57')  ORDER BY start DESC
+  [1m[36mProduct Load (12.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-16 16:49:57')  ORDER BY (pledges/(target * 1.0)) DESC[0m
+  [1m[35mProduct Load (14.9ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-16 16:49:57')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (1252.3ms)
+Completed 200 OK in 3724ms (Views: 3565.3ms | ActiveRecord: 41.4ms)
+
+
+Started GET "/assets/products-9d89691ef263de96c45d8e45e44da63a.css?body=1" for 127.0.0.1 at 2015-04-16 16:50:01 -0400
+
+
+Started GET "/assets/application-c2df208cfda6a7c0ae930e74290d5979.css?body=1" for 127.0.0.1 at 2015-04-16 16:50:02 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 16:50:03 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 16:50:03 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 16:50:04 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 16:50:04 -0400
+
+
+Started GET "/search?utf8=%E2%9C%93&search=toys" for 127.0.0.1 at 2015-04-16 16:50:14 -0400
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"toys"}
+  [1m[36mProduct Load (1.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE ( lower(name) LIKE lower('%toys%') OR lower(description) LIKE lower('%toys%') )  ORDER BY created_at DESC[0m
+  Rendered products/search.html.haml within layouts/application (112.5ms)
+Completed 200 OK in 833ms (Views: 797.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application-c2df208cfda6a7c0ae930e74290d5979.css?body=1" for 127.0.0.1 at 2015-04-16 16:50:15 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 16:50:15 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 16:50:16 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 16:50:16 -0400
+
+
+Started GET "/assets/products-9d89691ef263de96c45d8e45e44da63a.css?body=1" for 127.0.0.1 at 2015-04-16 16:50:16 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 16:50:16 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-16 16:52:45 -0400
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (18.8ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-16 16:52:45')  ORDER BY start DESC
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-16 16:52:45')  ORDER BY (pledges/(target * 1.0)) DESC[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-16 16:52:45')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (629.0ms)
+Completed 200 OK in 1800ms (Views: 1776.4ms | ActiveRecord: 21.3ms)
+
+
+Started GET "/assets/products-9d89691ef263de96c45d8e45e44da63a.css?body=1" for 127.0.0.1 at 2015-04-16 16:52:48 -0400
+
+
+Started GET "/assets/application-c2df208cfda6a7c0ae930e74290d5979.css?body=1" for 127.0.0.1 at 2015-04-16 16:52:48 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 16:52:49 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 16:52:49 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 16:52:49 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 16:52:49 -0400
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-04-16 16:53:15 -0400
+Processing by ProductsController#new as HTML
+  Rendered products/_product_form.html.haml (658.4ms)
+  Rendered products/new.html.haml within layouts/application (1182.4ms)
+Completed 200 OK in 2329ms (Views: 2328.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-c2df208cfda6a7c0ae930e74290d5979.css?body=1" for 127.0.0.1 at 2015-04-16 16:53:19 -0400
+
+
+Started GET "/assets/products-9d89691ef263de96c45d8e45e44da63a.css?body=1" for 127.0.0.1 at 2015-04-16 16:53:19 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 16:53:19 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 16:53:19 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 16:53:19 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 16:53:20 -0400
+
+
+Started GET "/assets/application-c2df208cfda6a7c0ae930e74290d5979.css?body=1" for 127.0.0.1 at 2015-04-16 16:53:52 -0400
+
+
+Started GET "/assets/products-9d89691ef263de96c45d8e45e44da63a.css?body=1" for 127.0.0.1 at 2015-04-16 16:53:52 -0400

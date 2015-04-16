@@ -88,6 +88,12 @@ When /^(?:|I )fill in "([^"]*)" for "([^"]*)"$/ do |value, field|
   fill_in(field, :with => value)
 end
 
+When /^(?:|I )select the following options:$/ do |table|
+  table.hashes.each do |selector, value|
+    page.select(value, :from => 'selector')
+  end
+end
+
 # Use this to fill in an entire form with data from a table. Example:
 #
 #   When I fill in the following:
