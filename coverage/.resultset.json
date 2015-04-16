@@ -12,10 +12,8 @@
         null,
         1,
         1,
-        null,
-        null,
-        null,
-        1,
+<<<<<<< HEAD
+=======
         0,
         0,
         0,
@@ -38,8 +36,141 @@
         null,
         null,
         null
+      ],
+      "/home/csvm/GroupBuy/app/models/product.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        9,
+        null,
+        9,
+        9,
+        null,
+        9,
+        9,
+        18,
+        null,
+        null,
+        null,
+        9,
+        9,
+        null,
+        null,
+        1,
+        9,
+        null,
+        null,
+        null,
+        null,
+        1,
+        39,
+>>>>>>> ccc19f534a033b8ec7d14782c15db519d09a6232
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+<<<<<<< HEAD
+        0,
+        null,
+=======
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        18,
+        9,
+        9,
+        null,
+        null,
+        9,
+        9,
+        9,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        9,
+        0,
+        0,
+        null,
+        0,
+        null,
+        9,
+        null,
+        null,
+        null,
+        9,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+>>>>>>> ccc19f534a033b8ec7d14782c15db519d09a6232
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+<<<<<<< HEAD
+=======
+        1,
+<<<<<<< HEAD
+        175,
+        175,
+=======
+        135,
+        135,
+>>>>>>> 9c8b4f886611ce3a4dde38884c5b39125d17a5e2
+>>>>>>> ccc19f534a033b8ec7d14782c15db519d09a6232
+        null,
+        null,
+        null,
+        null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1429225007
+=======
+<<<<<<< HEAD
+    "timestamp": 1429225088
+=======
+<<<<<<< HEAD
+    "timestamp": 1429224607
+=======
+    "timestamp": 1429224597
+>>>>>>> 0b2bb5c4dec38664335be8400e0f8c253b757f06
+>>>>>>> 9c8b4f886611ce3a4dde38884c5b39125d17a5e2
+>>>>>>> ccc19f534a033b8ec7d14782c15db519d09a6232
   }
 }
