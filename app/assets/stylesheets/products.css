@@ -92,7 +92,7 @@ body .ending_soon {
   border-radius: 10px;
 }
 body .close_to_target {
-  position: relative;
+  position: absolute;
   top: 90px;
   width: 30%;
   left: 70%;

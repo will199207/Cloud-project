@@ -1,0 +1,25 @@
+#main
+
+    %caption= link_to "Login", new_user_session_path
+    %caption or
+    %caption= link_to "Sign Up", new_user_registration_path
+    %caption or
+    %caption= link_to "Sign Out", destroy_user_session_path
+    %caption or
+    %caption= link_to "Edit User Registration", edit_user_registration_path
+
+	
+    
+    %h3 Welcome! Below are some hot products!
+    %table.search_results
+        %caption Search Results
+        %th Product
+        %th Description
+        %th Listed On
+        %th Price
+        - @product.each do |product|
+            %tr.product
+                %td.name= link_to "#{product.name}", product 
+                %td.description= product.description
+                %td.timecreated= listed_on(product.start)
+                %td.price= number_to_currency(product.price)
