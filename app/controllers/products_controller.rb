@@ -14,6 +14,9 @@ class ProductsController < ApplicationController
     def new
 	@product = Product.new
     end
+    def search 
+        @product = Product.all()
+    end
 
     def create
 	values = create_update_params

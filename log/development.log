@@ -11901,3 +11901,528 @@ AbstractController::ActionNotFound (The action 'search' could not be found for P
 
 
   Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:22:00 -0400
+Processing by ProductsController#search as HTML
+Completed 500 Internal Server Error in 52ms
+
+ActionView::MissingTemplate (Missing template products/search, application/search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/home/csvm/GroupBuy/app/views"
+  * "/home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views"
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (22.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (15.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (9.7ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (12.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/missing_template.html.erb within rescues/layout (282.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-16 14:30:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (5.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-16 14:30:53')  ORDER BY start DESC
+  [1m[36mProduct Load (1.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-16 14:30:53')  ORDER BY (pledges/(target * 1.0)) DESC[0m
+  [1m[35mProduct Load (2.5ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-16 14:30:53')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (278.0ms)
+Completed 200 OK in 894ms (Views: 811.1ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/assets/products-58169ebff16aa414ee8b4910da2592a9.css?body=1" for 127.0.0.1 at 2015-04-16 14:30:54 -0400
+
+
+Started GET "/assets/application-9a875c9e7d1c22d51de87dd29f6b78a2.css?body=1" for 127.0.0.1 at 2015-04-16 14:30:54 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:30:54 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:30:54 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:30:54 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:30:54 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:30:58 -0400
+Processing by ProductsController#search as HTML
+  Rendered products/search.html.haml within layouts/application (109.8ms)
+Completed 500 Internal Server Error in 165ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    16:         %th Product
+    17:         %th Listed On
+    18:         %th Price
+    19:         - @new.each do |product|
+    20:             %tr.product
+    21:                 %td.name= link_to "#{product.name}", product 
+    22:                 %td.timecreated= listed_on(product.start)
+  app/views/products/search.html.haml:19:in `_app_views_products_search_html_haml___840018624_98547750'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (26.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (5.7ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (259.4ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:31:15 -0400
+Processing by ProductsController#search as HTML
+  Rendered products/search.html.haml within layouts/application (16.1ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    16:         %th Product
+    17:         %th Listed On
+    18:         %th Price
+    19:         - @products.each do |product|
+    20:             %tr.product
+    21:                 %td.name= link_to "#{product.name}", product 
+    22:                 %td.timecreated= listed_on(product.start)
+  app/views/products/search.html.haml:19:in `_app_views_products_search_html_haml___840018624_98223440'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (26.8ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (55.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (15.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (6.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (345.2ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:31:44 -0400
+Processing by ProductsController#search as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/search.html.haml within layouts/application (53.7ms)
+Completed 200 OK in 325ms (Views: 323.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/products-58169ebff16aa414ee8b4910da2592a9.css?body=1" for 127.0.0.1 at 2015-04-16 14:31:44 -0400
+
+
+Started GET "/assets/application-9a875c9e7d1c22d51de87dd29f6b78a2.css?body=1" for 127.0.0.1 at 2015-04-16 14:31:44 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:31:44 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:31:44 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:31:45 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:31:45 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:32:26 -0400
+Processing by ProductsController#search as HTML
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/search.html.haml within layouts/application (37.2ms)
+Completed 200 OK in 298ms (Views: 296.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/products-58169ebff16aa414ee8b4910da2592a9.css?body=1" for 127.0.0.1 at 2015-04-16 14:32:26 -0400
+
+
+Started GET "/assets/application-9a875c9e7d1c22d51de87dd29f6b78a2.css?body=1" for 127.0.0.1 at 2015-04-16 14:32:26 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:32:26 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:32:26 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:32:27 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:32:27 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:33:28 -0400
+Processing by ProductsController#search as HTML
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/search.html.haml within layouts/application (68.3ms)
+Completed 200 OK in 402ms (Views: 401.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application-9a875c9e7d1c22d51de87dd29f6b78a2.css?body=1" for 127.0.0.1 at 2015-04-16 14:33:29 -0400
+
+
+Started GET "/assets/products-58169ebff16aa414ee8b4910da2592a9.css?body=1" for 127.0.0.1 at 2015-04-16 14:33:29 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:33:29 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:33:29 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:33:29 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:33:29 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:33:33 -0400
+Processing by ProductsController#search as HTML
+  [1m[35mProduct Load (1.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/search.html.haml within layouts/application (57.7ms)
+Completed 200 OK in 344ms (Views: 342.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/products-58169ebff16aa414ee8b4910da2592a9.css?body=1" for 127.0.0.1 at 2015-04-16 14:33:34 -0400
+
+
+Started GET "/assets/application-9a875c9e7d1c22d51de87dd29f6b78a2.css?body=1" for 127.0.0.1 at 2015-04-16 14:33:34 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:33:34 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:33:34 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:33:34 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:33:34 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:34:49 -0400
+Processing by ProductsController#search as HTML
+  [1m[36mProduct Load (10.1ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/search.html.haml within layouts/application (45.9ms)
+Completed 200 OK in 765ms (Views: 753.8ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/assets/products-7f0b7567c24de393b0491f5bc4b84131.css?body=1" for 127.0.0.1 at 2015-04-16 14:34:50 -0400
+
+
+Started GET "/assets/application-cd7cc3b3535249871d3519ff7a8537d2.css?body=1" for 127.0.0.1 at 2015-04-16 14:34:50 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:34:50 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:34:50 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:34:50 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:34:50 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:35:07 -0400
+Processing by ProductsController#search as HTML
+  [1m[35mProduct Load (17.1ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/search.html.haml within layouts/application (100.8ms)
+Completed 200 OK in 427ms (Views: 408.7ms | ActiveRecord: 17.1ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:35:08 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:35:08 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:35:08 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:35:08 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:35:41 -0400
+Processing by ProductsController#search as HTML
+  [1m[36mProduct Load (1.1ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/search.html.haml within layouts/application (32.5ms)
+Completed 200 OK in 704ms (Views: 702.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/products-ce100ef6a5ff994d910ea554bb003001.css?body=1" for 127.0.0.1 at 2015-04-16 14:35:42 -0400
+
+
+Started GET "/assets/application-14c8118036bcb87c67cf2ce13b5ef164.css?body=1" for 127.0.0.1 at 2015-04-16 14:35:42 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:35:42 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:35:42 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:35:43 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:35:43 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:35:48 -0400
+Processing by ProductsController#search as HTML
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/search.html.haml within layouts/application (57.4ms)
+Completed 200 OK in 354ms (Views: 351.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:35:48 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:35:48 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:35:48 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:35:48 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:36:07 -0400
+Processing by ProductsController#search as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/search.html.haml within layouts/application (43.7ms)
+Completed 200 OK in 522ms (Views: 520.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/products-f9ed4eb34a0c9102f931ffea5a7da932.css?body=1" for 127.0.0.1 at 2015-04-16 14:36:08 -0400
+
+
+Started GET "/assets/application-34b945d297d94166836b369e0a2a45ae.css?body=1" for 127.0.0.1 at 2015-04-16 14:36:08 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:36:08 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:36:08 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:36:09 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:36:09 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:36:22 -0400
+Processing by ProductsController#search as HTML
+  [1m[35mProduct Load (10.8ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/search.html.haml within layouts/application (43.8ms)
+Completed 200 OK in 573ms (Views: 560.6ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/assets/products-4ba6638116b511f4c7b355e261ab026b.css?body=1" for 127.0.0.1 at 2015-04-16 14:36:23 -0400
+
+
+Started GET "/assets/application-731758050dbeab076f76b3e9ff43a6d7.css?body=1" for 127.0.0.1 at 2015-04-16 14:36:23 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:36:23 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:36:23 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:36:23 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:36:24 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:36:50 -0400
+Processing by ProductsController#search as HTML
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/search.html.haml within layouts/application (63.2ms)
+Completed 200 OK in 517ms (Views: 515.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application-953af1a0ec10454a6112f67b3ea9eb47.css?body=1" for 127.0.0.1 at 2015-04-16 14:36:51 -0400
+
+
+Started GET "/assets/products-c73326f452536055f8e015fb523996c2.css?body=1" for 127.0.0.1 at 2015-04-16 14:36:51 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:36:51 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:36:51 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:36:51 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:36:51 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:37:04 -0400
+Processing by ProductsController#search as HTML
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/search.html.haml within layouts/application (28.6ms)
+Completed 200 OK in 479ms (Views: 477.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/products-c11481a26dd0feb47cf69b9708a03f41.css?body=1" for 127.0.0.1 at 2015-04-16 14:37:05 -0400
+
+
+Started GET "/assets/application-f6ef8c8d45eeace78cf0a680aae2d7fc.css?body=1" for 127.0.0.1 at 2015-04-16 14:37:05 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:37:05 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:37:05 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:37:05 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:37:05 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:38:44 -0400
+Processing by ProductsController#search as HTML
+  [1m[36mProduct Load (1.6ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/search.html.haml within layouts/application (76.1ms)
+Completed 200 OK in 359ms (Views: 355.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:38:45 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:38:45 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:38:45 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:38:45 -0400
+
+
+Started GET "/search" for 127.0.0.1 at 2015-04-16 14:39:21 -0400
+Processing by ProductsController#search as HTML
+  [1m[35mProduct Load (3.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/search.html.haml within layouts/application (75.1ms)
+Completed 200 OK in 331ms (Views: 327.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-16 14:39:22 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-16 14:39:22 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-16 14:39:22 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for 127.0.0.1 at 2015-04-16 14:39:22 -0400
