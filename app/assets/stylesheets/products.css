@@ -75,7 +75,7 @@ body .newly_listed {
 }
 body .ending_soon {
   position: absolute; 
-  top: 90px;
+  top: 62px;
   width: 30%;
   left: 35%;
   opacity: 1.0;
@@ -93,7 +93,7 @@ body .ending_soon {
 }
 body .close_to_target {
   position: absolute;
-  top: 90px;
+  top: 62px;
   width: 30%;
   left: 70%;
   background-color: #ffcc33;
@@ -112,7 +112,6 @@ body .search_results {
   position: relative;
   top: 0px;
   width: 100%;
-  right 10%;
   background-color: #ffcc33;
   color: #980000;
   padding: 10px;
@@ -153,8 +152,13 @@ body .product_form {
   font-family: Helvetica, sans-serif;
   font-size: 12pt;
 }
+
 body .centered_table {
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
 }
+.search_box {
+    text-align: left;
+}
+

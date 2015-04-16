@@ -1,9 +1,10 @@
 !!! 8
 %html
   %head
-  = form_tag(search_url ) do
-    =text_field_tag :search, params[:search]#, placeholder "Search Products"
-    =submit_tag "Search". :name => nil
+  .search_box
+    = form_tag(search_url, :method => "get") do
+      =text_field_tag :search, params[:search]#,  "Search Products"
+      =submit_tag "Search", :name => nil
 
     %meta{ charset: 'utf-8' }
     %title GroupBuy!
@@ -14,6 +15,7 @@
   %body
     #header
       %h4 GroupBuy!
+      -# link_to "GroupBuy!", products_path      
       - if flash.notice
         .notice= flash.notice
       - if flash.alert
