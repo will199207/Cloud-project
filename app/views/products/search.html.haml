@@ -1,14 +1,28 @@
 #main    
     %h3 Welcome! Below are some hot products!
+    =form_tag search_path, :method => :get do
+        =#label :sort_by, "Sort by"
+        =select_tag(:field, options_for_select([['Select sort options', 1], ['Ending Soonest', 1], ['Price low to high', 2], ['Price high to low', 3], ['Close to Tilt', 4], ['Newly Listed', 5]]))
+        =submit_tag 'Sort products'
+    =#params.inspect
     %table.search_results
         %caption Search Results
         %th Product
         %th Description
         %th Listed On
+        %th End Time
+        %th Pledges
+        %th Target
+        %th Close to Tilt
         %th.price Price
         - @products.each do |product|
             %tr.product
                 %td.name= link_to "#{product.name}", product
                 %td.description= product.description
                 %td.timecreated= listed_on(product.start)
+                %td.timeending= listed_on(product.end)
+                %td.pledges= product.pledges
+                %td.target= product.target
+                %td.tilting= product.target - product.pledges
                 %td.price= number_to_currency(product.price)
+    = link_to "Back to Homepage", products_path

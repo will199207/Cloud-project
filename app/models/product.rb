@@ -1,10 +1,13 @@
 class Product < ActiveRecord::Base
     belongs_to :user
     
+    @orders = Hash["1" => "end ASC",
+				   "2" => "price ASC",
+				   "3" => "price DESC",
+				   "4" => "target - pledges ASC",
+				   "5" => "start ASC"]
+    
     # search stuff --------------------------------------------
-    #def self.search(query)
-    #    where("name LIKE ? OR description LIKE ?", "%#{query}%", "%#{query}%") 
-    #end
     def self.search(query)
 		return all if query.blank?
 
@@ -20,6 +23,11 @@ class Product < ActiveRecord::Base
 		conditions = conditions.join('OR')    
 		self.where(conditions)
 	end
+
+    def self.sort_by(field)
+        return Product.order(@orders[field])
+    end
+
     #search stuff ----------------------------------------------
 
     def self.are_active
