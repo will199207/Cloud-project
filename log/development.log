@@ -17605,3 +17605,64 @@ Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for
 =======
 >>>>>>> c70c720894ca22f92615509c191c8aa1a5c48798
 >>>>>>> 2dceb4491fc792631e079c5caa77ef07ea05c49f
+
+
+Started GET "/products" for ::1 at 2015-04-16 20:32:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-16 20:32:47')  ORDER BY start DESC
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (end > '2015-04-16 20:32:47')  ORDER BY (pledges/(target * 1.0)) DESC[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (end > '2015-04-16 20:32:47')  ORDER BY end ASC
+  Rendered products/index.html.haml within layouts/application (48.7ms)
+Completed 200 OK in 167ms (Views: 160.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application-c2df208cfda6a7c0ae930e74290d5979.css?body=1" for ::1 at 2015-04-16 20:32:47 -0400
+
+
+Started GET "/assets/products-9d89691ef263de96c45d8e45e44da63a.css?body=1" for ::1 at 2015-04-16 20:32:47 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-16 20:32:47 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-16 20:32:47 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-16 20:32:47 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-16 20:32:47 -0400
+
+
+Started GET "/search?utf8=%E2%9C%93&search=dfasdg" for ::1 at 2015-04-16 20:32:49 -0400
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"dfasdg"}
+Redirected to http://localhost:3000/search?field=4&search=dfasdg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/search?field=4&search=dfasdg" for ::1 at 2015-04-16 20:32:49 -0400
+Processing by ProductsController#search as HTML
+  Parameters: {"field"=>"4", "search"=>"dfasdg"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE ( lower(name) LIKE lower('%dfasdg%') OR lower(description) LIKE lower('%dfasdg%') )  ORDER BY target - pledges ASC[0m
+  Rendered products/search.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/products-9d89691ef263de96c45d8e45e44da63a.css?body=1" for ::1 at 2015-04-16 20:32:49 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-04-16 20:32:49 -0400
+
+
+Started GET "/assets/application-c2df208cfda6a7c0ae930e74290d5979.css?body=1" for ::1 at 2015-04-16 20:32:49 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-04-16 20:32:49 -0400
+
+
+Started GET "/assets/application-b4a4d3386d51cdf42fc15b62f9ff01b9.js?body=1" for ::1 at 2015-04-16 20:32:49 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-04-16 20:32:49 -0400

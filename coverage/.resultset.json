@@ -51,7 +51,6 @@
         null,
         null,
         1,
-<<<<<<< HEAD
         11,
         null,
         11,
@@ -69,39 +68,12 @@
         null,
         1,
         11,
-=======
-        10,
-        null,
-        10,
-        10,
-        null,
-        10,
-        10,
-        20,
-        null,
-        null,
-        null,
-        10,
-        10,
-        null,
-        null,
-        1,
-        10,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
         null,
         null,
         null,
         1,
-<<<<<<< HEAD
         45,
-=======
-<<<<<<< HEAD
-        45,
-=======
-        42,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
->>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
         null,
         null,
@@ -122,10 +94,6 @@
         null,
         null,
         1,
-<<<<<<< HEAD
-        15,
-=======
-<<<<<<< HEAD
         15,
         null,
         null,
@@ -135,43 +103,15 @@
         null,
         1,
         15,
-=======
-        14,
->>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
-        null,
-        null,
-        1,
-        15,
-        null,
-        null,
-        1,
-<<<<<<< HEAD
-        15,
-=======
-        14,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
->>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
         null
       ],
       "/Users/ddrucker/Desktop/GroupBuy/app/controllers/products_controller.rb": [
         1,
         1,
-<<<<<<< HEAD
         15,
         15,
         15,
-=======
-<<<<<<< HEAD
-        15,
-        15,
-        15,
-=======
-        14,
-        14,
-        14,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
->>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
         null,
         1,
@@ -185,28 +125,13 @@
         null,
         null,
         1,
-<<<<<<< HEAD
         22,
         11,
         11,
         1,
-=======
-        20,
-        10,
-        10,
-        1,
-        null,
-        10,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
         11,
         null,
-<<<<<<< HEAD
-=======
-        10,
-        10,
-        10,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
         11,
         10,
@@ -217,31 +142,18 @@
         0,
         null,
         null,
-<<<<<<< HEAD
         11,
-=======
-        10,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         0,
         0,
         null,
         0,
         null,
-<<<<<<< HEAD
         11,
         null,
         null,
         null,
         11,
         11,
-=======
-        10,
-        null,
-        null,
-        null,
-        10,
-        10,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
         null,
         1,
@@ -289,34 +201,15 @@
       "/Users/ddrucker/Desktop/GroupBuy/app/helpers/products_helper.rb": [
         1,
         1,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         104,
         104,
         104,
         104,
         104,
-<<<<<<< HEAD
-=======
-=======
-        100,
-        100,
-        100,
-        100,
-        100,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
->>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
         null,
         null,
         1,
-<<<<<<< HEAD
-        157,
-        157,
-=======
-<<<<<<< HEAD
         166,
         166,
         null,
@@ -324,28 +217,10 @@
         1,
         62,
         62,
-=======
-        153,
-        153,
->>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
-        null,
-        null,
-        1,
-        53,
-        53,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1429227414
-=======
-<<<<<<< HEAD
-    "timestamp": 1429230248
-=======
-    "timestamp": 1429227098
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
->>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
+    "timestamp": 1429230994
   }
 }
