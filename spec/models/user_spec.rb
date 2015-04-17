@@ -29,7 +29,8 @@ RSpec.describe User, type: :model do
             expect(@user.password).to match("bataviany")
         end 
     end
-        
+
+=begin
     context "the user model" do
         it "should implement the find_for_google_oauth2 method correctly" do
             #user.stub(:message) { :return_val
@@ -39,5 +40,6 @@ RSpec.describe User, type: :model do
             
         end
     end
+=end
 end
 
