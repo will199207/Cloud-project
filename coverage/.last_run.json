@@ -1,21 +1,5 @@
 {
   "result": {
-<<<<<<< HEAD
-    "covered_percent": 94.74
-=======
-<<<<<<< HEAD
-    "covered_percent": 86.36
-=======
-<<<<<<< HEAD
-    "covered_percent": 91.26
-=======
-<<<<<<< HEAD
-    "covered_percent": 81.08
-=======
-    "covered_percent": 82.88
->>>>>>> 8da51cbe2f94f60256b0c5cd7eb19803c7207651
->>>>>>> 6dde63b83b9aef4238c9411245aad02751a37ada
->>>>>>> e3daa39a91546a192a51cec944093d94bfcdf0cc
->>>>>>> 291fe9b0eddeae207420daa4f153da3577ae7e86
+    "covered_percent": 95.7
   }
 }
