@@ -35,8 +35,7 @@ Feature: Pledge to buy a Product
     Then I should see "The most radical shorts"
     And I should see "$42.50"
     And I should see "25"
-    And I should see "Chubsters"
-    When I fill in "Pledge to buy" with "1"
+    When I fill in "pledges" with "1"
     And I press "Pledge!"
     Then I should be on the pledge confirmation page
     And I should see "Pledges until Bid: 4"
