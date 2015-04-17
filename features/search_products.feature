@@ -96,7 +96,8 @@ Feature: Search products by name and/or description
   Scenario: Search for product and sort by pledges needed to hit target
     Given I have searched for "o"
     And I sort by "Close to Tilt"
-    Then I should see product target - pledges order
+    Then I should see product "target - pledges" in "sorted" order
+    And I should see that "Wolf Cola" has a pledge target number of "20"
 
   Scenario: Search for product and sort by newly listed
     Given I have searched for "o"

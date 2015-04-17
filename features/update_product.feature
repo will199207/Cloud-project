@@ -29,7 +29,7 @@ Feature: Pledge to buy a Product
       | user_password | bigdaddyjohn             |
     And I press "Log in"
     Then I should be on the home page
-    #And I should see "Welcome, Markos"
+    And I should see "Signed in successfully."
     And I should see "Chubbies"
     When I follow "Chubbies"
     Then I should see "The most radical shorts"
