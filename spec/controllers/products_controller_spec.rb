@@ -28,6 +28,7 @@ RSpec.describe ProductsController, type: :controller do
       get :show, id: 1
       expect(response).to render_template(:show)
     end
+
   end
 
   describe "POST #create" do

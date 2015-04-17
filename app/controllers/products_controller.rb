@@ -19,13 +19,13 @@ class ProductsController < ApplicationController
         if params.has_key?(:search) and params.has_key?(:field)
 	    @products = Product.search(params[:search]).sort_by(params[:field])
 	    if @products.blank?
-	        flash[:alert] = "Search did not return any results"
+		flash[:alert] = "Search did not return any results"
 	    end
 	    return @products
-	
-        else
+
+	else	
 	    if params.has_key?(:search)
-		order = params[:search]
+	        order = params[:search]
                 session[:search] = params[:search]
 	    elsif session.has_key?(:search)
                 order = session[:search]
@@ -33,8 +33,8 @@ class ProductsController < ApplicationController
                 order = ""
             end		
 			
-            if params.has_key?(:field)
-		field = params[:field]
+	    if params.has_key?(:field)
+	        field = params[:field]
                 session[:field] = params[:field]
 	    elsif session.has_key?(:field)
                 field = session[:field]
