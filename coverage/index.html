@@ -14,7 +14,7 @@
       <img src="./assets/0.9.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-04-16T19:31:38-04:00">2015-04-16T19:31:38-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-04-16T19:36:54-04:00">2015-04-16T19:36:54-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         12.1
+         12.44
        </span>
     </span> hits/line)
   </h2>
@@ -67,7 +67,7 @@
         <td>51</td>
         <td>42</td>
         <td>9</td>
-        <td>3.7</td>
+        <td>3.8</td>
       </tr>
       
       <tr>
@@ -87,7 +87,7 @@
         <td>13</td>
         <td>13</td>
         <td>0</td>
-        <td>70.5</td>
+        <td>72.6</td>
       </tr>
       
       <tr>
@@ -97,7 +97,7 @@
         <td>30</td>
         <td>26</td>
         <td>4</td>
-        <td>6.6</td>
+        <td>6.8</td>
       </tr>
       
       <tr>
@@ -123,7 +123,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.6
+         3.69
        </span>
     </span> hits/line)
   </h2>
@@ -165,7 +165,7 @@
         <td>51</td>
         <td>42</td>
         <td>9</td>
-        <td>3.7</td>
+        <td>3.8</td>
       </tr>
       
     </tbody>
@@ -180,7 +180,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         5.33
+         5.46
        </span>
     </span> hits/line)
   </h2>
@@ -212,7 +212,7 @@
         <td>30</td>
         <td>26</td>
         <td>4</td>
-        <td>6.6</td>
+        <td>6.8</td>
       </tr>
       
       <tr>
@@ -274,7 +274,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         65.54
+         67.49
        </span>
     </span> hits/line)
   </h2>
@@ -316,7 +316,7 @@
         <td>13</td>
         <td>13</td>
         <td>0</td>
-        <td>70.5</td>
+        <td>72.6</td>
       </tr>
       
     </tbody>
@@ -445,20 +445,20 @@
           <code class="ruby">    def index</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="3">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="3">
+          <span class="hits">15</span>
           
           <code class="ruby">        @new = Product.are_active.newest</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="4">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="4">
+          <span class="hits">15</span>
           
           <code class="ruby">        @almost = Product.are_active.almost_targeted</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="5">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="5">
+          <span class="hits">15</span>
           
           <code class="ruby">        @expiring = Product.are_active.almost_expired</code>
         </li>
@@ -967,32 +967,32 @@
           <code class="ruby">    def time_left(end_time)</code>
         </li>
       
-        <li class="covered" data-hits="100" data-linenumber="3">
-          <span class="hits">100</span>
+        <li class="covered" data-hits="104" data-linenumber="3">
+          <span class="hits">104</span>
           
           <code class="ruby">        end_time = DateTime.parse(end_time)</code>
         </li>
       
-        <li class="covered" data-hits="100" data-linenumber="4">
-          <span class="hits">100</span>
+        <li class="covered" data-hits="104" data-linenumber="4">
+          <span class="hits">104</span>
           
           <code class="ruby">        now = DateTime.now</code>
         </li>
       
-        <li class="covered" data-hits="100" data-linenumber="5">
-          <span class="hits">100</span>
+        <li class="covered" data-hits="104" data-linenumber="5">
+          <span class="hits">104</span>
           
           <code class="ruby">        tl = (end_time - now).to_i # tl for Time Left</code>
         </li>
       
-        <li class="covered" data-hits="100" data-linenumber="6">
-          <span class="hits">100</span>
+        <li class="covered" data-hits="104" data-linenumber="6">
+          <span class="hits">104</span>
           
           <code class="ruby">        if tl &gt;= 2</code>
         </li>
       
-        <li class="covered" data-hits="100" data-linenumber="7">
-          <span class="hits">100</span>
+        <li class="covered" data-hits="104" data-linenumber="7">
+          <span class="hits">104</span>
           
           <code class="ruby">            return &quot;#{tl} days&quot;</code>
         </li>
@@ -1021,14 +1021,14 @@
           <code class="ruby">    def listed_on(start_date)</code>
         </li>
       
-        <li class="covered" data-hits="153" data-linenumber="12">
-          <span class="hits">153</span>
+        <li class="covered" data-hits="157" data-linenumber="12">
+          <span class="hits">157</span>
           
           <code class="ruby">        start = DateTime.parse(start_date)</code>
         </li>
       
-        <li class="covered" data-hits="153" data-linenumber="13">
-          <span class="hits">153</span>
+        <li class="covered" data-hits="157" data-linenumber="13">
+          <span class="hits">157</span>
           
           <code class="ruby">        start.strftime(&quot;%b %e, &#39;%y&quot;)</code>
         </li>
@@ -1291,8 +1291,8 @@
           <code class="ruby">    def self.are_active</code>
         </li>
       
-        <li class="covered" data-hits="42" data-linenumber="34">
-          <span class="hits">42</span>
+        <li class="covered" data-hits="45" data-linenumber="34">
+          <span class="hits">45</span>
           
           <code class="ruby">        self.where(&quot;end &gt; &#39;#{DateTime.now.to_formatted_s(:db)}&#39;&quot;)</code>
         </li>
@@ -1417,8 +1417,8 @@
           <code class="ruby">    def self.newest</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="55">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="55">
+          <span class="hits">15</span>
           
           <code class="ruby">        self.order(&quot;start DESC&quot;)</code>
         </li>
@@ -1441,8 +1441,8 @@
           <code class="ruby">    def self.almost_expired</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="59">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="59">
+          <span class="hits">15</span>
           
           <code class="ruby">        self.order(&quot;end ASC&quot;)</code>
         </li>
@@ -1465,8 +1465,8 @@
           <code class="ruby">    def self.almost_targeted</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="63">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="63">
+          <span class="hits">15</span>
           
           <code class="ruby">        self.order(&quot;(pledges/(target * 1.0)) DESC&quot;)</code>
         </li>
@@ -1549,8 +1549,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="31" data-linenumber="9">
-          <span class="hits">31</span>
+        <li class="covered" data-hits="32" data-linenumber="9">
+          <span class="hits">32</span>
           
           <code class="ruby">    before_save { self.email = email.downcase }</code>
         </li>
