@@ -3,7 +3,7 @@
   %head
   .search_box
     = form_tag(search_url, :method => "get") do
-      =text_field_tag :search, params[:search]#,  "Search Products"
+      =text_field_tag :search, params[:search], placeholder: "Search"#,  "Search Products"
       =submit_tag "Search", :name => nil
 
     %meta{ charset: 'utf-8' }

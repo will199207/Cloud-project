@@ -8,9 +8,9 @@ class ProductsController < ApplicationController
     def show
 		@product = Product.find(params[:id])
     end
-    def confirm
-        @product = Product.find(params[:id])
-    end
+    #def confirm
+        #@product = Product.find(params[:id])
+    #end
     def new
 	@product = Product.new
     end
@@ -22,6 +22,7 @@ class ProductsController < ApplicationController
 		flash[:alert] = "Search did not return any results"
 	    end
 	    return @products
+
 	else	
 	    if params.has_key?(:search)
 	        order = params[:search]
@@ -30,7 +31,7 @@ class ProductsController < ApplicationController
                 order = session[:search]
             else
                 order = ""
-            end
+            end		
 			
 	    if params.has_key?(:field)
 	        field = params[:field]
@@ -40,10 +41,9 @@ class ProductsController < ApplicationController
             else
                 field = ""
 	    end
-			
 	end
 	flash.clear
-        redirect_to search_path :search => order, :field => field
+	redirect_to search_path :search => order, :field => field
     end
 
     def create
