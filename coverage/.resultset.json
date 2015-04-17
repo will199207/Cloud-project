@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/ddrucker/Desktop/GroupBuy/app/models/user.rb": [
+      "/home/csvm/GroupBuy/app/models/user.rb": [
         1,
         null,
         null,
@@ -39,7 +39,7 @@
         null,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/models/product.rb": [
+      "/home/csvm/GroupBuy/app/models/product.rb": [
         1,
         1,
         null,
@@ -51,7 +51,6 @@
         null,
         null,
         1,
-<<<<<<< HEAD
         11,
         null,
         11,
@@ -69,35 +68,12 @@
         null,
         1,
         11,
-=======
-        10,
-        null,
-        10,
-        10,
-        null,
-        10,
-        10,
-        20,
-        null,
-        null,
-        null,
-        10,
-        10,
-        null,
-        null,
-        1,
-        10,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
         null,
         null,
         null,
         1,
-<<<<<<< HEAD
         45,
-=======
-        42,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
         null,
         null,
@@ -118,7 +94,6 @@
         null,
         null,
         1,
-<<<<<<< HEAD
         15,
         null,
         null,
@@ -128,36 +103,19 @@
         null,
         1,
         15,
-=======
-        14,
-        null,
-        null,
-        1,
-        14,
-        null,
-        null,
-        1,
-        14,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/controllers/products_controller.rb": [
+      "/home/csvm/GroupBuy/app/controllers/products_controller.rb": [
         1,
         1,
-<<<<<<< HEAD
         15,
         15,
         15,
-=======
-        14,
-        14,
-        14,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
         null,
         1,
-        0,
+        1,
         null,
         1,
         0,
@@ -167,28 +125,13 @@
         null,
         null,
         1,
-<<<<<<< HEAD
         22,
         11,
         11,
         1,
-=======
-        20,
-        10,
-        10,
-        1,
-        null,
-        10,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
         11,
         null,
-<<<<<<< HEAD
-=======
-        10,
-        10,
-        10,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
         11,
         10,
@@ -199,31 +142,18 @@
         0,
         null,
         null,
-<<<<<<< HEAD
         11,
-=======
-        10,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         0,
         0,
         null,
         0,
         null,
-<<<<<<< HEAD
         11,
         null,
         null,
         null,
         11,
         11,
-=======
-        10,
-        null,
-        null,
-        null,
-        10,
-        10,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
         null,
         1,
@@ -257,62 +187,40 @@
         null,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/controllers/application_controller.rb": [
+      "/home/csvm/GroupBuy/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/helpers/application_helper.rb": [
+      "/home/csvm/GroupBuy/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/ddrucker/Desktop/GroupBuy/app/helpers/products_helper.rb": [
+      "/home/csvm/GroupBuy/app/helpers/products_helper.rb": [
         1,
         1,
-<<<<<<< HEAD
-        104,
-        104,
-        104,
-        104,
-        104,
-=======
-        100,
-        100,
-        100,
-        100,
-        100,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
+        105,
+        105,
+        105,
+        105,
+        105,
         null,
         null,
         null,
         1,
-<<<<<<< HEAD
         166,
         166,
         null,
         null,
         1,
-        62,
-        62,
-=======
-        153,
-        153,
-        null,
-        null,
-        1,
-        53,
-        53,
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
+        63,
+        63,
         null,
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1429230248
-=======
-    "timestamp": 1429227098
->>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
+    "timestamp": 1429231138
   }
 }
