@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/csvm/GroupBuy/app/models/user.rb": [
+      "/Users/ddrucker/Desktop/GroupBuy/app/models/user.rb": [
         1,
         null,
         null,
@@ -10,7 +10,7 @@
         null,
         1,
         null,
-        31,
+        32,
         1,
         null,
         null,
@@ -39,7 +39,7 @@
         null,
         null
       ],
-      "/home/csvm/GroupBuy/app/models/product.rb": [
+      "/Users/ddrucker/Desktop/GroupBuy/app/models/product.rb": [
         1,
         1,
         null,
@@ -51,6 +51,7 @@
         null,
         null,
         1,
+<<<<<<< HEAD
         10,
         null,
         10,
@@ -59,21 +60,65 @@
         10,
         10,
         20,
+=======
+<<<<<<< HEAD
+        11,
+        null,
+        11,
+        11,
+        null,
+        11,
+        11,
+        22,
         null,
         null,
         null,
+        11,
+        11,
+        null,
+        null,
+        1,
+        11,
+=======
+        10,
+        null,
+        10,
+        10,
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
+        null,
+        10,
+        10,
+        20,
+        null,
+        null,
+<<<<<<< HEAD
+=======
+        null,
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         10,
         10,
         null,
         null,
         1,
         10,
+<<<<<<< HEAD
+=======
+>>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
         null,
         null,
         null,
         1,
+<<<<<<< HEAD
         42,
+=======
+<<<<<<< HEAD
+        45,
+=======
+        42,
+>>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
         null,
         null,
@@ -94,6 +139,20 @@
         null,
         null,
         1,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        15,
+        null,
+        null,
+        1,
+        15,
+        null,
+        null,
+        1,
+        15,
+=======
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         14,
         null,
         null,
@@ -103,15 +162,31 @@
         null,
         1,
         14,
+<<<<<<< HEAD
+=======
+>>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
         null
       ],
-      "/home/csvm/GroupBuy/app/controllers/products_controller.rb": [
+      "/Users/ddrucker/Desktop/GroupBuy/app/controllers/products_controller.rb": [
         1,
         1,
+<<<<<<< HEAD
         14,
         14,
         14,
+=======
+<<<<<<< HEAD
+        15,
+        15,
+        15,
+=======
+        14,
+        14,
+        14,
+>>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
         null,
         1,
@@ -125,35 +200,87 @@
         null,
         null,
         1,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        22,
+        11,
+        11,
+        1,
+=======
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         20,
         10,
         10,
         1,
+<<<<<<< HEAD
         null,
         10,
+=======
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
+        10,
+>>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
+<<<<<<< HEAD
         10,
         10,
         10,
+=======
+        11,
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
+<<<<<<< HEAD
+=======
+        10,
+        10,
+        10,
+>>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
+        null,
+        11,
+        10,
+        10,
+        null,
+        1,
+        null,
+        0,
+        null,
+        null,
+<<<<<<< HEAD
+        10,
+=======
+<<<<<<< HEAD
+        11,
+=======
+        10,
+>>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
+        0,
         0,
         null,
         0,
         null,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        11,
+        null,
+        null,
+        null,
+        11,
+        11,
+=======
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
+        10,
+        null,
+        null,
         null,
         10,
-        0,
-        0,
-        null,
-        0,
-        null,
         10,
-        null,
-        null,
-        null,
-        10,
-        10,
+<<<<<<< HEAD
+=======
+>>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
         null,
         1,
@@ -187,29 +314,55 @@
         null,
         null
       ],
-      "/home/csvm/GroupBuy/app/controllers/application_controller.rb": [
+      "/Users/ddrucker/Desktop/GroupBuy/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/home/csvm/GroupBuy/app/helpers/application_helper.rb": [
+      "/Users/ddrucker/Desktop/GroupBuy/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/csvm/GroupBuy/app/helpers/products_helper.rb": [
+      "/Users/ddrucker/Desktop/GroupBuy/app/helpers/products_helper.rb": [
         1,
         1,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        104,
+        104,
+        104,
+        104,
+        104,
+=======
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         100,
         100,
         100,
         100,
         100,
+<<<<<<< HEAD
+=======
+>>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
         null,
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
         null,
         1,
+<<<<<<< HEAD
+        166,
+        166,
+        null,
+        null,
+        1,
+<<<<<<< HEAD
+=======
+        62,
+        62,
+=======
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         153,
         153,
         null,
@@ -217,10 +370,22 @@
         1,
         53,
         53,
+<<<<<<< HEAD
+=======
+>>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
         null,
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1429227098
+=======
+<<<<<<< HEAD
+    "timestamp": 1429230248
+=======
+    "timestamp": 1429227098
+>>>>>>> 376b13d0bd6ca7fc2e18e6dd9ef6fc499f1873e1
+>>>>>>> 93a201bf012414d8993a15d447137b9d15dd9663
   }
 }
