@@ -71,7 +71,7 @@ Given /^my "user_id" is "(\d+)"$/ do |user|
 end
 
 Given /^I sort by "([^"]*)"$/ do |sort_field|
-  fill_in('field', :with => sort_field)
+  page.select(sort_field, :from => :field)
 end
 
 When /^(?:|I )go to (.+)$/ do |page_name|
@@ -83,7 +83,7 @@ When /^(?:|I )press "([^"]*)"$/ do |button|
 end
 
 When /^(?:|I )follow "([^"]*)"$/ do |link|
-  click_link(link)
+  first(:link, link).click
 end
 
 When /^(?:|I )fill in "([^"]*)" with "([^"]*)"$/ do |field, value|
@@ -185,7 +185,7 @@ Then /^(?:|I )should not see \/([^\/]*)\/$/ do |regexp|
   end
 end
 
-Then (/^I should see that "(.*?)" has a price of "(.*?)"$/) do |arg1, arg2|
+Then /^I should see that "(.*?)" has a price of "(.*?)"$/ do |arg1, arg2|
   visit "/products"
   find(".newly_listed").all(".product").each do |row|
     name = row.find(".name").text
@@ -195,6 +195,18 @@ Then (/^I should see that "(.*?)" has a price of "(.*?)"$/) do |arg1, arg2|
     end
   end
 end
+
+Then /^I should see that "(.*?)" has a pledge target number of "(.*?)"$/ do |arg1, arg2|
+    visit "/search"
+    find(".search_results").all(".product").each do |row|
+        name = row.find(".name").text
+        if name == arg1
+          target = row.find(".tilting").text
+          expect(target).to eq(arg2)
+        end
+    end
+end
+
 
 Then /^the "([^"]*)" field(?: within (.*))? should contain "([^"]*)"$/ do |field, parent, value|
   with_scope(parent) do

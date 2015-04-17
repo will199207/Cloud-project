@@ -51,6 +51,7 @@
         null,
         null,
         1,
+<<<<<<< HEAD
         10,
         null,
         10,
@@ -68,6 +69,25 @@
         null,
         1,
         10,
+=======
+        11,
+        null,
+        11,
+        11,
+        null,
+        11,
+        11,
+        22,
+        null,
+        null,
+        null,
+        11,
+        11,
+        null,
+        null,
+        1,
+        11,
+>>>>>>> 8da51cbe2f94f60256b0c5cd7eb19803c7207651
         null,
         null,
         null,
@@ -115,7 +135,7 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         1,
         0,
@@ -125,35 +145,63 @@
         null,
         null,
         1,
+<<<<<<< HEAD
         20,
         10,
         10,
         1,
         null,
         10,
+=======
+        22,
+        11,
+        11,
+        1,
+>>>>>>> 8da51cbe2f94f60256b0c5cd7eb19803c7207651
         null,
+        11,
         null,
+<<<<<<< HEAD
         10,
         10,
         10,
+=======
+>>>>>>> 8da51cbe2f94f60256b0c5cd7eb19803c7207651
         null,
+        11,
+        10,
+        10,
+        null,
+        1,
+        null,
+        0,
+        null,
+        null,
+<<<<<<< HEAD
+        10,
+=======
+        11,
+>>>>>>> 8da51cbe2f94f60256b0c5cd7eb19803c7207651
+        0,
         0,
         null,
         0,
         null,
-        null,
-        10,
-        0,
-        0,
-        null,
-        0,
-        null,
+<<<<<<< HEAD
         10,
         null,
         null,
         null,
         10,
         10,
+=======
+        11,
+        null,
+        null,
+        null,
+        11,
+        11,
+>>>>>>> 8da51cbe2f94f60256b0c5cd7eb19803c7207651
         null,
         null,
         1,
@@ -201,15 +249,24 @@
       "/home/csvm/GroupBuy/app/helpers/products_helper.rb": [
         1,
         1,
+<<<<<<< HEAD
         104,
         104,
         104,
         104,
         104,
+=======
+        105,
+        105,
+        105,
+        105,
+        105,
+>>>>>>> 8da51cbe2f94f60256b0c5cd7eb19803c7207651
         null,
         null,
         null,
         1,
+<<<<<<< HEAD
         157,
         157,
         null,
@@ -217,10 +274,23 @@
         1,
         53,
         53,
+=======
+        166,
+        166,
+        null,
+        null,
+        1,
+        63,
+        63,
+>>>>>>> 8da51cbe2f94f60256b0c5cd7eb19803c7207651
         null,
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1429227191
+=======
+    "timestamp": 1429231387
+>>>>>>> 8da51cbe2f94f60256b0c5cd7eb19803c7207651
   }
 }
