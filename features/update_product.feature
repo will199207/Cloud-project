@@ -27,11 +27,11 @@ Feature: Pledge to buy a Product
     When I fill in the following:
       | user_email    | john.smith@gmail.com     |
       | user_password | bigdaddyjohn             |
-    And I press "Sign up"
-    Then I should be on the index page
-    And I should see "Welcome, Markos"
+    And I press "Log in"
+    Then I should be on the home page
+    And I should see "Signed in successfully."
     And I should see "Chubbies"
-    When I press "Chubbies"
+    When I follow "Chubbies"
     Then I should see "The most radical shorts"
     And I should see "$42.50"
     And I should see "25"
