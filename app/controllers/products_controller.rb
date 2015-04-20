@@ -12,7 +12,8 @@ class ProductsController < ApplicationController
         #@product = Product.find(params[:id])
     #end
     def new
-	@product = Product.new
+		redirect_to new_user_session_path if !user_signed_in?
+	    @product = Product.new
     end
 
     def search
