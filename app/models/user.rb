@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
     VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
 
-=begin    
+
     def self.find_for_google_oauth2(access_token, signed_in_resource=nil)
 	data = access_token.info
 	user = User.where(:provider => access_token.provider, :uid => access_token.uid ).first
@@ -30,7 +30,6 @@ class User < ActiveRecord::Base
 	    end
 	end
     end
-=end
     
 end
     
