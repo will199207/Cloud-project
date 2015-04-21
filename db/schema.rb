@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20150416183340) do
     t.integer  "target"
     t.integer  "pledges"
     t.string   "start"
-    t.string   "end"
+    t.string   "ending"
     t.integer  "user_id"
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false

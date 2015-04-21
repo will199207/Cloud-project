@@ -1,28 +1,28 @@
 class Product < ActiveRecord::Base
     belongs_to :user
     
-    @orders = Hash["1" => "end ASC",
-				   "2" => "price ASC",
-				   "3" => "price DESC",
-				   "4" => "target - pledges ASC",
-				   "5" => "start ASC"]
+    @orders = Hash["1" => "ending ASC",
+                    "2" => "price ASC",
+		    "3" => "price DESC",
+		    "4" => "target - pledges ASC",
+		    "5" => "start ASC"]
     
     # search stuff --------------------------------------------
     def self.search(query)
-		return all if query.blank?
+	return all if query.blank?
 
-		conditions = []
-		search_columns = [ :name, :description ]
+	conditions = []
+	search_columns = [ :name, :description ]
 
-		query.split(' ').each do |word|
-			search_columns.each do |column|
-				conditions << " lower(#{column}) LIKE lower(#{sanitize("%#{word}%")}) "
-			end
-		end
-
-		conditions = conditions.join('OR')    
-		self.where(conditions)
+	query.split(' ').each do |word|
+	    search_columns.each do |column|
+	        conditions << " lower(#{column}) LIKE lower(#{sanitize("%#{word}%")}) "
+	    end
 	end
+
+	conditions = conditions.join('OR')    
+	self.where(conditions)
+    end
 
     def self.sort_by(field)
         return Product.order(@orders[field])
@@ -31,8 +31,7 @@ class Product < ActiveRecord::Base
     #search stuff ----------------------------------------------
 
     def self.are_active
-        self.where("end > '#{DateTime.now.to_formatted_s(:db)}'")
-        
+        self.where("ending > '#{DateTime.now.to_formatted_s(:db)}'")
     end
 
     #def self.not_active
@@ -56,7 +55,7 @@ class Product < ActiveRecord::Base
     end
 
     def self.almost_expired
-        self.order("end ASC")
+        self.order("ending ASC")
     end
 
     def self.almost_targeted
