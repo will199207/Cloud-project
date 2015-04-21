@@ -21,11 +21,13 @@ class User < ActiveRecord::Base
 	    if registered_user
 		return registered_user
 	    else
-	        user = User.create(first_name: data["name"],
+	        user = User.create(first_name: data["given_name"],
+                last_name: data["family_name"],
 		provider:access_token.provider,
 		email: data["email"],
 		uid: access_token.uid ,
 		password: Devise.friendly_token[0,20],
+                #picture: data["picture"]
 		)
 	    end
 	end
