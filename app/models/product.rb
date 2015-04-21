@@ -56,7 +56,8 @@ class Product < ActiveRecord::Base
     end
 
     def self.almost_expired
-        self.order("end ASC")
+        #self.order("end ASC")
+        self.all()
     end
 
     def self.almost_targeted
