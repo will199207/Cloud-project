@@ -21,7 +21,6 @@ class User < ActiveRecord::Base
 	    if registered_user
 		return registered_user
 	    else
-                byebug
 	        user = User.create(
                 first_name: data["first_name"],
                 last_name: data["last_name"],
