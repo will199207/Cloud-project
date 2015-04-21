@@ -1,7 +1,4 @@
 #main
-
-
-    
     %h3 Welcome! Below are some hot products!
     %table.newly_listed
         %caption Newly Listed!
@@ -33,7 +30,7 @@
         -@expiring.each do |product|
             %tr.product
                 %td.name= link_to "#{product.name}", product 
-                %td.timeleft= "#{time_left(product.end)}"
+                %td.timeleft= "#{time_left(product.ending)}"
                 %td.price= number_to_currency(product.price)
                 
 =link_to "Create New Product", new_product_path

@@ -17,7 +17,7 @@ Product.create!(
     :target => 100,
     :pledges => 50,
     :start => "2015-01-22 12:00:00",
-    :end => "2015-07-02 12:00:00",
+    :ending => "2015-07-02 12:00:00",
     :user_id => 1)
 
 Product.create!(
@@ -27,7 +27,7 @@ Product.create!(
     :target => 20,
     :pledges => 6,
     :start => "2014-01-01 12:00:00",
-    :end => "2015-07-03 12:00:00",
+    :ending => "2015-07-03 12:00:00",
     :user_id => 2)
         
 Product.create!(
@@ -37,7 +37,7 @@ Product.create!(
     :target => 200,
     :pledges => 150,
     :start => "2015-02-20 12:00:00",
-    :end => "2015-07-30 12:00:00",
+    :ending => "2015-07-30 12:00:00",
     :user_id => 3)
 
 Product.create!(
@@ -47,7 +47,7 @@ Product.create!(
     :target => 10,
     :pledges => 2,
     :start => "2015-04-01 12:00:00",
-    :end => "2015-08-01 12:00:00",
+    :ending => "2015-08-01 12:00:00",
     :user_id => 4)
 
 Product.create!(
@@ -57,7 +57,7 @@ Product.create!(
     :target => 35,
     :pledges => 30,
     :start => "2014-12-25 12:00:00",
-    :end => "2015-09-04 12:00:00",
+    :ending => "2015-09-04 12:00:00",
     :user_id => 5)
 
 Product.create!(
@@ -67,7 +67,7 @@ Product.create!(
     :target => 300,
     :pledges => 30,
     :start => "2015-01-01 12:00:00",
-    :end => "2015-10-29 12:00:00",
+    :ending => "2015-10-29 12:00:00",
     :user_id => 6)
 
 Product.create!(
@@ -77,7 +77,7 @@ Product.create!(
     :target => 24,
     :pledges => 4,
     :start => "2015-02-28 09:00:00",
-    :end => "2015-12-01 12:00:00",
+    :ending => "2015-12-01 12:00:00",
     :user_id => 1)
 
 Product.create!(
@@ -87,7 +87,7 @@ Product.create!(
     :target => 100,
     :pledges => 69,
     :start => "2015-03-16 10:00:00",
-    :end => "2015-09-15 17:00:00",
+    :ending => "2015-09-15 17:00:00",
     :user_id => 2)
 
 Product.create!(
@@ -97,7 +97,7 @@ Product.create!(
     :target => 100,
     :pledges => 34,
     :start => "2015-03-22 08:00:00",
-    :end => "2015-11-04 08:30:00",
+    :ending => "2015-11-04 08:30:00",
     :user_id => 4)
 
 Product.create!(
@@ -107,7 +107,7 @@ Product.create!(
     :target => 10,
     :pledges => 1,
     :start => "2015-01-21 05:00:00",
-    :end => "2015-08-04 10:30:00",
+    :ending => "2015-08-04 10:30:00",
     :user_id => 4)
 
 Product.create!(
@@ -117,7 +117,7 @@ Product.create!(
     :target => 79,
     :pledges => 15,
     :start => "2015-02-15 05:00:00",
-    :end => "2015-08-30 10:30:0",
+    :ending => "2015-08-30 10:30:0",
     :user_id => 3)
 
 Product.create!(
@@ -127,7 +127,7 @@ Product.create!(
     :target => 79,
     :pledges => 14,
     :start => "2015-02-16 05:00:00",
-    :end => "2015-08-31 10:30:00",
+    :ending => "2015-08-31 10:30:00",
     :user_id => 3)
 
 Product.create!(
@@ -137,7 +137,7 @@ Product.create!(
     :target => 10,
     :pledges => 0,
     :start => "2015-03-21 05:00:00",
-    :end => "2015-08-01 10:30:00 ",
+    :ending => "2015-08-01 10:30:00 ",
     :user_id => 2)
 
 Product.create!(
@@ -147,7 +147,7 @@ Product.create!(
     :target => 100,
     :pledges => 37,
     :start => "2015-01-01 05:00:00",
-    :end => "2015-05-04 10:30:00",
+    :ending => "2015-05-04 10:30:00",
     :user_id => 5)
 
 Product.create!(
@@ -157,7 +157,7 @@ Product.create!(
     :target => 200,
     :pledges => 19,
     :start => "2015-03-21 05:00:00",
-    :end => "2015-10-04 10:30:00",
+    :ending => "2015-10-04 10:30:00",
     :user_id => 1)
 
 #Users---------------------------------------------- 

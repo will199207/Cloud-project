@@ -4,18 +4,18 @@ body {
   font-size: 18pt;
   font-weight: 200;
   font-style: normal;
-  background-color: #393939;
+  background-color: #000000;
   color: #FF9900; 
 }
 body #main {
-  background-color: #e0e0e0;
+  background-color: #393939;
   opacity: 1;
-  color: #980000;
+  color: #E68A00;
   width: 90%;
   left: 5%;
   position: relative;
   padding: 10px;
-  border: 5px solid #980000;
+  border: 5px solid #E68A00;
   border-radius: 10px;
 }
 body h4{
@@ -58,7 +58,7 @@ body .newly_listed {
   width: 30%;
   left: 0%;
   background-color: #6e6e6e;
-  color: #980000;
+  color: #E68A00;
   padding: 10px;
   margin-bottom: 20px;
   text-align: left;
@@ -66,7 +66,7 @@ body .newly_listed {
   font-size: 13pt;
   font-weight: 200;
   font-style: normal; 
-  border: 5px solid #980000;
+  border: 5px solid #E68A00;
   border-radius: 10px;
 }
 body .ending_soon {
@@ -76,7 +76,7 @@ body .ending_soon {
   left: 34%; 
   opacity: 1.0;
   background-color: #6E6E6E;
-  color: #980000;
+  color: #E68A00;
   padding: 10px;
   margin-bottom: 20px;
   text-align: left;
@@ -84,7 +84,7 @@ body .ending_soon {
   font-size: 13pt;
   font-weight: 200;
   font-style: normal; 
-  border: 5px solid #980000;
+  border: 5px solid #E68A00;
   border-radius: 10px;
 }
 body .close_to_target {
@@ -93,7 +93,7 @@ body .close_to_target {
   width: 30%;
   left: 69%;
   background-color: #6E6E6E;
-  color: #980000;
+  color: #E68A00;
   padding: 10px;
   margin-bottom: 20px;
   text-align: left;
@@ -101,15 +101,15 @@ body .close_to_target {
   font-size: 13pt;
   font-weight: 200;
   font-style: normal; 
-  border: 5px solid #980000;
+  border: 5px solid #E68A00;
   border-radius: 10px;
 }
 body .search_results {
   position: relative;
   top: 0px;
   width: 100%;
-  background-color: #ffcc33;
-  color: #980000;
+  background-color: #6E6E6E;
+  color: #E68A00;
   padding: 10px;
   margin-bottom: 20px;
   text-align: left;
@@ -117,7 +117,7 @@ body .search_results {
   font-size: 13pt;
   font-weight: 200;
   font-style: normal; 
-  border: 5px solid #980000;
+  border: 5px solid #E68A00;
   border-radius: 10px;
 }
 body .products_table caption {
@@ -128,6 +128,7 @@ body .products_table caption {
 }
 body th {
   font-weight: bold; 
+  color: #FFFFFF;
 }
 body a:link, body a:visited, body .products_table th {
   color: #FFFFFF;
@@ -136,6 +137,18 @@ body a:link, body a:visited, body .products_table th {
 body .price {
   text-align: right;
   color: #FFFFFF;
+}
+body .description {
+  color: #FFFFFF;
+}
+body .pledges {
+  color: #FFFFFF; 
+}
+body .tilting { 
+  color: #FFFFFF; 
+}
+body .target {
+  color: #FFFFFF; 
 }
 body .timecreated {
   color: #FFFFFF; 
