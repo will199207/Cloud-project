@@ -4,11 +4,8 @@ body {
   font-size: 18pt;
   font-weight: 200;
   font-style: normal;
-  background-image: url(http://i.ytimg.com/vi/fVsONlc3OUY/maxresdefault.jpg);
-  background-color: #cccccc;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #980000; 
+  background-color: #393939;
+  color: #FF9900; 
 }
 body #main {
   background-color: #e0e0e0;
@@ -18,14 +15,14 @@ body #main {
   left: 5%;
   position: relative;
   padding: 10px;
-  border: 5px solid #CC3300;
+  border: 5px solid #980000;
   border-radius: 10px;
 }
 body h4{
   font-family: Helvetica, sans-serif;
   text-align: center; 
   font-size: 28pt;
-  font-weight: 500;
+  font-weight: 2000;
   font-style: normal;
   background-color: transparent;
   color: white;
@@ -42,11 +39,10 @@ body h3 {
 }
 body h2 {
   font-family: Helvetica, sans-serif;
-  font-size: 15pt;
-  font-weight: 200;
+  font-size: 20pt;
+  font-weight: 500;
   font-style: normal;
   text-align: center;
-  background-color: #CC6600;
 }
 body h1 {
   font-family: Helvetica, sans-serif;
@@ -61,7 +57,7 @@ body .newly_listed {
   top: -33px;
   width: 30%;
   left: 0%;
-  background-color: #ffcc33;
+  background-color: #6e6e6e;
   color: #980000;
   padding: 10px;
   margin-bottom: 20px;
@@ -76,10 +72,10 @@ body .newly_listed {
 body .ending_soon {
   position: absolute; 
   top: 62px;
-  width: 30%;
-  left: 35%;
+  width: 32%;
+  left: 34%; 
   opacity: 1.0;
-  background-color: #ffcc33;
+  background-color: #6E6E6E;
   color: #980000;
   padding: 10px;
   margin-bottom: 20px;
@@ -95,8 +91,8 @@ body .close_to_target {
   position: absolute;
   top: 62px;
   width: 30%;
-  left: 70%;
-  background-color: #ffcc33;
+  left: 69%;
+  background-color: #6E6E6E;
   color: #980000;
   padding: 10px;
   margin-bottom: 20px;
@@ -128,17 +124,27 @@ body .products_table caption {
   font-family: Helvetica, sans-serif;
   font-size: 20pt;
   font-weight: 200;
-  font-style: normal; 
+  font-style: normal;
 }
 body th {
   font-weight: bold; 
 }
 body a:link, body a:visited, body .products_table th {
-  color: #336600;
+  color: #FFFFFF;
   background-color: transparent; 
 }
 body .price {
-    text-align: right; 
+  text-align: right;
+  color: #FFFFFF;
+}
+body .timecreated {
+  color: #FFFFFF; 
+}
+body .timeleft {
+  color: #FFFFFF;
+}
+body .percent {
+  color: #FFFFFF; 
 }
 body .back_link:link {
   color: #980000;
