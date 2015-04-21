@@ -15,6 +15,24 @@ RSpec.describe ProductsController, type: :controller do
     end
   end
 
+  describe "GET #search" do
+    it "routes correctly" do
+      get :search
+      expect(response.status).to eq(200)
+    end
+    it "assigns empty string if no :search is defined in params or session" do
+      params[:search] = nil
+      session[:search] = nil
+      expect(order).to eq("")
+    end
+    it "assigns :field variable to field and session[:field] if params has a :field value" do
+      params[:search] = nil
+      params[:field] = "Ending Soonest"
+      expect(field).to eq("Ending Soonest")
+      expect(session[:field]).to eq("Ending Soonest")
+    end
+end
+
   describe "GET #show" do
     it "routes correctly" do
       expect(Product).to receive(:find).with("1") { p }
@@ -28,7 +46,6 @@ RSpec.describe ProductsController, type: :controller do
       get :show, id: 1
       expect(response).to render_template(:show)
     end
-
   end
 
   describe "POST #create" do

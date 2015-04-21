@@ -103,4 +103,4 @@ Feature: Search products by name and/or description
     Given I have searched for "o"
     And I sort by "Newly Listed"
     Then I should see product "start_date" in "sorted" order
-   
+

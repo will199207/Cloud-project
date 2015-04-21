@@ -50,6 +50,29 @@ Given /^(?:|I )have searched for "([^"]*)"$/ do |string|
     }
 end
 
+Given /^I am logged in with username "(.*?)" and password "(.*?)"$/ do |arg1, arg2|
+    steps %Q{
+        Given no users are logged in
+        And I am on the login page
+        And I fill in the following:
+            | user_email          | mgeorges@colgate.edu          |
+            | user_password       | greekfreak                    |
+        And I press "Log in"
+        Then "Markos" should be logged in
+    }
+end
+
+Given /^no users are logged in$/ do
+    visit "/products"
+    if page.has_no_link?("Login")
+        page.click_link("Sign Out")
+    end 
+    expect(page).to have_link("Login")
+end
+
+
+
+
 Given /^(?:|I )am on (.+)$/ do |page_name|
   visit path_to(page_name)
 end
@@ -135,6 +158,10 @@ end
 
 When /^(?:|I )attach the file "([^"]*)" to "([^"]*)"$/ do |path, field|
   attach_file(field, File.expand_path(path))
+end
+
+Then /^"(.*?)" should be logged in$/ do |arg1|
+    expect(page).to have_content(arg1)
 end
 
 Then /^(?:|I )should see product "([^"]*)" in "([^"]*)" order$/ do |field, sort_by|
