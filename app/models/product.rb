@@ -31,8 +31,8 @@ class Product < ActiveRecord::Base
     #search stuff ----------------------------------------------
 
     def self.are_active
-        self.where("end > '#{DateTime.now.to_formatted_s(:db)}'")
-        #self.all()
+        #self.where("end > '#{DateTime.now.to_formatted_s(:db)}'")
+        self.all()
     end
 
     #def self.not_active
