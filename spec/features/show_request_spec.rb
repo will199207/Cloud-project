@@ -7,9 +7,9 @@ RSpec.describe "show page", type: :feature do
             :description => "Cheap Caffinee",
             :price => 1.50,
             :target => 100,
-            :pledges => 50,
+            :pledge_count => 50,
             :start => "2015-01-22 12:00:00",
-            :end => "2015-08-02 12:00:00",
+            :ending => "2015-08-02 12:00:00",
             :user_id => 1)
 
         Product.create!(
@@ -17,9 +17,9 @@ RSpec.describe "show page", type: :feature do
             :description => "Probably need one",
             :price => 550.00,
             :target => 20,
-            :pledges => 6,
+            :pledge_count => 6,
             :start => "2014-01-01 12:00:00",
-            :end => "2015-08-03 12:00:00",
+            :ending => "2015-08-03 12:00:00",
             :user_id => 2)
 
         visit "/products"

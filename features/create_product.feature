@@ -5,10 +5,10 @@ Feature: Create new product
 
   Background: GroupBuy has several products and users
     Given these Products:
-      | name        |       description         | price  | target | pledges |          start      |          end        | user_id |
-      | Wolf Cola   | Bubbly and delicious      |   0.25 |   24   |    4    | 2015-03-30 09:00:00 | 2015-05-01 12:00:00 |    1    |
-      | Xbox One    | Second-rate game console  | 300.00 |  100   |   69    | 2015-04-16 10:00:00 | 2015-06-15 17:00:00 |    2    |
-      | Water Bed   | More motion in the ocean  | 500.00 |  100   |   34    | 2015-03-21 08:00:00 | 2015-04-04 08:30:00 |    4    |
+      | name        |       description         | price  | target | pledge_count |          start      |          ending        | user_id |
+      | Wolf Cola   | Bubbly and delicious      |   0.25 |   24   |    4         | 2015-03-30 09:00:00 | 2015-05-01 12:00:00    |    1    |
+      | Xbox One    | Second-rate game console  | 300.00 |  100   |   69         | 2015-04-16 10:00:00 | 2015-06-15 17:00:00    |    2    |
+      | Water Bed   | More motion in the ocean  | 500.00 |  100   |   34         | 2015-03-21 08:00:00 | 2015-04-04 08:30:00    |    4    |
 
     Given these Users:
       | id | email                     | first_name | last_name |    password       |   
@@ -32,11 +32,11 @@ Feature: Create new product
       | product_target      | 30                            |
     
     When I select the following options:
-      | product_end_1i      | 2015                          |
-      | product_end_2i      | May                           |
-      | product_end_3i      | 21                            |
-      | product_end_4i      | 17                            |
-      | product_end_5i      | 00                            |
+      | product_ending_1i      | 2015                          |
+      | product_ending_2i      | May                           |
+      | product_ending_3i      | 21                            |
+      | product_ending_4i      | 17                            |
+      | product_ending_5i      | 00                            |
 
     And I press "Post"
     Then I should be on the products page
@@ -55,11 +55,11 @@ Feature: Create new product
       | product_target      | 30                            |
     
     When I select the following options:
-      | product_end_1i      | 2015                          |
-      | product_end_2i      | May                           |
-      | product_end_3i      | 21                            |
-      | product_end_4i      | 17                            |
-      | product_end_5i      | 00                            |
+      | product_ending_1i      | 2015                          |
+      | product_ending_2i      | May                           |
+      | product_ending_3i      | 21                            |
+      | product_ending_4i      | 17                            |
+      | product_ending_5i      | 00                            |
 
     And I press "Post"
     Then I should be on the products page
