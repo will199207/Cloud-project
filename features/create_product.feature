@@ -1,6 +1,6 @@
 Feature: Create new product
   As a user
-  so that I can sell my product
+  So that I can sell my product
   I want to be able to add new product listings to GroupBuy
 
   Background: GroupBuy has several products and users
@@ -16,9 +16,15 @@ Feature: Create new product
       |  2 | wgarcia@colgate.edu       | William    | Garcia    | chiefcia          |
       |  3 | rely@colgate.edu          | Willets    | Ely       | presidentwill     |
       |  4 | ddrucker@colgate.edu      | Daniel     | Drucker   | GOHAWKSS          |
-  Scenario: Create a new product
-    Given I am on the create new product page
-    And my "user_id" is "1"
+  Scenario: Create a new product requires guests to log in
+    Given I am on the index page
+    And I follow "Create New Product"
+    Then I should be on the login page
+    And I fill in the following:
+      | user_email          | mgeorges@colgate.edu          |
+      | user_password       | greekfreak                    |
+    And I press "Log in"
+    Then I should be on the create new product page
     When I fill in the following:
       | product_name        | Kitten Mittens                |
       | product_description | Keeps your noisey cats quiet  |
@@ -36,3 +42,27 @@ Feature: Create new product
     Then I should be on the products page
     And I should see "New product Kitten Mittens created successfully"
     And I should see that "Kitten Mittens" has a price of "$4.98"
+
+  Scenario: Create a new product for signed in users
+    Given I am logged in with username "mgeorges@colgate.edu" and password "greekfreak"
+    And I am on the index page
+    And I follow "Create New Product"
+    Then I should be on the create new product page
+    When I fill in the following:
+      | product_name        | Kitten Mittens                |
+      | product_description | Keeps your noisey cats quiet  |
+      | product_price       | 4.98                          |
+      | product_target      | 30                            |
+    
+    When I select the following options:
+      | product_end_1i      | 2015                          |
+      | product_end_2i      | May                           |
+      | product_end_3i      | 21                            |
+      | product_end_4i      | 17                            |
+      | product_end_5i      | 00                            |
+
+    And I press "Post"
+    Then I should be on the products page
+    And I should see "New product Kitten Mittens created successfully"
+    And I should see that "Kitten Mittens" has a price of "$4.98"
+

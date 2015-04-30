@@ -28,9 +28,9 @@ Devise.setup do |config|
   #APP_ID = "60484279918-mot1mj74l8v9srq7cf3k8jqc6b1sjt0t.apps.googleusercontent.com"
   
 
-  APP_SECRET = "E1V4eJRTD_wOuNHbi8AV2a5v"
-  APP_ID = "60484279918-8u48rcighd2stvm87mb50esjigsi7ca2.apps.googleusercontent.com"
-  config.omniauth :google_oauth2, APP_ID, APP_SECRET, { access_type: "offline", approval_prompt: "" }
+  app_secret = "cni8B3xt0_Q9DFBFJQBZcND9"
+  app_id = "60484279918-8u48rcighd2stvm87mb50esjigsi7ca2.apps.googleusercontent.com"
+  config.omniauth :google_oauth2, app_id, app_secret, { access_type: "offline", approval_prompt: "" }
   
   
   #require 'omniauth-google-oauth2'

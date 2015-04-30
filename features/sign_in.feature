@@ -52,3 +52,7 @@ Feature: Access the Home Page
     And I press "Sign up"
     Then I should be on the users page
     And I should see "Email has already been taken"
+  Scenario: Google Oauth should work 
+    Given no users are logged in 
+    When I am on the login page
+    And I follow "Sign in with Google Oauth2"

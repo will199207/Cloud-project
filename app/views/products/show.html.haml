@@ -1,20 +1,20 @@
 #main
   %h3 #{@product.name}
-  %h5 Listing Expires: #{listing_expires(@product.end)}
-  %h5 Time Left: #{time_left(@product.end)} 
+  %h5 Listing Expires: #{listing_expires(@product.ending)}
+  %h5 Time Left: #{time_left(@product.ending)} 
   %table.centered_table
     %tr.products_header
       %th Pledges Made So Far
       %th Target Number
       %th Price
     %tr.product_info
-      %td= @product.pledges
+      %td= @product.pledge_count
       %td= @product.target
       %td= number_to_currency(@product.price)
 
   = form_tag "/products/#{@product.id}/confirm_pledge" do
     = label_tag 'Place an order'
-    = number_field_tag 'pledges', 0, in: 1...(1 + @product.target - @product.pledges) 
+    = number_field_tag 'pledges', 0, in: 1...(1 + @product.target - @product.pledge_count) 
     = submit_tag 'Pledge!'
 
   %h2 Product Description

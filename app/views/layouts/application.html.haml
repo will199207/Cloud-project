@@ -6,6 +6,13 @@
       =text_field_tag :search, params[:search], placeholder: "Search"#,  "Search Products"
       =submit_tag "Search", :name => nil
 
+  .user_name
+    = "Welcome, "
+    - if current_user.present? 
+      = link_to "#{current_user.first_name}!", users_path
+    - else
+      = "Guest!"
+
     %meta{ charset: 'utf-8' }
     %title GroupBuy!
     = csrf_meta_tags
@@ -21,13 +28,14 @@
       - if flash.alert
         .notice.alert= flash.alert
     
-    %caption= link_to "Login", new_user_session_path
-    %caption or
-    %caption= link_to "Sign Up", new_user_registration_path
-    %caption or
-    %caption= link_to "Sign Out", destroy_user_session_path, method: "delete"
-    %caption or
-    %caption= link_to "Edit User Registration", edit_user_registration_path
+    - if !user_signed_in?
+      %caption= link_to "Login", new_user_session_path
+      %caption or
+      %caption= link_to "Register", new_user_registration_path
+    - else
+      %caption= link_to "Sign Out", destroy_user_session_path, method: "delete"
+      %caption or
+      %caption= link_to "Edit User Account", edit_user_registration_path
 
 	
     = yield

@@ -1,7 +1,4 @@
 #main
-
-
-    
     %h3 Welcome! Below are some hot products!
     %table.newly_listed
         %caption Newly Listed!
@@ -22,7 +19,7 @@
         - @almost.each do |product|
             %tr.product
                 %td.name= link_to "#{product.name}", product
-                %td.percent= (product.pledges/product.target.to_f).round(3)*100
+                %td.percent= (product.pledge_count/product.target.to_f).round(3)*100
                 %td.price= number_to_currency(product.price)
 
     %table.ending_soon
@@ -33,8 +30,8 @@
         -@expiring.each do |product|
             %tr.product
                 %td.name= link_to "#{product.name}", product 
-                %td.timeleft= "#{time_left(product.end)}"
+                %td.timeleft= "#{time_left(product.ending)}"
                 %td.price= number_to_currency(product.price)
                 
-    =link_to "Create New Product", new_product_path
+=link_to "Create New Product", new_product_path
 

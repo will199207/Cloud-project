@@ -4,7 +4,6 @@
         =#label :sort_by, "Sort by"
         =select_tag(:field, options_for_select([['Select sort options', 1], ['Ending Soonest', 1], ['Price low to high', 2], ['Price high to low', 3], ['Close to Tilt', 4], ['Newly Listed', 5]]))
         =submit_tag 'Sort products'
-    =#params.inspect
     %table.search_results
         %caption Search Results
         %th Product
@@ -20,9 +19,9 @@
                 %td.name= link_to "#{product.name}", product
                 %td.description= product.description
                 %td.timecreated= listed_on(product.start)
-                %td.timeending= listing_expires(product.end)
-                %td.pledges= product.pledges
+                %td.timeleft= listing_expires(product.ending)
+                %td.pledges= product.pledge_count
                 %td.target= product.target
-                %td.tilting= product.target - product.pledges
+                %td.tilting= product.target - product.pledge_count
                 %td.price= number_to_currency(product.price)
-    = link_to "Back to Homepage", products_path
+    

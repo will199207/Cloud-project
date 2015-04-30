@@ -15,9 +15,9 @@ Product.create!(
     :description => "Cheap Caffinee",
     :price => 1.50,
     :target => 100,
-    :pledges => 50,
+    :pledge_count => 50,
     :start => "2015-01-22 12:00:00",
-    :end => "2015-07-02 12:00:00",
+    :ending => "2015-07-02 12:00:00",
     :user_id => 1)
 
 Product.create!(
@@ -25,9 +25,9 @@ Product.create!(
     :description => "Probably need one",
     :price => 550.00,
     :target => 20,
-    :pledges => 6,
+    :pledge_count => 6,
     :start => "2014-01-01 12:00:00",
-    :end => "2015-07-03 12:00:00",
+    :ending => "2015-07-03 12:00:00",
     :user_id => 2)
         
 Product.create!(
@@ -35,9 +35,9 @@ Product.create!(
     :description => "Keep the kids quiet",
     :price => 15.99,
     :target => 200,
-    :pledges => 150,
+    :pledge_count => 150,
     :start => "2015-02-20 12:00:00",
-    :end => "2015-07-30 12:00:00",
+    :ending => "2015-07-30 12:00:00",
     :user_id => 3)
 
 Product.create!(
@@ -45,9 +45,9 @@ Product.create!(
     :description => "Four wheels and a engine",
     :price => 35000.00,
     :target => 10,
-    :pledges => 2,
+    :pledge_count => 2,
     :start => "2015-04-01 12:00:00",
-    :end => "2015-08-01 12:00:00",
+    :ending => "2015-08-01 12:00:00",
     :user_id => 4)
 
 Product.create!(
@@ -55,9 +55,9 @@ Product.create!(
     :description => "Good for planes",
     :price => 120.00,
     :target => 35,
-    :pledges => 30,
+    :pledge_count => 30,
     :start => "2014-12-25 12:00:00",
-    :end => "2015-09-04 12:00:00",
+    :ending => "2015-09-04 12:00:00",
     :user_id => 5)
 
 Product.create!(
@@ -65,9 +65,9 @@ Product.create!(
     :description => "Round and made of rubber",
     :price => 220.00,
     :target => 300,
-    :pledges => 30,
+    :pledge_count => 30,
     :start => "2015-01-01 12:00:00",
-    :end => "2015-10-29 12:00:00",
+    :ending => "2015-10-29 12:00:00",
     :user_id => 6)
 
 Product.create!(
@@ -75,9 +75,9 @@ Product.create!(
     :description => "Bubbly and delicious",
     :price => 0.25,
     :target => 24,
-    :pledges => 4,
+    :pledge_count => 4,
     :start => "2015-02-28 09:00:00",
-    :end => "2015-12-01 12:00:00",
+    :ending => "2015-12-01 12:00:00",
     :user_id => 1)
 
 Product.create!(
@@ -85,9 +85,9 @@ Product.create!(
     :description => "Second-rate game console",
     :price => 300.00,
     :target => 100,
-    :pledges => 69,
+    :pledge_count => 69,
     :start => "2015-03-16 10:00:00",
-    :end => "2015-09-15 17:00:00",
+    :ending => "2015-09-15 17:00:00",
     :user_id => 2)
 
 Product.create!(
@@ -95,9 +95,9 @@ Product.create!(
     :description => "More motion in the ocean",
     :price => 500.00,
     :target => 100,
-    :pledges => 34,
+    :pledge_count => 34,
     :start => "2015-03-22 08:00:00",
-    :end => "2015-11-04 08:30:00",
+    :ending => "2015-11-04 08:30:00",
     :user_id => 4)
 
 Product.create!(
@@ -105,9 +105,9 @@ Product.create!(
     :description => "Makes wolf cars fast",
     :price => 20.55,
     :target => 10,
-    :pledges => 1,
+    :pledge_count => 1,
     :start => "2015-01-21 05:00:00",
-    :end => "2015-08-04 10:30:00",
+    :ending => "2015-08-04 10:30:00",
     :user_id => 4)
 
 Product.create!(
@@ -115,9 +115,9 @@ Product.create!(
     :description => "Better than an iPhone",
     :price => 99,
     :target => 79,
-    :pledges => 15,
+    :pledge_count => 15,
     :start => "2015-02-15 05:00:00",
-    :end => "2015-08-30 10:30:0",
+    :ending => "2015-08-30 10:30:0",
     :user_id => 3)
 
 Product.create!(
@@ -125,9 +125,9 @@ Product.create!(
     :description => "For those who think alike",
     :price => 199.99,
     :target => 79,
-    :pledges => 14,
+    :pledge_count => 14,
     :start => "2015-02-16 05:00:00",
-    :end => "2015-08-31 10:30:00",
+    :ending => "2015-08-31 10:30:00",
     :user_id => 3)
 
 Product.create!(
@@ -135,9 +135,9 @@ Product.create!(
     :description => "Outdated 2nd-rate console",
     :price => 99.99,
     :target => 10,
-    :pledges => 0,
+    :pledge_count => 0,
     :start => "2015-03-21 05:00:00",
-    :end => "2015-08-01 10:30:00 ",
+    :ending => "2015-08-01 10:30:00 ",
     :user_id => 2)
 
 Product.create!(
@@ -145,9 +145,9 @@ Product.create!(
     :description => "For better hydration",
     :price => 12.00,
     :target => 100,
-    :pledges => 37,
+    :pledge_count => 37,
     :start => "2015-01-01 05:00:00",
-    :end => "2015-05-04 10:30:00",
+    :ending => "2015-05-04 10:30:00",
     :user_id => 5)
 
 Product.create!(
@@ -155,9 +155,9 @@ Product.create!(
     :description => "More fun for everyone",
     :price => 3.00,
     :target => 200,
-    :pledges => 19,
+    :pledge_count => 19,
     :start => "2015-03-21 05:00:00",
-    :end => "2015-10-04 10:30:00",
+    :ending => "2015-10-04 10:30:00",
     :user_id => 1)
 
 #Users---------------------------------------------- 
@@ -190,5 +190,89 @@ User.create!(
     :password => "bataviany",
     :password_confirmation => "bataviany")
 
+#Pledges------------------------------------------
+
+for i in 0..50
+	Pledge.create!(
+	    :user_id => 4,
+	    :product_id => 1)
+end
+
+for i in 0..6
+	Pledge.create!(
+	    :user_id => 3,
+	    :product_id => 2)
+end
+
+for i in 0..150
+	Pledge.create!(
+	    :user_id => 2,
+	    :product_id => 3)
+end
+
+for i in 0..2
+	Pledge.create!(
+	    :user_id => 1,
+	    :product_id => 4)
+end
+
+for i in 0..30
+	Pledge.create!(
+	    :user_id => 4,
+	    :product_id => 5)
+end
+
+for i in 0..30
+	Pledge.create!(
+	    :user_id => 3,
+	    :product_id => 6)
+end
+
+for i in 0..4
+	Pledge.create!(
+	    :user_id => 2,
+	    :product_id => 7)
+end
+
+for i in 0..69
+	Pledge.create!(
+	    :user_id => 1,
+	    :product_id => 8)
+end
+
+for i in 0..34
+	Pledge.create!(
+	    :user_id => 4,
+	    :product_id => 9)
+end
+
+for i in 0..1
+	Pledge.create!(
+	    :user_id => 3,
+	    :product_id => 10)
+end
+
+for i in 0..15
+	Pledge.create!(
+	    :user_id => 2,
+	    :product_id => 11)
+end
+
+for i in 0..14
+	Pledge.create!(
+	    :user_id => 1,
+	    :product_id => 12)
+end
 
 
+for i in 0..37
+	Pledge.create!(
+	    :user_id => 3,
+	    :product_id => 14)
+end
+
+for i in 0..19
+	Pledge.create!(
+	    :user_id => 2,
+	    :product_id => 187)
+end
