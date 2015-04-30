@@ -1,0 +1,15 @@
+body .user_table {
+  position: relative;
+  width: 30%; 
+  background-color: #6e6e6e;
+  color: #E68A00;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: Helvetica, sans-serif;
+  font-size: 13pt;
+  font-weight: 200;
+  font-style: normal; 
+  border: 5px solid #E68A00;
+  border-radius: 10px;
+}

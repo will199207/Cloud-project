@@ -1,2 +1,20 @@
 #main
-  %h3= " Welcome, #{current_user.first_name}"
+  %h3= "Welcome, #{current_user.first_name}"
+  %table.user_table1
+    %caption Products You've Pledged to Buy
+    %th Product
+    %th % Pledged
+    - @buying.each do |product|
+      %tr.product
+        %td.name= link_to "#{product.name}", product
+        %td.ending= "#{time_left(product.ending)}"
+
+  %table.user_table2
+    %caption Products You've Listed for Sale
+    %th Product
+    %th % Ends on
+    - @selling.each do |product|
+      %tr.product
+        %td.name= link_to "#{product.name}", product
+        %td.ending= "#{time_left(product.ending)}"
+=link_to "Back to Home", products_path
