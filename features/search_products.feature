@@ -65,6 +65,18 @@ Feature: Search products by name and/or description
     But I should not see "Water bottles"
     But I should not see "iPhone9"
   
+  Scenario: Search for a product with an empty search field
+    Given I have searched for ""
+    Then I should see "Water Bed"
+    And I should see "Bubble mix"
+    And I should see "Wolf Cola"
+    And I should see "Turbocharger"
+    And I should see "Galaxy SIII"
+    And I should see "Xbox 360"
+    And I should see "Xbox One"
+    And I should see "Water bottles"
+    And I should see "iPhone9"
+  
   Scenario: Search for product comes back empty
     Given I have searched for "arbitrary"
     Then I should see "Search did not return any results"
