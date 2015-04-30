@@ -1,10 +1,8 @@
 #main
-  %h3 Pledge Confirmation
-  %h3 #{@product.name}
-  -total_price = @product.price * params[:pledges]
-  %h2 Your pledge: #{params[:pledges]} #{@product.name}s for #{total_price}
-  -pledges_until = @product.target - (@product.pledges + params[:pledges]
-  %h2 Pledges until target is hit: #{pledges_until}
-  %h2 Listing Expires: #{end_date.strftime("%A %B %e, %Y at %l:%M %p")}
+  %h3 Pledge Confirmation for #{@product.name}
+  %h2 Your pledge: #{your_pledge(@product, params[:pledges])}
+
+  %h2 Pledges until target is hit: 
+  %h2 Listing Expires: #{listing_expires(@product.ending)}
 
   =submit_tag 'Confirm'

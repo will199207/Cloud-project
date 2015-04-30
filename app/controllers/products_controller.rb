@@ -8,9 +8,9 @@ class ProductsController < ApplicationController
     def show
 	@product = Product.find(params[:id])
     end
-    #def confirm
-        #@product = Product.find(params[:id])
-    #end
+    def confirm
+        @product = Product.find(params[:id])
+    end
     def new
 	#redirect_to new_user_session_path if !user_signed_in?
 	if !anyone_signed_in?

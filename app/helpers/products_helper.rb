@@ -17,4 +17,12 @@ module ProductsHelper
         end_date = DateTime.parse(end_date)
         end_date.strftime("%A %B %e, %Y at %l:%M %p")
     end
+
+    def your_pledge(product, pledges)
+        pledges = pledges.to_i
+        total_price = product.price * pledges
+        name = product.name
+        if pledges > 1; name.pluralize; end
+        return "#{pledges} #{name} for #{number_to_currency(total_price)}"
+    end
 end
