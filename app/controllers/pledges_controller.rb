@@ -23,11 +23,13 @@ class PledgesController < ApplicationController
     end
 
     def show
+        @product = Product.find(params[:id])
+        redirect_to product_path @product.id if @product.pledges == @product.target
     	if !anyone_signed_in?
             flash[:alert] = "You must be logged in to buy a product!"
             deny_access
         else
-            @product = Product.find(params[:id])
+            return @product
         end
     end
 
