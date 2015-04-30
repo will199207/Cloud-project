@@ -5,7 +5,7 @@ class CreateProducts < ActiveRecord::Migration
       t.text :description
       t.decimal :price, :precision => 10, :scale => 2
       t.integer :target
-      t.integer :pledges
+      t.integer :pledge_count
       t.string :start
       t.string :ending
       t.integer :user_id

@@ -7,8 +7,11 @@
       =submit_tag "Search", :name => nil
 
   .user_name
-    - if current_user.present?
-      = "Welcome, #{current_user.first_name}!"
+    = "Welcome, "
+    - if current_user.present? 
+      = link_to "#{current_user.first_name}!", users_path
+    - else
+      = "Guest!"
 
     %meta{ charset: 'utf-8' }
     %title GroupBuy!

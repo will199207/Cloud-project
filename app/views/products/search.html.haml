@@ -20,8 +20,8 @@
                 %td.description= product.description
                 %td.timecreated= listed_on(product.start)
                 %td.timeleft= listing_expires(product.ending)
-                %td.pledges= product.pledges
+                %td.pledges= product.pledge_count
                 %td.target= product.target
-                %td.tilting= product.target - product.pledges
+                %td.tilting= product.target - product.pledge_count
                 %td.price= number_to_currency(product.price)
     

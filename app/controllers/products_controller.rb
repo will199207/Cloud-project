@@ -54,7 +54,7 @@ class ProductsController < ApplicationController
 	values = create_update_params
 	values[:start] = DateTime.now.to_formatted_s(:db)
         values[:ending] = fix_date(values.delete("ending(1i)"), values.delete("ending(2i)"), values.delete("ending(3i)"), values.delete("ending(4i)"), values.delete("ending(5i)")) 
-		values[:pledges] = 0
+		values[:pledge_count] = 0
 		values[:user_id] = User.pluck(:id).sample
         p = Product.new(values)
         if p.save
@@ -68,7 +68,7 @@ class ProductsController < ApplicationController
 
     private
     def create_update_params
-        params.require(:product).permit(:name, :description, :price, :target, :pledges, :start, :ending, :user_id)
+        params.require(:product).permit(:name, :description, :price, :target, :pledge_count, :start, :ending, :user_id)
     end
 
     def fix_date(year, month, day, hour, minute)

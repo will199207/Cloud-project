@@ -1,6 +1,8 @@
 class Product < ActiveRecord::Base
     belongs_to :user
-    
+    has_many :pledges
+    has_many :users, :through => :pledges
+
     @orders = Hash["1" => "ending ASC",
                     "2" => "price ASC",
 		    "3" => "price DESC",
@@ -39,11 +41,11 @@ class Product < ActiveRecord::Base
     #end
 
     #def self.target_not_hit
-    #    self.where("target > pledges")
+    #    self.where("target > pledge_count")
     #end
     
     #def self.target_hit
-    #    self.where("target = pledges")
+    #    self.where("target = pledge_count")
     #end
 
     #def self.oldest
@@ -59,6 +61,6 @@ class Product < ActiveRecord::Base
     end
 
     def self.almost_targeted
-        self.order("(pledges/(target * 1.0)) DESC")
+        self.order("(pledge_count/(target * 1.0)) DESC")
     end
 end
