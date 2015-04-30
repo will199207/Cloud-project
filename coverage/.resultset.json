@@ -12,7 +12,11 @@
         1,
         1,
         null,
+<<<<<<< HEAD
         1,
+=======
+        42,
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
         1,
         null,
         null,
@@ -57,7 +61,11 @@
         null,
         null,
         1,
+<<<<<<< HEAD
         0,
+=======
+        12,
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
         null,
         0,
         0,
@@ -69,6 +77,45 @@
         null,
         null,
         0,
+        0,
+        null,
+        null,
+        1,
+<<<<<<< HEAD
+        0,
+=======
+        12,
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
+        null,
+        null,
+        null,
+        null,
+        1,
+<<<<<<< HEAD
+        0,
+=======
+        69,
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+<<<<<<< HEAD
         0,
         null,
         null,
@@ -76,43 +123,32 @@
         0,
         null,
         null,
+        1,
+        0,
+=======
+        23,
         null,
         null,
         1,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        23,
         null,
         null,
         1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
+        23,
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
         null,
         null
       ],
       "/home/csvm/GroupBuy/app/models/pledge.rb": [
         1,
+<<<<<<< HEAD
+=======
+        23,
+        23,
+        23,
+        null,
+        null,
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
         1,
         1,
         null,
@@ -131,6 +167,7 @@
         null,
         null,
         1,
+<<<<<<< HEAD
         1,
         1,
         null,
@@ -138,14 +175,53 @@
         1,
         null,
         null,
+=======
+        24,
+        12,
+        12,
+        1,
+        null,
+        12,
+        null,
+        null,
+        12,
+        11,
+        11,
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
         null,
         1,
         0,
+<<<<<<< HEAD
+=======
+        null,
+        null,
+        12,
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
         0,
         0,
         0,
         null,
+<<<<<<< HEAD
         0,
+=======
+        12,
+        null,
+        null,
+        12,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
         0,
         0,
         null,
@@ -176,6 +252,7 @@
       "/home/csvm/GroupBuy/app/helpers/products_helper.rb": [
         1,
         1,
+<<<<<<< HEAD
         0,
         0,
         0,
@@ -184,24 +261,41 @@
         null,
         0,
         null,
+        null,
+=======
+        130,
+        130,
+        130,
+        130,
+        118,
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+<<<<<<< HEAD
+        0,
+        0,
         null,
         null,
         1,
         0,
         0,
+        0,
+        0,
+        0,
+=======
+        200,
+        200,
         null,
         null,
         1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
+        72,
+        72,
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
         null,
         null
       ],
@@ -231,6 +325,26 @@
         null
       ],
       "/home/csvm/GroupBuy/app/helpers/users_helper.rb": [
+<<<<<<< HEAD
+=======
+        1,
+        null
+      ]
+    },
+    "timestamp": 1430363855
+  },
+  "RSpec": {
+    "coverage": {
+      "/Users/ddrucker/Desktop/GroupBuy/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
         1,
         null
       ],
@@ -300,7 +414,23 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/csvm/GroupBuy/app/controllers/products_controller.rb": [
+=======
+<<<<<<< HEAD
+      "/home/csvm/GroupBuy/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/home/csvm/GroupBuy/app/controllers/products_controller.rb": [
+=======
+      "/Users/ddrucker/Desktop/GroupBuy/app/helpers/users_helper.rb": [
+>>>>>>> 7d6627e8043eeb9af72cb920fb47d9b3970b71d1
+        1,
+        null
+      ],
+      "/Users/ddrucker/Desktop/GroupBuy/app/controllers/products_controller.rb": [
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
         1,
         1,
         4,
@@ -393,14 +523,43 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/csvm/GroupBuy/app/models/pledge.rb": [
+=======
+<<<<<<< HEAD
+      "/home/csvm/GroupBuy/app/controllers/users_controller.rb": [
+=======
+      "/Users/ddrucker/Desktop/GroupBuy/app/controllers/users_controller.rb": [
+>>>>>>> 7d6627e8043eeb9af72cb920fb47d9b3970b71d1
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
         1,
         1,
         1,
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/csvm/GroupBuy/app/models/product.rb": [
+=======
+<<<<<<< HEAD
+      "/home/csvm/GroupBuy/app/models/pledge.rb": [
+=======
+      "/Users/ddrucker/Desktop/GroupBuy/app/models/pledge.rb": [
+>>>>>>> 7d6627e8043eeb9af72cb920fb47d9b3970b71d1
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+<<<<<<< HEAD
+      "/home/csvm/GroupBuy/app/models/product.rb": [
+=======
+      "/Users/ddrucker/Desktop/GroupBuy/app/models/product.rb": [
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
+        1,
+        1,
+>>>>>>> 7d6627e8043eeb9af72cb920fb47d9b3970b71d1
         1,
         1,
         1,
@@ -454,7 +613,6 @@
         null,
         null,
         null,
-        null,
         1,
         4,
         null,
@@ -473,6 +631,14 @@
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1430367898
+=======
+<<<<<<< HEAD
+    "timestamp": 1430367738
+=======
+    "timestamp": 1430359483
+>>>>>>> 7d6627e8043eeb9af72cb920fb47d9b3970b71d1
+>>>>>>> 6f6b46f1cc207f2020b91a622e9104184817904a
   }
 }
