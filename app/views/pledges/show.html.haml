@@ -1,8 +1,8 @@
 #main
   %h3 Pledge Confirmation for #{@product.name}
   %h2 Your pledge: #{your_pledge(@product, params[:pledges])}
-
+  =params.inspect
   %h2 Pledges until target is hit: 
   %h2 Listing Expires: #{listing_expires(@product.ending)}
 
-  =button_to 'Confirm', {:controller => "pledges", :action => "create", :pledge_num => params[:pledges], :user_id => current_user.id, :product_id => @product.id}, :form_class => "pledge", :method =>:post  
+  =button_to 'Confirm 2', {action: :create, :product_id => @product.id, :pledge_num => params[:pledges]}, :method => :post

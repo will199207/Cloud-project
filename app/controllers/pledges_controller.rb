@@ -1,5 +1,5 @@
 class PledgesController < ApplicationController
-    def create
+    def create2
         #values = pledge_update_params
         product = Product.where("id = #{params[:product_id]}")
         product.pledge_count = product.pledge_count + params[:pledge_num]
@@ -11,6 +11,20 @@ class PledgesController < ApplicationController
         else
             flash[:alert] = "Pledge could not go through. Try again"
             redirect_to product_path p.product_id
+        end
+    end
+
+    def create
+        @product = Product.find(params[:product_id])
+        @product.pledge_count = @product.pledge_count + params[:pledge_num].to_i
+        @product.save
+        @pledge = Pledge.new({:user_id => params[:user_id], :product_id => params[:product_id]})
+        if @pledge.save
+            flash[:notice] = "Your pledge went through!"
+            redirect_to product_path @pledge.product_id
+        else
+            flash[:alert] = "Pledge could not go through. Try again"
+            redirect_to product_path @pledge.product_id
         end
     end
 
