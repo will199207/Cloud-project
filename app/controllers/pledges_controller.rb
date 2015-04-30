@@ -16,17 +16,17 @@ class PledgesController < ApplicationController
                 redirect_to product_path @pledge.product_id
             end
         end 
-
         flash[:notice] = "Your pledge went through!"
         redirect_to product_path @product
 
     end
 
     def show
-    	if !anyone_signed_in?
+        if !anyone_signed_in?
             flash[:alert] = "You must be logged in to buy a product!"
             deny_access
         else
+            @pledge_num = params[:pledges]
             @product = Product.find(params[:id])
         end
     end
