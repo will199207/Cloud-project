@@ -21,6 +21,77 @@ Product.create!(
     :user_id => 1)
 
 Product.create!(
+    :name => "Chewing Gum", 
+    :description => "20 Sticks of BubbleYum, cotton candy flavored",
+    :price => 0.30,
+    :target => 300,
+    :pledge_count => 203,
+    :start => "2015-01-22 12:00:00",
+    :ending => "2015-09-02 12:00:00",
+    :user_id => 2)
+
+Product.create!(
+    :name => "Shower Speakers", 
+    :description => "Waterproof and loud enough to play over your singing",
+    :price => 50,
+    :target => 65,
+    :pledge_count => 50,
+    :start => "2015-01-22 12:00:00",
+    :ending => "2015-07-20 12:00:00",
+    :user_id => 3)
+
+Product.create!(
+    :name => "40 Gallon Trash Bag (pack of 30)", 
+    :description => "They'll help you clean your House",
+    :price => 22.00,
+    :target => 350,
+    :pledge_count => 50,
+    :start => "2015-01-22 12:00:00",
+    :ending => "2015-07-16 12:00:00",
+    :user_id => 3)
+
+Product.create!(
+    :name => "Flat Screen TV!", 
+    :description => "Large with a nice picture",
+    :price => 1000,
+    :target => 22,
+    :pledge_count => 5,
+    :start => "2015-01-22 12:00:00",
+    :ending => "2015-07-04 12:00:00",
+    :user_id => 3)
+
+Product.create!(
+    :name => "Window", 
+    :description => "Cracked, good deal",
+    :price => 15,
+    :target => 20,
+    :pledge_count => 10,
+    :start => "2015-01-22 12:00:00",
+    :ending => "2015-06-02 12:00:00",
+    :user_id => 2)
+
+Product.create!(
+    :name => "Startup Social Networking Company", 
+    :description => "The next facebook",
+    :price => 2000000,
+    :target => 5,
+    :pledge_count => 0,
+    :start => "2015-01-22 12:00:00",
+    :ending => "2015-09-02 12:00:00",
+    :user_id => 3)
+
+Product.create!(
+    :name => "1 pound of M & M", 
+    :description => "Round chocolate candies, enough for all your friends too",
+    :price => 12.50,
+    :target => 100,
+    :pledge_count => 72,
+    :start => "2015-01-22 12:00:00",
+    :ending => "2015-08-02 12:00:00",
+    :user_id => 3)
+
+
+Product.create!(
     :name => "Laptop",
     :description => "Probably need one",
     :price => 550.00,
@@ -168,6 +239,22 @@ User.create!(
     :last_name => "Drucker",
     :password => "football",
     :password_confirmation => "football")
+
+User.create!(
+    :email => "test1@google.com",
+    :first_name => "Test User1",
+    :last_name => "Drucker",
+    :password => "password",
+    :password_confirmation => "password")
+
+User.create!(
+    :email => "test2@google.com",
+    :first_name => "Test User2",
+    :last_name => "Drucker",
+    :password => "password",
+    :password_confirmation => "password")
+
+
         
 User.create!(
     :email => "garcia@yahoo.com",
