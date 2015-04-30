@@ -70,7 +70,7 @@ Feature: Create new product
     Given I am logged in with username "mgeorges@colgate.edu" and password "greekfreak"
     And I am on the users page
     Then I should see "Wolf Cola"
-    When I follow "create a new product listing"
+    When I follow "create a new listing"
     Then I should be on the create new product page
     When I fill in the following:
       | product_name        | Coffee Maker                                                     |
@@ -84,11 +84,10 @@ Feature: Create new product
       | product_ending_3i   | 31        |
       | product_ending_4i   | 12        |
       | product_ending_5i   | 12        |
-      | product_ending_6i   | 12        |
 
     And I press "Post"
     Then I should be on the products page
-    And I should see that "Coffee Maker" has a price of "120.00"
+    And I should see that "Coffee Maker" has a price of "$120.00"
     When I follow "Markos!"
     Then I should be on the users page
     And I should see "Wolf Cola"
@@ -108,7 +107,6 @@ Feature: Create new product
       | product_ending_3i   | 20    |
       | product_ending_4i   | 13    |
       | product_ending_5i   | 00    |
-      | product_ending_6i   | 00    |
 
     And I press "Post"
     Then I should be on the products page
@@ -129,12 +127,11 @@ Feature: Create new product
       | product_ending_3i   | 20   |
       | product_ending_4i   | 12   |
       | product_ending_5i   | 00   |
-      | product_ending_6i   | 00   |
 
     And I press "Post"
     Then I should be on the products page
     And I should see "Failed to create new product listing. No name specified"
-    And I should not "$75.00"
+    And I should not see "$75.00"
 
   Scenario: Creating a new product fails if a price is not specified
     Given I am logged in with username "mgeorges@colgate.edu" and password "greekfreak"
@@ -144,13 +141,12 @@ Feature: Create new product
       | product_description | Pad for your computer mouse   |
       | product_target      | 45                            |
 
-    When I select the following:
+    When I select the following options:
       | product_ending_1i   | 2019 |
       | product_ending_2i   | June |
       | product_ending_3i   | 15   |
       | product_ending_4i   | 10   |
       | product_ending_5i   | 59   |
-      | product_ending_6i   | 59   |
 
     And I press "Post"
     Then I should be on the products page
@@ -182,12 +178,11 @@ Feature: Create new product
     When I select the following options:
       | product_ending_1i   | 2015      |
       | product_ending_2i   | August    |
-      | product_ending_3i   | 01        |
+      | product_ending_3i   |  1        |
       | product_ending_4i   | 09        |
       | product_ending_5i   | 15        |
-      | product_ending_6i   | 00        |
 
     And I press "Post"
     Then I should be on the products page
     And I should see "New product Watch created successfully"
-    And I should see that "Watch" has a price of "400.00"
+    And I should see that "Watch" has a price of "$400.00"
