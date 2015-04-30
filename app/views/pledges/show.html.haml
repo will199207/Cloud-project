@@ -1,7 +1,9 @@
 #main
-  %h3 Pledge Confirmation for #{@product.name}
+  %h3 Are you sure about this?
   %h2 Your pledge: #{your_pledge(@product, params[:pledges])}
-  %h2 Pledges until target is hit: 
+  %h2 Pledges until target is hit: #{@product.target - @product.pledge_count}
   %h2 Listing Expires: #{listing_expires(@product.ending)}
 
+
+  =button_to "Cancel", product_path(@product), :method => :get
   =button_to 'Confirm!!!', {action: :create, :product_id => @product.id, :pledge_num => params[:pledges]}, :method => :post

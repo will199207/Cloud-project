@@ -4,16 +4,24 @@
     %caption Here are some products you've Pledged to Buy!
     %th Product
     %th % Pledged
+    %th Total Cost
+    %th.price Quantity
     - @buying.each do |product|
       %tr.product
-        %td.name= link_to "#{product.name}", product
-        %td.ending= "#{time_left(product.ending)}"
+        %td.name= link_to product.name, product
+        %td.percent= "#{(100*product.pledge_count/product.target.to_f).round(0)}" + '%'
+
+        %td.cost= number_to_currency(product.price * @amount[product.id])
+        %td.quanity.price= @amount[product.id]
 
   %table.user_table2
     %caption Here are some products you've Listed for Sale!
     %th Product
-    %th % Ends on
+    %th % Pledged
+    %th.price Ends on
     - @selling.each do |product|
       %tr.product
-        %td.name= link_to "#{product.name}", product
-        %td.ending= "#{time_left(product.ending)}"
+        %td.name= link_to product.name, product
+        %td.pecent= "#{(100*product.pledge_count/product.target.to_f).round(0)}" + '%'
+
+        %td.ending.price= time_left(product.ending)

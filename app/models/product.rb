@@ -40,9 +40,9 @@ class Product < ActiveRecord::Base
     #    self.where("end <= '#{DateTime.now.to_formatted_s(:db)}'")
     #end
 
-    #def self.target_not_hit
-    #    self.where("target > pledge_count")
-    #end
+    def self.target_not_hit
+        self.where("target > pledge_count")
+    end
     
     #def self.target_hit
     #    self.where("target = pledge_count")
@@ -53,14 +53,33 @@ class Product < ActiveRecord::Base
     #end
 
     def self.newest
-        self.order("start DESC")
+        self.are_active.target_not_hit.order("start DESC").limit(7)
     end
 
     def self.almost_expired
-        self.order("ending ASC")
+        self.are_active.target_not_hit.order("ending ASC").limit(7)
     end
 
     def self.almost_targeted
-        self.order("(pledge_count/(target * 1.0)) DESC")
+        self.are_active.target_not_hit.order("(pledge_count * 1.0) / target DESC").limit(7)
     end
+
+    def self.selling (id)
+        self.where("user_id = #{id}").order("(pledge_count * 1.0) / target DESC")
+    end
+
+    def self.buying (id)
+        p = Product.joins(:pledges).where("pledges.user_id = #{id}")
+        ids = {}
+        p.each do |product|
+            if ids[product.id] == nil
+                ids[product.id] = 1
+            else
+                ids[product.id] = ids[product.id] + 1
+            end 
+        end
+        return p.uniq, ids
+
+    end
+
 end
