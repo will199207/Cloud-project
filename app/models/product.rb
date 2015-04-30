@@ -71,14 +71,16 @@ class Product < ActiveRecord::Base
     def self.buying (id)
         p = Product.joins(:pledges).where("pledges.user_id = #{id}")
         ids = {}
+        cost = 0
         p.each do |product|
+            cost = cost + product.price
             if ids[product.id] == nil
                 ids[product.id] = 1
             else
                 ids[product.id] = ids[product.id] + 1
             end 
         end
-        return p.uniq, ids
+        return p.uniq, ids, cost
 
     end
 
