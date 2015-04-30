@@ -11,11 +11,14 @@
       %td= @product.pledge_count
       %td= @product.target
       %td= number_to_currency(@product.price)
-
-  = form_tag "/products/#{@product.id}/confirm" do
-    = label_tag 'Place an order'
-    = number_field_tag 'pledges', 0, in: 1...(1 + @product.target - @product.pledge_count) 
-    = submit_tag 'Pledge!'
+  
+  - if @product.pledge_count != @product.target 
+    = form_tag "/products/#{@product.id}/confirm" do
+      = label_tag 'Place an order'
+      = number_field_tag 'pledges', 0, in: 1...(1 + @product.target - @product.pledge_count) 
+      = submit_tag 'Pledge!'
+  - else
+    %h5 This product has been fully pledged!
 
   %h2 Product Description
   %h1= @product.description
