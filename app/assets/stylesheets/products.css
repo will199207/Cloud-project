@@ -168,7 +168,8 @@ body .back_link:link {
 body .product_form {
   text-align: left;
   font-family: Helvetica, sans-serif;
-  font-size: 12pt;
+  font-size: 14pt;
+  font-weight: 200;
 }
 
 body .centered_table {
@@ -179,7 +180,9 @@ body .centered_table {
 .search_box {
     text-align: left;
 }
-
+.right {
+    text-align: right;
+}
 .user_name {
   font-family: Helvetica, sans-serif;
   text-align: right;
