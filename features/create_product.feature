@@ -65,4 +65,124 @@ Feature: Create new product
     Then I should be on the products page
     And I should see "New product Kitten Mittens created successfully"
     And I should see that "Kitten Mittens" has a price of "$4.98"
+  
+  Scenario: Newly created product is visible on the user page
+    Given I am logged in with username "mgeorges@colgate.edu" and password "greekfreak"
+    And I am on the users page
+    Then I should see "Wolf Cola"
+    When I follow "create a new listing"
+    Then I should be on the create new product page
+    When I fill in the following:
+      | product_name        | Coffee Maker                                                     |
+      | product_description | Makes any brew taste like it came from the Colombian rainforests |
+      | product_price       | 120.00                                                           |
+      | product_target      | 25                                                               |
+    
+    When I select the following options:
+      | product_ending_1i   | 2015      |
+      | product_ending_2i   | October   |
+      | product_ending_3i   | 31        |
+      | product_ending_4i   | 12        |
+      | product_ending_5i   | 12        |
 
+    And I press "Post"
+    Then I should be on the products page
+    And I should see that "Coffee Maker" has a price of "$120.00"
+    When I follow "Markos!"
+    Then I should be on the users page
+    And I should see "Wolf Cola"
+    And I should see "Coffee Maker"
+
+  Scenario: Creating a new product fails if a target is not specified
+    Given I am logged in with username "mgeorges@colgate.edu" and password "greekfreak"
+    And I am on the create new product page
+    When I fill in the following:
+      | product_name        | Book                       |
+      | product_description | 400 pages of entertainment |
+      | product_price       | 3.50                       |
+    
+    When I select the following options:
+      | product_ending_1i   | 2015  |
+      | product_ending_2i   | May   |
+      | product_ending_3i   | 20    |
+      | product_ending_4i   | 13    |
+      | product_ending_5i   | 00    |
+
+    And I press "Post"
+    Then I should be on the products page
+    And I should see "Failed to create new product listing. No target specified"
+    And I should not see "Book"
+
+  Scenario: Creating a new product fails if a name is not specified
+    Given I am logged in with username "mgeorges@colgate.edu" and password "greekfreak"
+    And I am on the create new product page
+    When I fill in the following:
+      | product_description | prints colorful ink onto paper |
+      | product_price       | 75.00                          |
+      | product_target      | 30                             |
+
+    When I select the following options:
+      | product_ending_1i   | 2015 |
+      | product_ending_2i   | May  |
+      | product_ending_3i   | 20   |
+      | product_ending_4i   | 12   |
+      | product_ending_5i   | 00   |
+
+    And I press "Post"
+    Then I should be on the products page
+    And I should see "Failed to create new product listing. No name specified"
+    And I should not see "$75.00"
+
+  Scenario: Creating a new product fails if a price is not specified
+    Given I am logged in with username "mgeorges@colgate.edu" and password "greekfreak"
+    And I am on the create new product page
+    When I fill in the following:
+      | product_name        | Mouse Pad                     |
+      | product_description | Pad for your computer mouse   |
+      | product_target      | 45                            |
+
+    When I select the following options:
+      | product_ending_1i   | 2019 |
+      | product_ending_2i   | June |
+      | product_ending_3i   | 15   |
+      | product_ending_4i   | 10   |
+      | product_ending_5i   | 59   |
+
+    And I press "Post"
+    Then I should be on the products page
+    And I should see "Failed to create new product listing. No price specified"
+    And I should not see "Mouse Pad"
+
+  Scenario: Creating a new product fails if an ending date is not specified
+    Given I am logged in with username "mgeorges@colgate.edu" and password "greekfreak"
+    And I am on the create new product page
+    When I fill in the following:
+      | product_name        | Baseball Cap     |
+      | product_description | stylish headware |
+      | product_target      | 50               |
+      | product_price       | 18.00            |
+    
+    And I press "Post"
+    Then I should be on the products page
+    And I should see "Failed to create new product listing. No ending date specified"
+    And I should not see "Baseball Cap"
+
+  Scenario: Creating a new product succeeds if no product description is given
+    Given I am logged in with username "mgeorges@colgate.edu" and password "greekfreak"
+    And I am on the create new product page
+    When I fill in the following:
+      | product_name        | Watch     |
+      | product_target      | 34        |
+      | product_price       | 400.00    |
+
+    When I select the following options:
+      | product_ending_1i   | 2015      |
+      | product_ending_2i   | August    |
+      | product_ending_3i   |  1        |
+      | product_ending_4i   | 09        |
+      | product_ending_5i   | 15        |
+
+    And I press "Post"
+    Then I should be on the products page
+    And I should see "New product Watch created successfully"
+    And I should see that "Watch" has a price of "$400.00"

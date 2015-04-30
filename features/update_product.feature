@@ -38,6 +38,8 @@ Feature: Pledge to buy a Product
     When I fill in "pledges" with "1"
     And I press "Pledge!"
     Then I should be on the pledge confirmation page
-    And I should see "Pledges until Bid: 4"
-    And I should see "Pledge Confirmation"
-
+    And I should see "Pledges until target is hit: 4"
+    And I should see "Confirm!!!"
+    When I press "Confirm!!!"
+    Then I should be on the products page
+    And I should see "Successfully made 1 pledge to Chubbies listing"
