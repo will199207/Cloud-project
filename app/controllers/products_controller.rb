@@ -53,7 +53,7 @@ class ProductsController < ApplicationController
 	values[:start] = DateTime.now.to_formatted_s(:db)
         values[:ending] = fix_date(values.delete("ending(1i)"), values.delete("ending(2i)"), values.delete("ending(3i)"), values.delete("ending(4i)"), values.delete("ending(5i)")) 
 		values[:pledge_count] = 0
-		values[:user_id] = User.pluck(:id).sample
+		values[:user_id] = current_user.id
         p = Product.new(values)
         if p.save
             flash[:notice] = "New product #{p.name} created successfully"
