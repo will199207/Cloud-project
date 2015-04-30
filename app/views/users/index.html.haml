@@ -1,2 +1,19 @@
 #main
-  %h3= " Welcome, #{current_user.first_name}"
+  %h3 Hey, #{current_user.first_name}. Would you like to #{link_to "create a new listing", new_product_path}? Or maybe return #{link_to "home", products_path}?
+  %table.user_table1
+    %caption Here are some products you've Pledged to Buy!
+    %th Product
+    %th % Pledged
+    - @buying.each do |product|
+      %tr.product
+        %td.name= link_to "#{product.name}", product
+        %td.ending= "#{time_left(product.ending)}"
+
+  %table.user_table2
+    %caption Here are some products you've Listed for Sale!
+    %th Product
+    %th % Ends on
+    - @selling.each do |product|
+      %tr.product
+        %td.name= link_to "#{product.name}", product
+        %td.ending= "#{time_left(product.ending)}"

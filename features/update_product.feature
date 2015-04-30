@@ -5,12 +5,12 @@ Feature: Pledge to buy a Product
 
   Background: GroupBuy has several products and users
     Given these Products:
-      | name        |       description         | price  | target | pledges |          start      |          end        |  user_id  |
-      | Wolf Cola   | Bubbly and delicious      |   0.25 |   24   |    4    | 2015-03-30 09:00:00 | 2015-05-01 12:00:00 |     1     |
-      | Xbox One    | Second-rate game console  | 300.00 |  100   |   69    | 2015-04-16 10:00:00 | 2015-06-15 17:00:00 |     2     |
-      | Water Bed   | More motion in the ocean  | 500.00 |  100   |   34    | 2015-03-21 08:00:00 | 2015-04-04 08:30:00 |     4     |
-      | Wolf Pelts  | soft and furry            |  54.99 |   50   |   48    | 2015-02-14 14:30:54 | 2015-07-04 23:59:59 |     5     |
-      | Chubbies    | The most radical shorts   |  42.50 |   25   |   20    | 2015-03-25 09:26:31 | 2015-06-21 23:59:59 |     7     |
+      | name        |       description         | price  | target | pledge_count |          start      |          ending        |  user_id  |
+      | Wolf Cola   | Bubbly and delicious      |   0.25 |   24   |    4         | 2015-03-30 09:00:00 | 2015-05-01 12:00:00    |     1     |
+      | Xbox One    | Second-rate game console  | 300.00 |  100   |   69         | 2015-04-16 10:00:00 | 2015-06-15 17:00:00    |     2     |
+      | Water Bed   | More motion in the ocean  | 500.00 |  100   |   34         | 2015-03-21 08:00:00 | 2015-04-04 08:30:00    |     4     |
+      | Wolf Pelts  | soft and furry            |  54.99 |   50   |   48         | 2015-02-14 14:30:54 | 2015-07-04 23:59:59    |     5     |
+      | Chubbies    | The most radical shorts   |  42.50 |   25   |   20         | 2015-03-25 09:26:31 | 2015-06-21 23:59:59    |     7     |
 
     Given these Users:
       | id | email                     | first_name | last_name |    password       |

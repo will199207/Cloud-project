@@ -2,10 +2,10 @@ require 'rails_helper'
 RSpec.describe "show page", type: :feature do
     
     fields = [
-        "Product Name", 
-        "Product Description",
-        "Target Number for Sale", 
-        "Price"]
+        "name", 
+        "description",
+        "target", 
+        "price"]
 
     before :each do
         visit "/products"
@@ -22,9 +22,9 @@ RSpec.describe "show page", type: :feature do
         end
     end
     
-    it "should have a post link" do 
+    it "should have a post button" do 
         click_link("Create New Product")
-        expect(page).to have_button("Post")
+        expect(page).to have_submit_button("Post")
     end 
 end
 
