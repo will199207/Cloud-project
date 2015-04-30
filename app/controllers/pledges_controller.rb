@@ -34,8 +34,6 @@ class PledgesController < ApplicationController
     end
 
 
-
-
     private
     def create_update_params
         params.require(:user_id)

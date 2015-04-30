@@ -50,6 +50,24 @@ class ProductsController < ApplicationController
 
     def create
 	values = create_update_params
+        # check to make sure the user has input all the required information
+        if values[:name] == ""
+            flash[:alert] = "Failed to create new product listing. No name specified"
+            redirect_to(products_path) and return
+        end
+        if values[:target] == ""
+            flash[:alert] = "Failed to create new product listing. No target specified"
+            redirect_to products_path and return
+        end
+        if values[:price] == ""
+            flash[:alert] = "Failed to create new product listing. No price specified"
+            redirect_to products_path and return
+        end
+        if values[:target] == ""
+            flash[:alert] = "Failed to create new product listing. No ending date specified"
+            redirect_to products_path and return
+        end
+
 	values[:start] = DateTime.now.to_formatted_s(:db)
         values[:ending] = fix_date(values.delete("ending(1i)"), values.delete("ending(2i)"), values.delete("ending(3i)"), values.delete("ending(4i)"), values.delete("ending(5i)")) 
 	values[:pledge_count] = 0
