@@ -3,8 +3,10 @@ module ProductsHelper
         end_time = DateTime.parse(end_time)
         now = DateTime.now
         tl = (end_time - now).to_i # tl for Time Left
-        if tl >= 2
+        if tl > 1
             return "#{tl} days"
+        else
+            return "less than a day"
         end
     end
 
@@ -22,7 +24,7 @@ module ProductsHelper
         pledges = pledges.to_i
         total_price = product.price * pledges
         name = product.name
-        if pledges > 1; name.pluralize; end
+        name = name.pluralize if pledges > 1
         return "#{pledges} #{name} for #{number_to_currency(total_price)}"
     end
 end
