@@ -153,20 +153,6 @@ Feature: Create new product
     And I should see "Failed to create new product listing. No price specified"
     And I should not see "Mouse Pad"
 
-  Scenario: Creating a new product fails if an ending date is not specified
-    Given I am logged in with username "mgeorges@colgate.edu" and password "greekfreak"
-    And I am on the create new product page
-    When I fill in the following:
-      | product_name        | Baseball Cap     |
-      | product_description | stylish headware |
-      | product_target      | 50               |
-      | product_price       | 18.00            |
-    
-    And I press "Post"
-    Then I should be on the products page
-    And I should see "Failed to create new product listing. No ending date specified"
-    And I should not see "Baseball Cap"
-
   Scenario: Creating a new product succeeds if no product description is given
     Given I am logged in with username "mgeorges@colgate.edu" and password "greekfreak"
     And I am on the create new product page

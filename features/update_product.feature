@@ -5,12 +5,12 @@ Feature: Pledge to buy a Product
 
   Background: GroupBuy has several products and users
     Given these Products:
-      | name        |       description         | price  | target | pledge_count |          start      |          ending        |  user_id  |
-      | Wolf Cola   | Bubbly and delicious      |   0.25 |   24   |    4         | 2015-03-30 09:00:00 | 2015-05-01 12:00:00    |     1     |
-      | Xbox One    | Second-rate game console  | 300.00 |  100   |   69         | 2015-04-16 10:00:00 | 2015-06-15 17:00:00    |     2     |
-      | Water Bed   | More motion in the ocean  | 500.00 |  100   |   34         | 2015-03-21 08:00:00 | 2015-04-04 08:30:00    |     4     |
-      | Wolf Pelts  | soft and furry            |  54.99 |   50   |   48         | 2015-02-14 14:30:54 | 2015-07-04 23:59:59    |     5     |
-      | Chubbies    | The most radical shorts   |  42.50 |   25   |   20         | 2015-03-25 09:26:31 | 2015-06-21 23:59:59    |     7     |
+      | name        | id |       description         | price  | target | pledge_count |          start      |          ending        |  user_id  |
+      | Wolf Cola   |  1 | Bubbly and delicious      |   0.25 |   24   |    4         | 2015-03-30 09:00:00 | 2015-05-01 12:00:00    |     1     |
+      | Xbox One    |  2 | Second-rate game console  | 300.00 |  100   |   69         | 2015-04-16 10:00:00 | 2015-06-15 17:00:00    |     2     |
+      | Water Bed   |  3 | More motion in the ocean  | 500.00 |  100   |   34         | 2015-03-21 08:00:00 | 2015-04-04 08:30:00    |     4     |
+      | Wolf Pelts  |  4 | soft and furry            |  54.99 |   50   |   48         | 2015-02-14 14:30:54 | 2015-07-04 23:59:59    |     5     |
+      | Chubbies    |  5 | The most radical shorts   |  42.50 |   25   |   20         | 2015-03-25 09:26:31 | 2015-06-21 23:59:59    |     7     |
 
     Given these Users:
       | id | email                     | first_name | last_name |    password       |
@@ -37,9 +37,15 @@ Feature: Pledge to buy a Product
     And I should see "25"
     When I fill in "pledges" with "1"
     And I press "Pledge!"
-    Then I should be on the pledge confirmation page
-    And I should see "Pledges until target is hit: 4"
-    And I should see "Confirm!!!"
+    Then I should be on the confirm page with ID = 5
+    And I should see "Pledges until target is hit: 5"
     When I press "Confirm!!!"
-    Then I should be on the products page
-    And I should see "Successfully made 1 pledge to Chubbies listing"
+    Then I should be on the Chubbies page with ID = 5
+    And I should see "Your pledge went through!"
+
+  Scenario: Attempt to Pledge to a Product while not logged in
+    Given I am on the Wolf Pelts page with ID = 4
+    When I fill in "pledges" with "2"
+    And I press "Pledge!"
+    Then I should be on the login page
+    And I should see "You must be logged in to buy a product!"

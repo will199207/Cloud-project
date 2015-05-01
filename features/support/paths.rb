@@ -27,7 +27,7 @@ module NavigationHelpers
 
     when /^the index page$/
       '/products'
-     
+
     when /^the login page$/
       '/users/sign_in'
 
@@ -35,6 +35,15 @@ module NavigationHelpers
       '/users/sign_up'
     when /^the users page$/
       '/users'
+    
+    when /^the confirm page with ID = (.*)/
+      "/products/#{$1}/confirm"
+    
+    when /^Sign in with Google Oauth2$/
+      "/o/oauth2/auth"
+
+    when /^the (.*) page with ID = (.*)/
+      "/products/#{$2}"
 
     else
       begin

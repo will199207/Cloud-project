@@ -106,7 +106,11 @@ When /^(?:|I )press "([^"]*)"$/ do |button|
 end
 
 When /^(?:|I )follow "([^"]*)"$/ do |link|
-  first(:link, link).click
+  if link == "Sign in with Google Oauth2"
+    visit path_to(link)
+  else
+    first(:link, link).click
+  end
 end
 
 When /^(?:|I )fill in "([^"]*)" with "([^"]*)"$/ do |field, value|

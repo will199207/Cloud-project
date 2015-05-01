@@ -10,7 +10,7 @@ Feature: Access the Home Page
       | Water Bed   | More motion in the ocean  | 500.00 |  100   |   34         | 2015-03-21 08:00:00 | 2015-04-04 08:30:00    |    4    |
 
     Given these Users:
-      | id | email                | first_name | last_name |    password       |   
+      | id | email                     | first_name | last_name |    password       |   
       |  1 | mgeorges@colgate.edu      | Markos     | Georges   | greekfreak        |
       |  2 | wgarcia@colgate.edu       | William    | Garcia    | chiefcia          |
       |  3 | rely@colgate.edu          | Willets    | Ely       | presidentwill     |
@@ -20,7 +20,7 @@ Feature: Access the Home Page
     Given I am on the login page
     When I follow "Sign up"
     Then I should be on the sign up page
-
+  
   Scenario: Sign Up to GroupBuy
     Given I am on the sign up page
     When I fill in the following:
@@ -30,7 +30,7 @@ Feature: Access the Home Page
     And I press "Sign up"
     Then I should be on the home page
     And I should see "Welcome! You have signed up successfully."
-    And I should see "Wolf Cola"
+    And I should not see "Wolf Cola"
     And I should see "Xbox One"
 
   Scenario: Log in to GroupBuy
@@ -41,7 +41,7 @@ Feature: Access the Home Page
     And I press "Log in"
     Then I should be on the home page
     And I should see "Signed in successfully."
-    And I should see "Wolf Cola"
+    And I should see "Xbox One"
 
   Scenario: Attempt to Sign Up with an email that is already used
     Given I am on the sign up page
