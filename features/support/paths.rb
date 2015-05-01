@@ -35,6 +35,9 @@ module NavigationHelpers
       '/users/sign_up'
     when /^the users page$/
       '/users'
+    when /^the pledge confirmation page for product (.*)$/
+        "products/#{}/confirm"
+        
 
     else
       begin
