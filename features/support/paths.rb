@@ -35,6 +35,7 @@ module NavigationHelpers
       '/users/sign_up'
     when /^the users page$/
       '/users'
+<<<<<<< HEAD
     
     when /^the confirm page with ID = (.*)/
       "/products/#{$1}/confirm"
@@ -44,6 +45,11 @@ module NavigationHelpers
 
     when /^the (.*) page with ID = (.*)/
       "/products/#{$2}"
+=======
+    when /^the pledge confirmation page for product (.*)$/
+        "products/#{}/confirm"
+        
+>>>>>>> 92fa521bede1a4188b0b7eb5b365f29ba6ca3679
 
     else
       begin

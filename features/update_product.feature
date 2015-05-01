@@ -37,6 +37,7 @@ Feature: Pledge to buy a Product
     And I should see "25"
     When I fill in "pledges" with "1"
     And I press "Pledge!"
+<<<<<<< HEAD
     Then I should be on the confirm page with ID = 5
     And I should see "Pledges until target is hit: 5"
     When I press "Confirm!!!"
@@ -49,3 +50,8 @@ Feature: Pledge to buy a Product
     And I press "Pledge!"
     Then I should be on the login page
     And I should see "You must be logged in to buy a product!"
+=======
+    And I should see "Pledges until target is hit: 5"
+    When I press "Confirm!!!"
+    Then I should see "Your pledge went through!"
+>>>>>>> 92fa521bede1a4188b0b7eb5b365f29ba6ca3679

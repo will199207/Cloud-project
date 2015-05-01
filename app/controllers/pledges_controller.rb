@@ -28,10 +28,16 @@ class PledgesController < ApplicationController
         else
             @pledge_num = params[:pledges]
             @product = Product.find(params[:id])
+<<<<<<< HEAD
             redirect_to product_path @product.id if @product.pledges == @product.target
             return @product
+=======
+            @product = Product.find(params[:id])
+            redirect_to product_path @product.id if @product.pledges == @product.target
+>>>>>>> 92fa521bede1a4188b0b7eb5b365f29ba6ca3679
         end
     end
+    
 
 
     private
